@@ -1,8 +1,22 @@
 CB's Fishing Log
 ---------------
+What is it?
 
-Well it sure looks like I have a lot of files!
-I probably should do some housecleaning and remove
-some that aren't being used...
+A php-based fishing log webapp with cool features like automatic weather information,
+USGS gauge info, GPS locating, privacy settings, and lots of other cool stuff.
 
--CB
+Why?
+
+There are other fishing log webapps, but I don't care for any that I've seen. I decided
+to try to make my own, without any real coding experience. This is my learning project!
+
+Does it work?
+
+Yes*. The core feature of recording a fishing trip and lots of information works
+pretty well; other features like friendships, RSS feeds, sharing to social media,
+and "place pages" for waterbodies are still in progress.
+
+For more info
+Check out my blog at cbfishes.com
+
+-Chris Beckstrom
