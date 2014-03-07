@@ -1,3 +1,0 @@
-here is something new-
-created on mac pro
-if I commit and push it.. how will it work on github?
