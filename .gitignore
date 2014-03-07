@@ -1,0 +1,11 @@
+config/*
+connect/*
+*config*
+*connect*
+config.default.php
+config.old.php
+config.php
+connect.php
+*.sql
+*.config
+zipcode.sql

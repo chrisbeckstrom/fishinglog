@@ -25,13 +25,19 @@ if(isset($_SESSION['myusername']))
     	</box>";
 	
 		print "<box>";
-		print "current user is " . $_SESSION['myusername'] . "<br>";
+		//print "current user is " . $_SESSION['myusername'] . "<br>";
 		include 'recenttrips.php';
 		print "</box>";
 	}
-	else		// IF NO USER LOGGED IN
+	else		////////////////// IF NO USER LOGGED IN
 	{
+	////////////// LOGIN BOX //////////
 	?>
+	<box>
+		<?php include 'php/interestbox.php'; ?>
+	</box>
+	
+	
 	<box>
 		<h3>Login</h3>
 		<tr>
@@ -57,6 +63,8 @@ if(isset($_SESSION['myusername']))
 		</tr>
 		</table>
 	</box>
+	
+
 <?
 	}
 ?>

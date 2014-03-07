@@ -8,6 +8,7 @@
 include '../config/config.php';
 // include 'config/connect.php';
 
+
 $host= $DBurl; // Host name
 $username= $DBuser; // Mysql username
 $password= $DBpass; // Mysql password
@@ -44,8 +45,7 @@ if($count==1){
 // session_register("myusername");
 // session_register("mypassword");
 
-// RECORD THAT THIS USER LOGGED IN
-//////////////////////////////////
+include 'recordlogin.php';
 
 
 session_start(); // if this isn't here, session variables don't get saved!

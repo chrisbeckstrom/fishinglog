@@ -66,7 +66,6 @@ $header =
 			<a href='map.php' class='headerlink'>map</a> | 
 			<a href='form.php' class='headerlink'>log a trip</a> | 
 			<a href='trips.php' class='headerlink'>trips</a> | 
-			<a href='php/updatetrip.php' class='headerlink'>update</a> | 
 			<a href='waterbodies.php' class='headerlink'>waters</a> |
 			
 			$secret_stuff

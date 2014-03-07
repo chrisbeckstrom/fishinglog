@@ -20,7 +20,10 @@ print $header;
 ?>
 <div id='main'>
 	    <nav>nav</nav>
-    <aside>aside</aside>
+    <aside>
+    <?php include 'sidebar.php'; ?>
+    
+    </aside>
     <article>
  <?
 

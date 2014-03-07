@@ -1,0 +1,173 @@
+password: 6thZcnd!
+
+
+* Find the weather for 1/17/2013 in itasca, morning
+
+SELECT weatherdate,timeofday,weather,temp_f 
+FROM weather 
+WHERE weathercity = 'Itasca' 
+AND weatherdate = '2013-01-17' 
+AND timeofday = 'morning';
++-------------+-----------+---------+--------+
+| weatherdate | timeofday | weather | temp_f |
++-------------+-----------+---------+--------+
+| 2013-01-17  | morning   | Clear   |     24 |
++-------------+-----------+---------+--------+
+1 row in set (0.00 sec)
+
+* get the current conditions for Salt Creek, Wood Dale
+	including city, date, time, temp f, weather, pressuretrend, waters site, waters gaugeheight
+
+SELECT weather.weathercity, weather.weatherdate, weather.weatherhms, weather.temp_f, weather.weather, weather.pressuretrend,
+waters.sitename, waters.gaugeheight
+FROM weather, waters
+WHERE weather.weatherdate = '2013-01-17'
+AND weather.weathercity = 'Itasca'
+AND waters.stationid = '05531175'
+ORDER BY weather.weatherhms DESC
+LIMIT 1;
+
+
+* Find the water level for salt creek 1/17/2013 in wood dale, late morning
+
+SELECT sitename,waterdate,timeofday,gaugeheight,discharge
+FROM waters
+WHERE stationid = '05531175'
+AND waterdate = '2013-01-17'
+AND timeofday = 'late morni';
+
++-------------------------------+------------+------------+-------------+-----------+
+| sitename                      | waterdate  | timeofday  | gaugeheight | discharge |
++-------------------------------+------------+------------+-------------+-----------+
+|   SALT CREEK AT WOOD DALE IL
+ | 2013-01-17 | late morni | 6.82        |           |
++-------------------------------+------------+------------+-------------+-----------+
+
+
+
+* Get the waterlevel and weather for Salt Creek
+
+- get the weatherdate, timeofday, weather, temp_f + sitename, gaugeheight
+	for Salt Creek
+	
+SELECT weather.weatherdate, weather.timeofday, weather.weather, weather.temp_f,
+waters.sitename, waters.gaugeheight
+FROM weather, waters
+WHERE weather.weathercity = 'Itasca' 
+AND weather.weatherdate = '2013-01-17' 
+AND weather.timeofday = 'morning'
+AND waters.stationid = '05531175'
+AND waters.timeofday = 'late morni';
+
++-------------+-----------+---------+--------+-------------------------------+-------------+
+| weatherdate | timeofday | weather | temp_f | sitename                      | gaugeheight |
++-------------+-----------+---------+--------+-------------------------------+-------------+
+| 2013-01-17  | morning   | Clear   |     24 |   SALT CREEK AT WOOD DALE IL	 | 6.82        |
++-------------+-----------+---------+--------+-------------------------------+-------------+
+
+
+* Get the trip info and weather for a night trip on salt creek 1-17-2013
+
+*** DOES NOT WORK *****
+SELECT trips.date,
+weather.timeofday, weather.weather, weather.temp_f,
+waters.sitename, waters.gaugeheight,
+trips.notes
+FROM trips, weather, waters
+WHERE trips.timeofday = 'night'
+AND trips.date = '2013-01-17'
+AND weather.date = trips.date
+AND weather.city = 'Itasca'
+AND weather.timeofday = trips.timeofday
+AND waters.waterdate = trips.date
+AND waters.timeofday = trips.timeofday
+AND waters.stationid = '05531175';
+
+* Get all the (trips) information of a particular trip, searching by trips.tripid
+
+SELECT *
+FROM trips
+WHERE tripid = 461
+
+* Get all the (trips) information for trips.tripid = 474
+and get the weather for that day and time and location
+
+SELECT *
+FROM trips, weather
+WHERE tripid = 474
+AND trips.timeofday = weather.timeofday
+AND trips.date = weather.date
+AND trips.city = weather.city
+
+
+* Get all the (trips) information for trips.tripid = 474
+and get the WEATHER for that day and time and location
+and get the WATER information for that day and time and location
+
+SELECT *
+FROM trips, weather, waters
+WHERE tripid = 474
+AND trips.timeofday = weather.timeofday
+AND trips.date = weather.date
+AND trips.city = weather.city
+AND trips.timeofday = waters.timeofday
+AND trips.date = waters.waterdate
+AND trips.waterbody = waters.waterbody
+
+
+******** SELECTING and REPLACING DATA
+
+* look for entries w/o a username
+
+SELECT * FROM trips WHERE username=0;
+UPDATE yourtable SET specificfield='$newvalue' WHERE specificfield IS NULL
+
+UPDATE trips SET username='cbfishes' WHERE username=0
+
+* add the city to waters based on the sitename
+* IN the WATERS table - look for sitenames that mention "salt" and make the city = Wood Dale
+SELECT * FROM waters WHERE sitename LIKE '%caled%';
+UPDATE trips SET city='Naperville, IL' WHERE waterbody LIKE '%dupage%';
+
+UPDATE waters SET timeofday='noon' WHERE timeofday='
+
+UPDATE trips SET city='Batavia, IL' WHERE notes LIKE '%les arend%';
+UPDATE trips SET private=1 WHERE waterbody LIKE '%happy acres%';
+
+salt creek devry spot:
+Latitude: 41.982296, Longitude: -87.990912
+
+st. charles wwd spot:
+Latitude: 41.903422, Longitude: -88.303709
+UPDATE trips SET lat=41.982296 ,lon=-87.990912 WHERE notes LIKE '%devry%'
+
+**** this works, when the trip happens on a river... *****
+SELECT *
+FROM trips, weather, waters
+WHERE tripid = $trip_id
+AND trips.timeofday = weather.timeofday
+AND trips.date = weather.date
+AND trips.city = weather.city
+AND trips.timeofday = waters.timeofday
+AND trips.date = waters.waterdate
+AND trips.waterbody = waters.waterbody
+
+
+SELECT watertype, date 
+FROM trips 
+WHERE tripid = 476
+
+UPDATE trips SET tripidtwo = ( SELECT @pos := @pos + 1 ) ORDER BY date
+UPDATE trips SET tripidtwo = ( SELECT tripidtwo := tripidtwo + 1 ) ORDER BY date
+
+ALTER TABLE trips ORDER BY date ASC
+
+SELECT *
+FROM `trips`
+ORDER BY `trips`.`date` ASC
+UPDATE tripidtwo
+
+SELECT * FROM trips ORDER BY trips.date ASC, ALTER TABLE `trips` ADD `tripid` INT NOT NULL AUTO_INCREMENT FIRST
+
+
+mysql -h mysql.cbfishes.com -p -u cbfishescom fishingtrips < zipcode.sql 

@@ -6,6 +6,7 @@
 	// privacy of this current trip
 	$privacy = $row['private'];
 	
+	//print "<br>PRIVACY.PHP<br>";
 	//print "PRIVACY = $privacy <br>";
 	//print "<b> 0 = public, 1 = users, 2 = friends, 3 = private <br></b>";
 	

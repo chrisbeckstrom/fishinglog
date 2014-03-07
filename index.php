@@ -11,7 +11,6 @@ print "<link rel='stylesheet' href='css/style.css' type='text/css'/>";
 print $header;
 
 ?>
-<link rel='stylesheet' href='css/style.css' type='text/css'/>
 <div id='main'>
     <article>
     	
@@ -26,12 +25,14 @@ print "
 			<br><br>
 			This is a fishing web site being built by <a href='http://cbfishes.com'>this guy<br><br>
 			<img src='https://en.gravatar.com/userimage/38567694/a1875b8ab27199899d7e8142cc5f608c.jpg'></a><br><br>
-			<a target='_blank' href='http://cbfishes.com/2013/07/26/building-a-fishing-app/'><i>Take a peek inside...</i></a>
+			<a target='_blank' href='http://cbfishes.com/2013/07/26/building-a-fishing-app/'><i>Read about it...</i></a>
 
 	</box>";
 	
 	// include 'php/loginbox.php';
+	print "<box>";
 	include 'php/interestbox.php';
+	print "</box>";
 	
 	print "</article></div>";
 	

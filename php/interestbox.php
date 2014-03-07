@@ -1,6 +1,6 @@
-<link rel="stylesheet" type="text/css" href="style.css"/>
-<box class='login'>
-<h2>Want to be a <a target='_blank' href='http://en.wikipedia.org/wiki/Software_testing#Beta_testing'>beta tester</a>?</h2> Want to be the first to know when it's ready? Sign up below!<br>
+
+<h2>Want to be a <a target='_blank' href='http://en.wikipedia.org/wiki/Software_testing#Beta_testing'>beta tester</a>?</h2> <br>
+Want to be the first to know when it's ready? Sign up below!<br>
 <tr>
 <form class="loginform" name="loginform" method="post" action="php/submit-interest.php">
 <td>
@@ -18,4 +18,3 @@
 </form>
 </tr>
 </table>
-</box>

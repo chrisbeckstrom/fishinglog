@@ -79,8 +79,9 @@ $waterbodyrow = mysql_fetch_array($waterbodyresult);
 		   <nav>nav</nav>
     <aside>
 
-			<box>
-<? print "<h3>Who's fished here?</h3>";
+	<box>
+<? 	//////////// WHO'S FISHED HERE box /////////////////////
+	print "<h3>Who's fished here?</h3>";
 	// get information about trips
 	// that happened there
 	$whofishedherequery = 
@@ -114,6 +115,8 @@ $waterbodyrow = mysql_fetch_array($waterbodyresult);
 		}
 		?>
 	</box>
+	
+	<?php include 'sidebar.php'; ?>
 	
 	
 	

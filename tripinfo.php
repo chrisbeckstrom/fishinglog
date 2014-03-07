@@ -254,8 +254,8 @@ print "<otherbox>";
 	
 
 	// if we have weather information, show it
-	// if ( $hum != '')
-// 		{
+	if ( $hum != '')
+{
 		print "
 		<otherbox>
 		<h3>Weather</h3>";
@@ -265,7 +265,7 @@ print "<otherbox>";
 		Winds: $wspdi mph from the $wdir<br><br>
 		</otherbox>";
 	
-// 		}
+}
 
 	print "
 	<otherbox>

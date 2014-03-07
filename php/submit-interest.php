@@ -5,8 +5,8 @@
 /* this script takes an EMAIL address and adds it to the email_list database
 
 */
-include 'config/config.php';
-include 'config/connect.php';
+include '../config/config.php';
+include '../config/connect.php';
 
 $host= $DBurl; // Host name
 $username= $DBuser; // Mysql username
@@ -15,11 +15,21 @@ $db_name= $DBdb; // Database name
 
 $tbl_name="email_list"; // users Table name
 
-include 'php/getip.php';
+include 'getip.php';
 
-print "<span class='whiteonwhite'>I grabbed your IP because I'm curious to see who signs up! It's ";
+include '../header.php';
+?>
+<link rel="stylesheet" type="css/text/css" href="../css/style.css"/>
+<?
+print $header;
+
+print "<box>";
+
+//print "<span class='whiteonwhite'>I grabbed your IP because I'm curious to see who signs up! It's ";
 $ipaddress = print get_client_ip();
 print "</span>";
+
+print "</box>";
 
 // Connect to server and select databse.
 // mysql_connect("$host", "$username", "$password")or die("cannot connect");

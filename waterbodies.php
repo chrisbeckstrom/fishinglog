@@ -23,12 +23,15 @@ print $header;
 <div id='main'>
 		   <nav>nav</nav>
     <aside>
-    	<box>
-			
-			ASIDE BOX
-		</box></aside>
+	<?php include 'sidebar.php'; ?>
+	
+	</aside>
 		
     <article>
+    	<box>
+    	<h1>Waters</h1>
+    	</box>
+    	
     	<box>
     	<?
 

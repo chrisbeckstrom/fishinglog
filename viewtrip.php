@@ -64,15 +64,15 @@ if ($tripnumber == "" )	// tell us if there's no ID loaded
 	$currentuser = $_SESSION['myusername'];
 	
 // hide things that should be hidden depending on who is viewing
-	if ( $currentuser == $tripusername )
-		{	// if the user is viewing their own trip, show everything
-			$hidethings = 0;
-			$hidespots = 0;
-		}
-	else {	// if the user is viewing other people's trips, hide stuff
-			$hidethings = 1;
-			$hidespots = 1;
-	}
+// 	if ( $currentuser == $tripusername )
+// 		{	// if the user is viewing their own trip, show everything
+// 			$hidethings = 0;
+// 			$hidespots = 0;
+// 		}
+// 	else {	// if the user is viewing other people's trips, hide stuff
+// 			$hidethings = 1;
+// 			$hidespots = 1;
+// 	}
 	
 	
 // MAKE EVERYTHING INTO NICER VARIABLES
@@ -127,6 +127,7 @@ $previous = $tripnumber - 1;
    	<article>
     	
 <?
+include 'php/privacy.php';
 	//////////////////// THIS IS WHERE EVERYTHING BUT THE MAP COMES FROM //
 	include 'tripinfo.php';
 	// includes info, fish caught, weather, streamflow information, notes
@@ -227,9 +228,7 @@ $previous = $tripnumber - 1;
     </nav> -->
     
     <aside>    	
-		<box>
-			<h3><?php include 'php/recenttrips.php'; ?></h3>
-		</box>
+		<?php include 'sidebar.php'; ?>
 		
 		<box>
 			<h3>Share this</h3>
