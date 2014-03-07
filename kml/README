@@ -1,0 +1,8 @@
+the "makekml.php" file, when run, spits out all of the fishingtrip.trip details.
+
+if you pipe that to a file, like php makekml.php >> newfile.kml, you've got a working kml file!
+
+Then you can import that into Google Earth, maps, etc.
+
+-CB
+6/7/2013

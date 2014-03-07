@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>BOWFIN.kml</name>
+	<Style id="s_ylw-pushpin02">
+		<IconStyle>
+			<scale>0.5</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_red-stars0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_red-stars0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_red-stars0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_red-stars0">
+		<IconStyle>
+			<scale>0.6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-stars.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-stars-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_red-stars0">
+		<IconStyle>
+			<scale>0.72</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-stars.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/red-stars-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_ylw-diamond">
+		<IconStyle>
+			<scale>0.6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/ylw-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/ylw-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_ylw-diamond">
+		<IconStyle>
+			<scale>0.72</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/ylw-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/ylw-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl41">
+		<IconStyle>
+			<scale>0.590909</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin51">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin02</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl41</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-diamond">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-diamond</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-diamond</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>BOWFIN</name>
+		<Folder>
+			<name>Desplaines River</name>
+			<visibility>0</visibility>
+			<Placemark>
+				<name>Desplaines Pike Spot</name>
+				<visibility>0</visibility>
+				<LookAt>
+					<longitude>-87.96070952550762</longitude>
+					<latitude>41.69634725632072</latitude>
+					<altitude>0</altitude>
+					<heading>-2.604079145448254e-14</heading>
+					<tilt>0</tilt>
+					<range>116.9593012729305</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#m_ylw-pushpin51</styleUrl>
+				<Point>
+					<coordinates>-87.96055254652482,41.69620009774478,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>DPR pike spot parking</name>
+				<visibility>0</visibility>
+				<LookAt>
+					<longitude>-87.96058082208059</longitude>
+					<latitude>41.70838511658157</latitude>
+					<altitude>0</altitude>
+					<heading>0.001001352202053729</heading>
+					<tilt>0</tilt>
+					<range>233.4630915473927</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#m_ylw-pushpin51</styleUrl>
+				<Point>
+					<coordinates>-87.96009813697796,41.70818871071827,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Placemark>
+			<name>Russel, IL Post Office Pond</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-87.91609383751111</longitude>
+				<latitude>42.4927010961516</latitude>
+				<altitude>0</altitude>
+				<heading>0.02221091947316479</heading>
+				<tilt>0</tilt>
+				<range>806.2937471158402</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_red-stars0</styleUrl>
+			<Point>
+				<coordinates>-87.91725626030296,42.49262211806133,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Gurnee, IL - Desplaines</name>
+			<styleUrl>#msn_red-stars0</styleUrl>
+			<Point>
+				<coordinates>-87.91955,42.366915,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Rock River, Oregon, IL</name>
+			<styleUrl>#msn_red-stars0</styleUrl>
+			<Point>
+				<coordinates>-89.382019,41.968553,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Rock River, Roscoe, IL</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-89.021138960616</longitude>
+				<latitude>42.4237502379484</latitude>
+				<altitude>0</altitude>
+				<heading>0.06823392323154032</heading>
+				<tilt>0</tilt>
+				<range>2343.628013175392</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_red-stars0</styleUrl>
+			<Point>
+				<coordinates>-89.02122391984004,42.42320063069012,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>IL river (?), near Channahon, IL</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-88.20973372453099</longitude>
+				<latitude>41.39892079478486</latitude>
+				<altitude>0</altitude>
+				<heading>0.0001772827887731685</heading>
+				<tilt>0</tilt>
+				<range>7922.347958070335</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_red-stars0</styleUrl>
+			<Point>
+				<coordinates>-88.20985359131055,41.39586386650949,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mississippi near Oglesby, IL</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-89.0373631847833</longitude>
+				<latitude>41.28968565010118</latitude>
+				<altitude>0</altitude>
+				<heading>-2.189171215203984e-09</heading>
+				<tilt>0</tilt>
+				<range>2451.240547366127</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_red-stars0</styleUrl>
+			<Point>
+				<coordinates>-89.0350306903797,41.290131,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Rend Lake, IL</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-88.96666999608038</longitude>
+				<latitude>38.03667002128593</latitude>
+				<altitude>0</altitude>
+				<heading>3.567278325182666e-09</heading>
+				<tilt>0</tilt>
+				<range>13206.329794444</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_red-stars0</styleUrl>
+			<Point>
+				<coordinates>-88.96736774669577,38.03826870430562,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mississippi, Rock Island, IL</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-90.55978518717369</longitude>
+				<latitude>41.51432731745155</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0001215824755475642</heading>
+				<tilt>0</tilt>
+				<range>6806.8305123583</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_red-stars0</styleUrl>
+			<Point>
+				<coordinates>-90.56140156824473,41.518241,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Rock River, Rockton, IL</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-89.07287082435241</longitude>
+				<latitude>42.4506001445943</latitude>
+				<altitude>0</altitude>
+				<heading>0.003761162796095435</heading>
+				<tilt>0</tilt>
+				<range>3271.757354414926</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_red-stars0</styleUrl>
+			<Point>
+				<coordinates>-89.07422956670543,42.4499566034579,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mississippi, East Dubuque, IL</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-90.64290499999997</longitude>
+				<latitude>42.492225</latitude>
+				<altitude>0</altitude>
+				<heading>5.963540027744094e-15</heading>
+				<tilt>0</tilt>
+				<range>5782.012348736052</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_red-stars0</styleUrl>
+			<Point>
+				<coordinates>-90.65236779359843,42.492268,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>McHenry Dam, Fox River, IL</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-88.25051549640439</longitude>
+				<latitude>42.30909446783653</latitude>
+				<altitude>0</altitude>
+				<heading>0.0003450490135021525</heading>
+				<tilt>0</tilt>
+				<range>759.1587372342655</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_red-stars0</styleUrl>
+			<Point>
+				<coordinates>-88.25131935742471,42.30890492573641,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Rock River, Rockton, IL</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-89.0769108125027</longitude>
+				<latitude>42.44963142134107</latitude>
+				<altitude>0</altitude>
+				<heading>0.001034382939429566</heading>
+				<tilt>0</tilt>
+				<range>2716.859117491649</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_red-stars0</styleUrl>
+			<Point>
+				<coordinates>-89.08954539976952,42.45308434012854,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>&quot;pit area&quot; near Byron, IL</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-89.25333337672836</longitude>
+				<latitude>42.1397018219628</latitude>
+				<altitude>0</altitude>
+				<heading>0.01108248349580248</heading>
+				<tilt>0</tilt>
+				<range>831.7333279354251</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_red-stars0</styleUrl>
+			<Point>
+				<coordinates>-89.2523192288099,42.13975201457793,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Horseshoe Lake, IL</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-89.3349954278724</longitude>
+				<latitude>37.14182949075874</latitude>
+				<altitude>0</altitude>
+				<heading>0.004743096696624259</heading>
+				<tilt>0</tilt>
+				<range>9059.547065844356</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_red-stars0</styleUrl>
+			<Point>
+				<coordinates>-89.34028385562013,37.13538657889352,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>MANY bowfin - Russel, IL</name>
+			<description>cutbait, catfish rigs</description>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-87.9256238131898</longitude>
+				<latitude>42.48914362369173</latitude>
+				<altitude>0</altitude>
+				<heading>-1.564827755751083e-06</heading>
+				<tilt>0</tilt>
+				<range>112.8978637975543</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_red-stars0</styleUrl>
+			<Point>
+				<coordinates>-87.92562381318979,42.48914362369174,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Thomson Causeway, Mississippi River</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-90.11682348551528</longitude>
+				<latitude>41.96088831063785</latitude>
+				<altitude>0</altitude>
+				<heading>-0.01156331775017629</heading>
+				<tilt>0</tilt>
+				<range>13076.85698714965</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_red-stars0</styleUrl>
+			<Point>
+				<coordinates>-90.12127880837126,41.95514912061417,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Castle Rock State Park, IL (campground) - Rock River</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-89.38263936989995</longitude>
+				<latitude>41.96767580708852</latitude>
+				<altitude>0</altitude>
+				<heading>6.410633282910432e-09</heading>
+				<tilt>0</tilt>
+				<range>2058.276604639846</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_red-stars0</styleUrl>
+			<Point>
+				<coordinates>-89.37959195502532,41.96723972958605,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>IL River, Spring Valley, IL</name>
+			<description>cranks</description>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-89.19851725455588</longitude>
+				<latitude>41.31384452578911</latitude>
+				<altitude>0</altitude>
+				<heading>0.001544673840702402</heading>
+				<tilt>0</tilt>
+				<range>2765.313873132231</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_red-stars0</styleUrl>
+			<Point>
+				<coordinates>-89.20101028729032,41.31237999992586,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Channahon, IL</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-88.22256985501618</longitude>
+				<latitude>41.42431764801805</latitude>
+				<altitude>0</altitude>
+				<heading>-0.00292801395510404</heading>
+				<tilt>0</tilt>
+				<range>4621.923493096697</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_red-stars0</styleUrl>
+			<Point>
+				<coordinates>-88.2301949566522,41.42473673524078,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>DesPlaines Conservation Area</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-88.21719616133825</longitude>
+				<latitude>41.37038777639425</latitude>
+				<altitude>0</altitude>
+				<heading>-0.006632821709072419</heading>
+				<tilt>0</tilt>
+				<range>12760.98169313356</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_red-stars0</styleUrl>
+			<Point>
+				<coordinates>-88.22253238420268,41.35783573966744,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Webster Lake, IN</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-85.67936402746101</longitude>
+				<latitude>41.32436256092608</latitude>
+				<altitude>0</altitude>
+				<heading>0.0009000340984297567</heading>
+				<tilt>0</tilt>
+				<range>2818.478969987944</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_red-stars0</styleUrl>
+			<Point>
+				<coordinates>-85.67936402746101,41.32436256092608,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>possible bowfin pond?</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-87.92058279654016</longitude>
+				<latitude>42.38078176024007</latitude>
+				<altitude>0</altitude>
+				<heading>-1.237904403196233</heading>
+				<tilt>0</tilt>
+				<range>869.9531337659336</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-diamond</styleUrl>
+			<Point>
+				<coordinates>-87.92058279654016,42.38078176024008,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>possible bowfin?</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-87.92735340450609</longitude>
+				<latitude>42.40609439895199</latitude>
+				<altitude>0</altitude>
+				<heading>-1.243136633514279</heading>
+				<tilt>0</tilt>
+				<range>756.522103018158</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-diamond</styleUrl>
+			<Point>
+				<coordinates>-87.92735340450611,42.406094398952,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>possible bowfin backwaters</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-87.93340468768622</longitude>
+				<latitude>42.42263913370202</latitude>
+				<altitude>0</altitude>
+				<heading>-1.245089973337204</heading>
+				<tilt>0</tilt>
+				<range>857.6524871038977</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-diamond</styleUrl>
+			<Point>
+				<coordinates>-87.93370597008281,42.42376363904538,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>possible bowfin pond?</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-87.93764137956026</longitude>
+				<latitude>42.46338263031782</latitude>
+				<altitude>0</altitude>
+				<heading>0.002466790987257654</heading>
+				<tilt>0</tilt>
+				<range>1551.809877673142</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-diamond</styleUrl>
+			<Point>
+				<coordinates>-87.93912944488892,42.46379359775528,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>possible bowfin pond</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-87.93251457522808</longitude>
+				<latitude>42.35340652306471</latitude>
+				<altitude>0</altitude>
+				<heading>-0.003519164178252395</heading>
+				<tilt>0</tilt>
+				<range>1311.50720720442</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-diamond</styleUrl>
+			<Point>
+				<coordinates>-87.93422652122791,42.35320797768902,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>possible bowfin pond</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-87.94184365592221</longitude>
+				<latitude>42.34291059890673</latitude>
+				<altitude>0</altitude>
+				<heading>-0.00960898716857338</heading>
+				<tilt>0</tilt>
+				<range>752.4845512748333</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-diamond</styleUrl>
+			<Point>
+				<coordinates>-87.9421402535443,42.34310982463472,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>possible bowfin pond</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-87.93822550146768</longitude>
+				<latitude>42.26065989827381</latitude>
+				<altitude>0</altitude>
+				<heading>-0.007814032428451731</heading>
+				<tilt>0</tilt>
+				<range>438.6752611044275</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-diamond</styleUrl>
+			<Point>
+				<coordinates>-87.93832191097698,42.26061674184088,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>possible bowfin backwater</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-87.93808394997873</longitude>
+				<latitude>42.23827367700464</latitude>
+				<altitude>0</altitude>
+				<heading>-0.007271845907582975</heading>
+				<tilt>0</tilt>
+				<range>631.7251104889679</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-diamond</styleUrl>
+			<Point>
+				<coordinates>-87.93929460712073,42.23930116735518,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>possible bowfin backwater</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-87.93808394997873</longitude>
+				<latitude>42.23827367700464</latitude>
+				<altitude>0</altitude>
+				<heading>-0.007271845907582975</heading>
+				<tilt>0</tilt>
+				<range>631.7251104889679</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-diamond</styleUrl>
+			<Point>
+				<coordinates>-87.93777072925185,42.23758066779069,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>possible bowfin backwaters</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-87.92294793841059</longitude>
+				<latitude>42.20304121001543</latitude>
+				<altitude>0</altitude>
+				<heading>0.002898629535098124</heading>
+				<tilt>0</tilt>
+				<range>905.1625645758677</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-diamond</styleUrl>
+			<Point>
+				<coordinates>-87.92259208389052,42.2020070908734,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>possible bowfin backwaters</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-87.88784089001076</longitude>
+				<latitude>42.11550799306765</latitude>
+				<altitude>0</altitude>
+				<heading>0.02635958167261673</heading>
+				<tilt>0</tilt>
+				<range>865.3181633188575</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-diamond</styleUrl>
+			<Point>
+				<coordinates>-87.88845418571191,42.11566532668359,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>possible bowfin backwater</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-87.89071764851062</longitude>
+				<latitude>42.08492927441306</latitude>
+				<altitude>0</altitude>
+				<heading>0.02469366485108378</heading>
+				<tilt>0</tilt>
+				<range>1110.985560447947</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-diamond</styleUrl>
+			<Point>
+				<coordinates>-87.89058727717656,42.08513937285628,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>possible bowfin backwater</name>
+			<LookAt>
+				<gx:TimeStamp><when>2012-03-13</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-87.86983795326694</longitude>
+				<latitude>42.01798152012863</latitude>
+				<altitude>0</altitude>
+				<heading>0.03836852219077583</heading>
+				<tilt>0</tilt>
+				<range>783.459616996524</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-diamond</styleUrl>
+			<Point>
+				<coordinates>-87.86983795326694,42.01798152012863,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

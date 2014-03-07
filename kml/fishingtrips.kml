@@ -1,0 +1,13 @@
+
+Warning: include(../config.php): failed to open stream: No such file or directory in /home/chrisbeckstrom/cbfishes.com/log/kml/makekml.php on line 19
+
+Warning: include(): Failed opening '../config.php' for inclusion (include_path='.:/usr/local/lib/php:/usr/local/php5/lib/pear') in /home/chrisbeckstrom/cbfishes.com/log/kml/makekml.php on line 19
+
+Warning: include(../connect.php): failed to open stream: No such file or directory in /home/chrisbeckstrom/cbfishes.com/log/kml/makekml.php on line 20
+
+Warning: include(): Failed opening '../connect.php' for inclusion (include_path='.:/usr/local/lib/php:/usr/local/php5/lib/pear') in /home/chrisbeckstrom/cbfishes.com/log/kml/makekml.php on line 20
+
+Warning: mysql_query(): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) in /home/chrisbeckstrom/cbfishes.com/log/kml/makekml.php on line 30
+
+Warning: mysql_query(): A link to the server could not be established in /home/chrisbeckstrom/cbfishes.com/log/kml/makekml.php on line 30
+Invalid query: Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)

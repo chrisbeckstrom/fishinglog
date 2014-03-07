@@ -1,0 +1,555 @@
+/* 
+CB's CSS for the Fishing Log app
+Lots of good stuff from: 
+http://www.456bereastreet.com/lab/developing_with_web_standards/csslayout/2-col/ 
+
+originally the main font was:
+font-family: "Century Schoolbook", serif;
+
+
+*/
+
+/* LINKS */
+a:link {
+color:4C4C4C;
+text-decoration:none;
+}
+
+a:visited {
+color:4C4C4C;
+text-decoration:none;
+}
+a:hover {
+text-decoration:underline;
+color:4C4C4C;
+}
+
+a:active {
+color:4C4C4C;
+text-decoration:underline;
+}
+
+
+body {
+	background-color:ddd;
+	margin:0;
+	padding:0;
+	text-align:left;
+	font-family:"New Century Schoolbook", Century Schoolbook, serif;
+	}
+
+
+hr {
+	color:sienna;
+	}
+
+p {
+	margin-left:20px;
+	}
+	
+h1 {
+	color:000; 
+	font-size:30px;
+	}
+	
+h4 {
+	margin-left:20px;
+	font-style:italic;
+	}
+
+
+/* SECTIONS (div) */
+
+#title {
+	padding-right:2px;
+	padding-bottom:2px;
+		}
+
+/* CONTENT */
+#wrap {
+/* 
+	width:100%;
+	margin-top: 50;
+/* 	margin:0 auto;
+	padding:0px;
+	background:#000;
+ */
+ 	text-align:left;
+	position:absolute;
+	margin-top:60px;
+	margin-left:100px;
+	margin-right:100px;
+	background-color:fff;
+	color:000;
+	width:870px;
+	padding: 10;
+ 
+	}
+	
+.bigwhitebox {
+	text-align:right;
+	position:absolute;
+	margin-top:60px;
+	margin-left:100px;
+	margin-right:100px;
+	background-color:fff;
+	color:000;
+	width:870px;
+	padding: 10;
+	}
+	
+	
+#content {
+	width:100%;
+marigin:0;
+/* 	margin:0 auto; */
+	padding:0;
+	background:#ddd;
+	}
+	
+/* 
+// TRIP BOX STUFF ////////////////////////////
+ */
+
+#tripbox {
+	background-color:F8F8F8;
+	padding:20px;
+	}
+	
+#datetext {
+	background-color:ddd;
+	text-align:right;
+	color:8E8E8E;
+	padding:10px;
+	}
+	
+#weathertext {
+	background-color:fff;
+	color:8E8E8E;
+	padding:10px;
+	}
+
+#waterinfotext {
+	background-color:ddd;
+	color:8E8E8E;
+	padding:10px;
+	}
+
+#notestext {
+	background-color:fff;
+	color:000;
+	padding:10px;
+	}
+
+
+#waterbox {
+	background-color:ddd;
+	padding:30px;
+	padding-bottom:30px;
+	}
+	
+#map {
+	margin: 20px;
+/* 
+    width: 600; 
+    height: 600; 
+    position:fixed;
+ */
+	}	
+	
+.waterinfo {
+	background-color:fff;
+	color:000;
+	padding: 10px;
+	margin: 20px;
+	width: 500;
+	}
+	
+
+
+/* 
+////////////////////////////////////////////////////////
+ */
+
+
+#debug {
+	width: 300px;
+	font-family:"Monaco", Courier, serif;
+	padding:20px;
+	background-color: 3333FF;
+	color: fff;
+   box-shadow:         inset 0 0 0px #000000;
+	}
+
+#header {
+	position:fixed;
+	z-index:1;
+	width:97%;
+	margin-top: 0px;
+	padding:8px;
+	font-color:fff;
+	padding-left:50px;
+	background:#0099CC;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black;
+	}
+
+a.headerlink:link {color:fff;}
+a.headerlink:visited {color:fff;}
+a.headerlink:hover {color:fff;}
+a.headerlink:active {color:fff;}
+
+#header-userinfo {
+	vertical-align:center;
+	float:right;
+	margin-right:70px;
+	}
+	
+#nav {
+	padding:5px;
+	color:fff;
+	}
+
+/*  FOOTER at the bottom of every page	*/
+#footer {
+	clear:both; 	/* this pushes it to the bottom */
+	padding:5px;
+	color:fff;
+	background:#0099CC;
+	}
+	
+#pagetitle {
+	font-size:45px;
+	line-height:150%;
+	color:000;
+	}
+
+ 
+/*  FORMS  */ 
+/* 
+form    {
+margin-left:auto;
+margin-right:auto;
+width:35%;
+	position:relative;
+	width:65%;
+	background:#0099CC;
+	font-family: "Century Schoolbook", serif;
+	font-size: 16px;
+	line-height: 16px;
+	text-decoration: none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding:20px;
+		border: 1px solid #999;
+	border: inset 1px solid #333;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
+	background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+ */
+	
+	}
+
+/* LOGIN FORM */
+.loginform    {
+	position:absolute;
+	top:20px;
+	margin:auto;
+	position:relative;
+	width:300px;
+	background:#fff;
+	font-family: "Century Schoolbook", serif;
+	font-size: 19px;
+	line-height: 24px;
+	text-decoration: none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding:20px;
+	}
+
+/* for INDEX.PHP */
+
+.indextitle {
+float:right;
+margin:150px;
+width:300px;
+background:#fff;
+font-family: "Century Schoolbook", serif;
+font-size: 19px;
+line-height: 24px;
+text-decoration: none;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+padding:20px;
+}
+
+.devlogbox {
+	font-family: "Monaco";
+	color: 000;
+	background:fff;
+	}
+
+
+/* REGULAR OLD TEXT BOXES */
+/* 
+input    {
+/* text-align: left; */
+font-family: "Century Schoolbook", serif;
+font-size: 12px;
+padding:10px;
+width:300px;
+display:block;
+border: 1px solid #999;
+height: 45px;
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+ */
+
+.inputshort    {
+text-align: center;
+font-family: "Century Schoolbook", serif;
+font-size: 15px;
+padding:0px;
+width:60px;
+display:block;
+border: 1px solid #999;
+height: 45px;
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+textarea#styled {
+	width: 100%;
+	height: 120px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+	font-family: "Century Schoolbook", serif;
+	font-size: 18px;
+	color:000;
+	background-image: url(bg.gif);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.checkbox {
+	font-family: "Century Schoolbook", serif;
+	font-size: 14px;
+	text-align: right;
+	padding:3px;
+	width:100%;
+	border: 1px solid #999;
+	height: 10px;
+/* 
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);	
+ */
+
+}
+
+
+/* DROPDOWN MENUS */
+.styled-select select {
+   background: fff;
+   vertical-align: center;
+   text-align: left;
+   font-family: "Century Schoolbook", serif;
+   width: 175px;
+   padding: 5px;
+   font-size: 19px;
+   line-height: 120%;
+   border: 0;
+   border-radius: 0;
+   height: 45px;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+   overflow: hidden;
+   border: 1px solid #ccc;
+   }
+
+/* For the auto complete results: */
+#searchField {
+	width: 200px;}
+
+#results {
+	border: 1px solid #BFBFBF;
+	border-bottom: 0px;
+	font-size: 12px;
+	font-family: arial;
+	padding: 0px;
+	display: none;
+}
+
+#results div {
+    border-bottom: 1px solid #BFBFBF;
+    padding: 3px;
+}
+
+#results .selected {
+	background-color: #666;
+	color: #fff;
+}
+
+#results .unselected {
+	background-color: #fff;
+	color: #666;
+}
+
+/* end of autocomplete results */
+	
+#leftcolumn {
+z-index:1;
+	float:left;
+	width:44%;
+	padding:20;
+	background:#ddd;}
+	
+#rightcolumn {
+	float:right;
+	width:44%;
+	padding:20;
+	background:#ddd;}
+	
+#centered {
+	float:center;
+	width:75%;
+	padding-top:10px;
+	padding-left:50px;
+	padding-right:50px;
+	background:#ddd;}
+	
+#fishcaught {
+	float:right;
+	padding:0px;
+	background:#ddd;
+	}
+	
+#textbox {
+	font-size:300px;
+	text-align:right;
+	}
+	
+#smalldebug {
+	font-size:10px;
+	text-align:right;
+	background: fff;
+	font-family:"Monaco";
+	}
+	
+.button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}.button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.button:active {
+	position:relative;
+	top:1px;
+}
+
+.submit {
+	float:center;
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#fff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}.submit:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.submit:active {
+	position:relative;
+	top:1px;
+}
+
+.button-link {
+    padding: 10px 15px;
+    background: #4479BA;
+    color: #FFF;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #20538D;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+   
+}
+.button-link:hover {
+    background: #356094;
+    border: solid 1px #2A4E77;
+    text-decoration: none;
+   
+}
+.button-link:active {
+    -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    background: #2E5481;
+    border: solid 1px #203E5F;
+   
+}
+
+/* ACE */
+    #editor {
+        position: absolute;
+        width: 500px;
+        height: 400px;
+    }

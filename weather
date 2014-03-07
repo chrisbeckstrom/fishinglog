@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# run the weather script
+# /home/chrisbeckstrom/cbfishes.com/log/./getweather.php
+
+php /home/chrisbeckstrom/cbfishes.com/log/getweather.php
+
+# echo
+echo "Php get weather script has been run!"
+
+

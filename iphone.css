@@ -1,0 +1,72 @@
+/* 
+CB's CSS for the Fishing Log app
+Lots of good stuff from: 
+http://www.456bereastreet.com/lab/developing_with_web_standards/csslayout/2-col/ 
+*/
+
+hr {
+	color:sienna;
+	}
+
+p {
+	margin-left:20px;
+	}
+	
+h1 {
+	color:000; 
+	font-family:"Century Schoolbook", Century, serif;
+	font-size:60px;
+	}
+	
+h4 {
+	margin-left:20px;
+	font-style:italic;
+	}
+
+
+body {
+	background-color:f0f0f0;
+	margin:0;
+	padding:0;
+	text-align:left;
+	font-family:"Century Schoolbook", Century, serif;
+	}
+
+/* SECTIONS (div) */
+
+#wrap {
+	width:100%;
+	margin:0;
+	background:#ddd;
+	}
+
+
+#header {
+	padding:0;
+	background:#33CC33;
+	}
+	
+#nav {
+	padding:0px;
+	background:#fff;}
+	
+#footer {
+	clear:both; 	/* this pushes it to the bottom */
+	padding:0px;
+	background:#33CC33;
+	}
+	
+#leftcolumn {
+	width:100%;
+	padding:0;
+	background:#ddd;}
+	
+#rightcolumn {
+	width:100%;
+	padding:0;
+	background:#ddd;}
+	
+#fishcaught {
+	padding:0px;
+	background:#ddd;
+	}

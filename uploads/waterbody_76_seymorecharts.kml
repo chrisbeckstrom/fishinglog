@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>campau.kml</name>
+	<Style id="sn_fishing">
+		<IconStyle>
+			<scale>0.6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_fishing">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_fishing</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_fishing</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_sailing">
+		<IconStyle>
+			<scale>0.7</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/sailing.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sh_fishing">
+		<IconStyle>
+			<scale>0.709093</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_sailing">
+		<IconStyle>
+			<scale>0.827275</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/sailing.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_sailing">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_sailing</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_sailing</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Campau Lake</name>
+		<open>1</open>
+		<Placemark>
+			<name>Campau Lake</name>
+			<description>Northern Pike
+Muskie
+Yellow Perch
+Pumpkinseed Sunfish
+Largemouth Bass
+Bluegill
+---
+It&apos;s generally not a great bass lake since it gets a lot of pressure and there don&apos;t tend to be many big ones. It&apos;s got a public launch and it&apos;s less than a half-hour drive from the South End of Grand Rapids and Kentwood so it gets a lot of use for a small lake.</description>
+			<LookAt>
+				<longitude>-85.44460124128483</longitude>
+				<latitude>42.83789018597296</latitude>
+				<altitude>0</altitude>
+				<heading>0.06388545575561479</heading>
+				<tilt>0.9797565483147777</tilt>
+				<range>2187.284329435457</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_fishing</styleUrl>
+			<Point>
+				<coordinates>-85.44888930810473,42.83988865647085,0</coordinates>
+			</Point>
+		</Placemark>
+		<GroundOverlay>
+			<name>campau</name>
+			<color>a3ffffff</color>
+			<Icon>
+				<href>Google Earth/images/CAMPAU_LAKE.jpg</href>
+				<viewBoundScale>0.75</viewBoundScale>
+			</Icon>
+			<LatLonBox>
+				<north>42.84603433213448</north>
+				<south>42.83110318457603</south>
+				<east>-85.43624819119414</east>
+				<west>-85.46413687879107</west>
+				<rotation>90.89720932366187</rotation>
+			</LatLonBox>
+		</GroundOverlay>
+		<Placemark>
+			<name>boat launch</name>
+			<LookAt>
+				<longitude>-85.44667883922766</longitude>
+				<latitude>42.83733847935329</latitude>
+				<altitude>0</altitude>
+				<heading>0.1378548219496538</heading>
+				<tilt>0</tilt>
+				<range>216.7582048477547</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_sailing</styleUrl>
+			<Point>
+				<coordinates>-85.44680016850597,42.83740194105228,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

@@ -1,0 +1,25 @@
+SimpleXMLElement Object
+(
+    [code] => SimpleXMLElement Object
+        (
+            [postalcode] => 49508
+            [name] => Grand Rapids
+            [countryCode] => US
+            [lat] => 42.86267
+            [lng] => -85.62547
+            [adminCode1] => MI
+            [adminName1] => Michigan
+            [adminCode2] => 081
+            [adminName2] => Kent
+            [adminCode3] => SimpleXMLElement Object
+                (
+                )
+
+            [adminName3] => SimpleXMLElement Object
+                (
+                )
+
+            [distance] => 0
+        )
+
+)

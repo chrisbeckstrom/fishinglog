@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Breweries.kml</name>
+	<Style id="listing_A7">
+		<IconStyle>
+			<scale>0.5</scale>
+			<Icon>
+				<href>Dropbox/Google Earth/icons/BEER.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.9</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00ffffff</color>
+		</LineStyle>
+	</Style>
+	<StyleMap id="listing_A">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#listing_A8</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#listing_A7</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="listing_A8">
+		<IconStyle>
+			<scale>0.5</scale>
+			<Icon>
+				<href>Dropbox/Google Earth/icons/BEER.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.9</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>00ffffff</color>
+		</LineStyle>
+	</Style>
+	<Folder>
+		<name>Breweries</name>
+		<open>1</open>
+		<Placemark id="22.1.2">
+			<name>Founders Brewing Co</name>
+			<address>235 Grandville Avenue Southwest, Grand Rapids, MI, United States</address>
+			<phoneNumber>(616) 776-1195</phoneNumber>
+			<snippet>235 Grandville Avenue Southwest, Grand Rapids, MI, United States</snippet>
+			<description><![CDATA[<!DOCTYPE html><html><head></head><body><script type="text/javascript">window.location.href="http://maps.google.com/maps/place?latlng=42958376,-85673543,4001350023416692942&hl=en&gl=us&ui=earth&view=teaser";</script></body></html>]]></description>
+			<styleUrl>#listing_A</styleUrl>
+			<ExtendedData>
+				<Data name="placepageUri">
+					<value>http://maps.google.com/maps/place?latlng=42958376,-85673543,4001350023416692942&amp;hl=en&amp;gl=us&amp;ui=earth&amp;view=teaser</value>
+				</Data>
+			</ExtendedData>
+			<MultiGeometry>
+				<Point>
+					<coordinates>-85.673543,42.958376,0</coordinates>
+				</Point>
+				<LinearRing>
+					<coordinates>
+						-86.73203100000001,42.419144,0 -86.73203100000001,43.497608,0 -84.615055,43.497608,0 -84.615055,42.419144,0 -86.73203100000001,42.419144,0 
+					</coordinates>
+				</LinearRing>
+			</MultiGeometry>
+			<AddressDetails xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" Accuracy="8">
+          <Country>
+            <CountryNameCode>US</CountryNameCode>
+            <AdministrativeArea>
+              <AdministrativeAreaName>MI</AdministrativeAreaName>
+              <SubAdministrativeArea>
+                <SubAdministrativeAreaName>Kent</SubAdministrativeAreaName>
+                <Locality>
+                  <LocalityName>Grand Rapids</LocalityName>
+                  <Thoroughfare>
+                    <ThoroughfareName>235 Grandville Avenue Southwest</ThoroughfareName>
+                  </Thoroughfare>
+                </Locality>
+              </SubAdministrativeArea>
+            </AdministrativeArea>
+          </Country>
+        </AddressDetails>
+		</Placemark>
+		<Placemark id="21.1.3">
+			<name>Brewery Vivant</name>
+			<address>925 Cherry Street Southeast, Grand Rapids, MI, United States</address>
+			<phoneNumber>(616) 719-1604</phoneNumber>
+			<snippet>925 Cherry Street Southeast, Grand Rapids, MI, United States</snippet>
+			<description><![CDATA[<!DOCTYPE html><html><head></head><body><script type="text/javascript">window.location.href="http://maps.google.com/maps/place?latlng=42959736,-85646126,7366975318340550020&hl=en&gl=us&ui=earth&view=teaser";</script></body></html>]]></description>
+			<styleUrl>#listing_A</styleUrl>
+			<ExtendedData>
+				<Data name="placepageUri">
+					<value>http://maps.google.com/maps/place?latlng=42959736,-85646126,7366975318340550020&amp;hl=en&amp;gl=us&amp;ui=earth&amp;view=teaser</value>
+				</Data>
+			</ExtendedData>
+			<MultiGeometry>
+				<Point>
+					<coordinates>-85.646126,42.959736,0</coordinates>
+				</Point>
+				<LinearRing>
+					<coordinates>
+						-85.65893199999999,42.9532032,0 -85.65893199999999,42.9662688,0 -85.63332,42.9662688,0 -85.63332,42.9532032,0 -85.65893199999999,42.9532032,0 
+					</coordinates>
+				</LinearRing>
+			</MultiGeometry>
+			<AddressDetails xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" Accuracy="8">
+          <Country>
+            <CountryNameCode>US</CountryNameCode>
+            <AdministrativeArea>
+              <AdministrativeAreaName>MI</AdministrativeAreaName>
+              <Locality>
+                <LocalityName>Grand Rapids</LocalityName>
+                <Thoroughfare>
+                  <ThoroughfareName>925 Cherry Street Southeast</ThoroughfareName>
+                </Thoroughfare>
+              </Locality>
+            </AdministrativeArea>
+          </Country>
+        </AddressDetails>
+		</Placemark>
+		<Placemark id="22.2.4">
+			<name>Harmony Brewing Company</name>
+			<address>1551 Lake Drive Southeast, Grand Rapids, MI, United States</address>
+			<phoneNumber>(616) 233-0063</phoneNumber>
+			<snippet>1551 Lake Drive Southeast, Grand Rapids, MI, United States</snippet>
+			<description><![CDATA[<!DOCTYPE html><html><head></head><body><script type="text/javascript">window.location.href="http://maps.google.com/maps/place?latlng=429551,-8563076,4715444115496619803&hl=en&gl=us&ui=earth&view=teaser";</script></body></html>]]></description>
+			<styleUrl>#listing_A</styleUrl>
+			<ExtendedData>
+				<Data name="placepageUri">
+					<value>http://maps.google.com/maps/place?latlng=429551,-8563076,4715444115496619803&amp;hl=en&amp;gl=us&amp;ui=earth&amp;view=teaser</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-85.63076,42.9551,0</coordinates>
+			</Point>
+			<AddressDetails xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" Accuracy="8">
+          <Country>
+            <CountryNameCode>US</CountryNameCode>
+            <AdministrativeArea>
+              <AdministrativeAreaName>MI</AdministrativeAreaName>
+              <Locality>
+                <LocalityName>Grand Rapids</LocalityName>
+                <Thoroughfare>
+                  <ThoroughfareName>1551 Lake Drive Southeast</ThoroughfareName>
+                </Thoroughfare>
+              </Locality>
+            </AdministrativeArea>
+          </Country>
+        </AddressDetails>
+		</Placemark>
+		<Placemark id="21.1.3">
+			<name>Bell&apos;s General Store</name>
+			<address>355 East Kalamazoo Avenue, Kalamazoo, MI, United States</address>
+			<phoneNumber>(269) 382-5712</phoneNumber>
+			<snippet>355 East Kalamazoo Avenue, Kalamazoo, MI, United States</snippet>
+			<description><![CDATA[<!DOCTYPE html><html><head></head><body><script type="text/javascript">window.location.href="http://maps.google.com/maps/place?latlng=42294843,-85578724,11811765872730254504&hl=en&gl=us&ui=earth&view=teaser";</script></body></html>]]></description>
+			<styleUrl>#listing_A</styleUrl>
+			<ExtendedData>
+				<Data name="placepageUri">
+					<value>http://maps.google.com/maps/place?latlng=42294843,-85578724,11811765872730254504&amp;hl=en&amp;gl=us&amp;ui=earth&amp;view=teaser</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-85.57872399999999,42.294843,0</coordinates>
+			</Point>
+			<AddressDetails xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" Accuracy="8">
+          <Country>
+            <CountryNameCode>US</CountryNameCode>
+            <AdministrativeArea>
+              <AdministrativeAreaName>MI</AdministrativeAreaName>
+              <SubAdministrativeArea>
+                <SubAdministrativeAreaName>Kalamazoo</SubAdministrativeAreaName>
+                <Locality>
+                  <LocalityName>Kalamazoo</LocalityName>
+                  <DependentLocality>
+                    <DependentLocalityName>Central Business District</DependentLocalityName>
+                    <Thoroughfare>
+                      <ThoroughfareName>355 East Kalamazoo Avenue</ThoroughfareName>
+                    </Thoroughfare>
+                  </DependentLocality>
+                </Locality>
+              </SubAdministrativeArea>
+            </AdministrativeArea>
+          </Country>
+        </AddressDetails>
+		</Placemark>
+		<Placemark id="22.2.7">
+			<name>Grand Rapids Brewing Co.</name>
+			<address>1 Ionia Avenue Southwest, Grand Rapids, MI, United States</address>
+			<phoneNumber>(616) 458-7000</phoneNumber>
+			<snippet>1 Ionia Avenue Southwest, Grand Rapids, MI, United States</snippet>
+			<description><![CDATA[<!DOCTYPE html><html><head></head><body><script type="text/javascript">window.location.href="http://maps.google.com/maps/place?latlng=42963061,-85670394,3859776186319889675&hl=en&gl=us&ui=earth&view=teaser";</script></body></html>]]></description>
+			<styleUrl>#listing_A</styleUrl>
+			<ExtendedData>
+				<Data name="placepageUri">
+					<value>http://maps.google.com/maps/place?latlng=42963061,-85670394,3859776186319889675&amp;hl=en&amp;gl=us&amp;ui=earth&amp;view=teaser</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-85.670394,42.963061,0</coordinates>
+			</Point>
+			<AddressDetails xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" Accuracy="8">
+          <Country>
+            <CountryNameCode>US</CountryNameCode>
+            <AdministrativeArea>
+              <AdministrativeAreaName>MI</AdministrativeAreaName>
+              <SubAdministrativeArea>
+                <SubAdministrativeAreaName>Kent</SubAdministrativeAreaName>
+                <Locality>
+                  <LocalityName>Grand Rapids</LocalityName>
+                  <DependentLocality>
+                    <DependentLocalityName>Heartside-Downtown</DependentLocalityName>
+                    <Thoroughfare>
+                      <ThoroughfareName>1 Ionia Avenue Southwest</ThoroughfareName>
+                    </Thoroughfare>
+                  </DependentLocality>
+                </Locality>
+              </SubAdministrativeArea>
+            </AdministrativeArea>
+          </Country>
+        </AddressDetails>
+		</Placemark>
+		<Placemark id="22.2.8">
+			<name>The Mitten Brewing Company</name>
+			<address>527 Leonard Street Northwest, Grand Rapids, MI, United States</address>
+			<phoneNumber>(616) 608-5612</phoneNumber>
+			<snippet>527 Leonard Street Northwest, Grand Rapids, MI, United States</snippet>
+			<description><![CDATA[<!DOCTYPE html><html><head></head><body><script type="text/javascript">window.location.href="http://maps.google.com/maps/place?latlng=42985098,-85681056,4534080487860859378&hl=en&gl=us&ui=earth&view=teaser";</script></body></html>]]></description>
+			<styleUrl>#listing_A</styleUrl>
+			<ExtendedData>
+				<Data name="placepageUri">
+					<value>http://maps.google.com/maps/place?latlng=42985098,-85681056,4534080487860859378&amp;hl=en&amp;gl=us&amp;ui=earth&amp;view=teaser</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-85.681056,42.985098,0</coordinates>
+			</Point>
+			<AddressDetails xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" Accuracy="8">
+          <Country>
+            <CountryNameCode>US</CountryNameCode>
+            <AdministrativeArea>
+              <AdministrativeAreaName>MI</AdministrativeAreaName>
+              <SubAdministrativeArea>
+                <SubAdministrativeAreaName>Kent</SubAdministrativeAreaName>
+                <Locality>
+                  <LocalityName>Grand Rapids</LocalityName>
+                  <DependentLocality>
+                    <DependentLocalityName>West Grand</DependentLocalityName>
+                    <Thoroughfare>
+                      <ThoroughfareName>527 Leonard Street Northwest</ThoroughfareName>
+                    </Thoroughfare>
+                  </DependentLocality>
+                </Locality>
+              </SubAdministrativeArea>
+            </AdministrativeArea>
+          </Country>
+        </AddressDetails>
+		</Placemark>
+		<Placemark id="22.2.10">
+			<name>Hideout Brewing Co</name>
+			<address>3113 Plaza Drive Northeast, Grand Rapids, MI, United States</address>
+			<phoneNumber>(616) 361-9658</phoneNumber>
+			<snippet>3113 Plaza Drive Northeast, Grand Rapids, MI, United States</snippet>
+			<description><![CDATA[<!DOCTYPE html><html><head></head><body><script type="text/javascript">window.location.href="http://maps.google.com/maps/place?latlng=43017945,-85630767,8867845274898790627&hl=en&gl=us&ui=earth&view=teaser";</script></body></html>]]></description>
+			<styleUrl>#listing_A</styleUrl>
+			<ExtendedData>
+				<Data name="placepageUri">
+					<value>http://maps.google.com/maps/place?latlng=43017945,-85630767,8867845274898790627&amp;hl=en&amp;gl=us&amp;ui=earth&amp;view=teaser</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-85.63076700000001,43.017945,0</coordinates>
+			</Point>
+			<AddressDetails xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" Accuracy="8">
+          <Country>
+            <CountryNameCode>US</CountryNameCode>
+            <AdministrativeArea>
+              <AdministrativeAreaName>MI</AdministrativeAreaName>
+              <Locality>
+                <LocalityName>Grand Rapids</LocalityName>
+                <Thoroughfare>
+                  <ThoroughfareName>3113 Plaza Drive Northeast</ThoroughfareName>
+                </Thoroughfare>
+              </Locality>
+            </AdministrativeArea>
+          </Country>
+        </AddressDetails>
+		</Placemark>
+		<Placemark id="22.2.2">
+			<name>Perrin Brewing Co</name>
+			<address>5910 Comstock Park Drive Northwest, Comstock Park, MI, United States</address>
+			<phoneNumber>(616) 551-1957</phoneNumber>
+			<snippet>5910 Comstock Park Drive Northwest, Comstock Park, MI, United States</snippet>
+			<description><![CDATA[<!DOCTYPE html><html><head></head><body><script type="text/javascript">window.location.href="http://maps.google.com/maps/place?latlng=43071545,-85681407,12949277320484311653&hl=en&gl=us&ui=earth&view=teaser";</script></body></html>]]></description>
+			<styleUrl>#listing_A</styleUrl>
+			<ExtendedData>
+				<Data name="placepageUri">
+					<value>http://maps.google.com/maps/place?latlng=43071545,-85681407,12949277320484311653&amp;hl=en&amp;gl=us&amp;ui=earth&amp;view=teaser</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-85.68140699999999,43.071545,0</coordinates>
+			</Point>
+			<AddressDetails xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" Accuracy="8">
+          <Country>
+            <CountryNameCode>US</CountryNameCode>
+            <AdministrativeArea>
+              <AdministrativeAreaName>MI</AdministrativeAreaName>
+              <Locality>
+                <LocalityName>Comstock Park</LocalityName>
+                <Thoroughfare>
+                  <ThoroughfareName>5910 Comstock Park Drive Northwest</ThoroughfareName>
+                </Thoroughfare>
+              </Locality>
+            </AdministrativeArea>
+          </Country>
+        </AddressDetails>
+		</Placemark>
+		<Placemark id="22.2.7">
+			<name>New Holland Brewing</name>
+			<address>66 East 8th Street, Holland, MI, United States</address>
+			<phoneNumber>(616) 355-6422</phoneNumber>
+			<snippet>66 East 8th Street, Holland, MI, United States</snippet>
+			<description><![CDATA[<!DOCTYPE html><html><head></head><body><script type="text/javascript">window.location.href="http://maps.google.com/maps/place?latlng=42790018,-86104134,16974909858889468491&hl=en&gl=us&ui=earth&view=teaser";</script></body></html>]]></description>
+			<styleUrl>#listing_A</styleUrl>
+			<ExtendedData>
+				<Data name="placepageUri">
+					<value>http://maps.google.com/maps/place?latlng=42790018,-86104134,16974909858889468491&amp;hl=en&amp;gl=us&amp;ui=earth&amp;view=teaser</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.104134,42.790018,0</coordinates>
+			</Point>
+			<AddressDetails xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" Accuracy="8">
+          <Country>
+            <CountryNameCode>US</CountryNameCode>
+            <AdministrativeArea>
+              <AdministrativeAreaName>MI</AdministrativeAreaName>
+              <Locality>
+                <LocalityName>Holland</LocalityName>
+                <Thoroughfare>
+                  <ThoroughfareName>66 East 8th Street</ThoroughfareName>
+                </Thoroughfare>
+              </Locality>
+            </AdministrativeArea>
+          </Country>
+        </AddressDetails>
+		</Placemark>
+		<Placemark id="22.2.4">
+			<name>Rockford Brewing Company</name>
+			<address>12 E Bridge St, Rockford, MI, United States</address>
+			<phoneNumber>(616) 951-4677</phoneNumber>
+			<snippet>12 E Bridge St, Rockford, MI, United States</snippet>
+			<description><![CDATA[<!DOCTYPE html><html><head></head><body><script type="text/javascript">window.location.href="http://maps.google.com/maps/place?latlng=43119529,-85561439,15250566805515622621&hl=en&gl=us&ui=earth&view=teaser";</script></body></html>]]></description>
+			<styleUrl>#listing_A</styleUrl>
+			<ExtendedData>
+				<Data name="placepageUri">
+					<value>http://maps.google.com/maps/place?latlng=43119529,-85561439,15250566805515622621&amp;hl=en&amp;gl=us&amp;ui=earth&amp;view=teaser</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-85.56143899999999,43.119529,0</coordinates>
+			</Point>
+			<AddressDetails xmlns="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" Accuracy="8">
+          <Country>
+            <CountryNameCode>US</CountryNameCode>
+            <AdministrativeArea>
+              <AdministrativeAreaName>MI</AdministrativeAreaName>
+              <SubAdministrativeArea>
+                <SubAdministrativeAreaName>Kent</SubAdministrativeAreaName>
+                <Locality>
+                  <LocalityName>Rockford</LocalityName>
+                  <Thoroughfare>
+                    <ThoroughfareName>12 E Bridge St</ThoroughfareName>
+                  </Thoroughfare>
+                </Locality>
+              </SubAdministrativeArea>
+            </AdministrativeArea>
+          </Country>
+        </AddressDetails>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

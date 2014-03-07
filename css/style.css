@@ -1,0 +1,461 @@
+  /* started from https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes */
+/* GOOD COLORS
+	good for less important stuff (kinda grey)
+   color: #ABABAB;    
+*/
+   
+ body {
+  font-family: 'Lato', sans-serif;
+/*  font-family: 'Arial', sans-serif; */
+   background: #f5f5f5;
+   margin: 0px;
+   padding: 0px;
+   color: #474747;
+  }  
+  
+/* LINKS */
+	a:link {color:#000000; text-decoration:none;}
+	a:visited {color:#000000; text-decoration:none;}
+	a:hover {color:#606060 ; text-decoration:none;}
+	a:active {color:#000000;text-decoration:none;}
+	
+	header-wrap a:link {color:#f5f5f5; text-decoration:none;}
+	header-wrap a:visited {color:#f5f5f5; text-decoration:none;}
+	header-wrap a:hover {color:yellow ; text-decoration:none;}
+	header-wrap a:active {color:yellow;text-decoration:none;}
+
+
+/* THE BAR AT THE TOP OF THE PAGE */
+	header-wrap {
+	background-color: black;
+	vertical-align: top;
+	font-size: 15px;
+	/* font-family: 'Press Start 2P', cursive; */
+	font-family: 'Lato', sans-serif;
+	width: 100%;
+	padding: 2;
+	z-index: 1;
+	background: black;
+	color: white;
+	/* border-bottom: 1px solid rgba(0,0,0,0.2); */
+	overflow: hidden;
+	position: relative;
+	min-height: 5px;
+	position: fixed;
+	-moz-box-shadow: 0px 0px 5px #b7b0c2;
+	-webkit-box-shadow: 0px 0px 5px #b7b0c2;
+	box-shadow: 0px 0px 5px #b7b0c2;
+	/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+	}
+	
+footer {
+	font-size: 15px;
+	/* font-family: 'Press Start 2P', cursive; */
+	font-family: 'Lato', sans-serif;
+	width:auto;
+	margin-top: 2em;
+	padding: 2em;
+	z-index: 1;
+	background: #fff;
+	/* border-bottom: 1px solid rgba(0,0,0,0.2); */
+	min-height: 200px;
+	-moz-box-shadow: 0px 0px 5px #b7b0c2;
+	-webkit-box-shadow: 0px 0px 5px #b7b0c2;
+	box-shadow: 0px 0px 5px #b7b0c2;
+	/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+	}
+	
+
+	/* header links */
+   header a:link {color:#E0E0E0 ; text-decoration:none;}
+   header a:visited {color:#E0E0E0; text-decoration:none;}
+   header a:hover {color:#ffffff; text-decoration:none;}
+   header a:active {color:#E0E0E0; text-decoration:none;} 
+	
+	headermenu {	/* the text in the header at the top */
+	
+	font-size: 12px;
+	color: #FF0000;}
+
+/* THE BOX that most everything appears in */
+	box,formbox,messagebox {
+	margin-left: 15px;
+	margin-right: 5px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	display: block;
+	padding: 1em;
+	background: #fff;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+	-moz-box-shadow: 0px 0px 5px #b7b0c2;
+	-webkit-box-shadow: 0px 0px 5px #b7b0c2;
+	box-shadow: 0px 0px 5px #b7b0c2;
+	/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+/* 	min-width: 200px; */
+	max-width: 700px;
+	clear: both;
+	}
+	
+	formbox {
+	min-width: 700px;
+	}
+	
+	messagebox {
+	background-color: yellow;
+	}
+	
+	otherbox {
+	margin-left: 15px;
+	margin-right: 5px;
+	display: inline-block;
+	padding: 1em;
+	vertical-align: top;
+	}
+
+.select:hover {
+	background: #FFFFF0;
+}
+
+
+
+
+box-title {
+font-size: 20px;
+margin: 0 0 .5em;
+padding: 0;}
+
+.whiteonwhite {
+	color: #ffffff;
+	background: #ffffff;}
+   
+/* reset h* so that there isn't extra whitespace added */   
+h1, h2, h3, h4 {
+margin:0;
+padding:0;
+}   
+   
+h1 {
+font-size: 35px;
+padding-top: 3px;
+/* line-height: 1em; */	/* MAKE SURE THERE ARE NO H1's on 2 lines! they'll get squashy */
+}
+
+h2 {
+display:inline-block; vertical-align:middle;	
+font-size: 30px;
+padding-top: 3px;
+}
+
+h3 {
+font-size: 25px;
+padding-top: 3px;	
+}
+
+small, smallnotes {
+	font-size: 12px;
+	color: #ABABAB;
+	padding-bottom: 0px;
+	}
+	
+#smallnotes {
+	font-size: 10px;
+	padding-left: 20px;
+	padding-top: 1px;
+	max-width: 400px;
+	}
+
+.alignleft {
+	display: inline-block;
+	display: inline;
+	float: left;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.alignright {
+	/* display: inline-block; */
+	display: inline;
+	float: right;
+	text-align: right;
+	padding-right: 10px;
+}
+
+formitem {
+  margin: 10px;
+  padding: 2px;
+  display: inline-block;
+ /*  clear: none; */
+  /* white-space: nowrap; */
+  }
+
+.login { 	/* the login box */
+	margin-left: 33%;
+	margin-right: 33%;
+	margin-top: 75px;
+}
+
+
+.input, .longinput, .seethrough, .findfish, .shortinput, .login input {
+	color: #555;
+	font-weight: 200;
+	font-size: 24px;
+	line-height: 1;
+	padding: 3px;
+	margin-top: 2px;
+	margin-right: 6px;
+	margin-bottom: 16px;
+	border: 1px solid #e5e5e5;
+	background: #fbfbfb;
+	outline: 0;
+	-webkit-box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+	box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+	display: inline-box;
+}
+
+.findfish {
+	display: inline-block;
+	max-width: 400px;
+	}
+
+.fancybutton {
+	-webkit-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	-moz-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	color:#333;
+	background-color:#FFFFFF;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:none;
+	font-size:16px;
+	/*font-weight:700;*/
+	height:32px;
+	padding:4px 16px;
+	/*text-shadow:#FE6 0 1px 0*/
+}
+
+button {
+	-webkit-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	-moz-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	color:#333;
+	background-color:#f5f5f5;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:none;
+	font-size:16px;
+	/*font-weight:700;*/
+	height:32px;
+	padding:4px 16px;
+	}
+
+.fancybutton:hover, button:hover {
+	background-color:#FA2;
+}
+
+input[type="radio"] {
+    display:inline-block;
+    height:20px;
+    text-indent:-9999px;
+    width:20px;
+}
+
+.table {
+	width: 100%;
+}
+
+
+.highlight {
+	background: #FF0000;
+}
+
+.longinput {
+	width: 100%;
+}
+
+.shortinput {
+	width: 200px;
+}
+
+.input {
+	width: 200px;
+}
+
+.checkbox {
+	padding: 3px;
+	margin: 10px;
+}
+
+.seethrough {
+	background-color: transparent; 
+	border-style:hidden; 
+	border-width: 0px 0px 0px 0px; 
+}
+
+/* from http://css-tricks.com/fun-with-blurred-text/ */
+.blurry-text {
+   color: transparent;
+   text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#pup {
+  position:absolute;
+  z-index:200; /* aaaalways on top*/
+  padding: 10px;
+  margin: 15px;
+  width: 250px;
+  border: 1px solid black;
+  background-color: #777;
+  color: white;
+  font-size: 0.95em;
+}
+
+
+
+.myFormClass input[type=submit] {
+  margin: 10px;
+  color: white;
+  background-color: blue;
+}
+
+.smallinfo {
+	font-family: Monaco, monospace;
+	font-size: 9px;
+	padding: 15px;
+	margin: 15px;
+}
+
+.submit:hover {
+	background-color: #FF0000;
+}
+
+
+  #main {
+   min-height: 800px;
+   margin-left:auto;
+	margin-right:auto;
+	width:auto;
+   display: -webkit-flex;
+   display:         flex;
+   -webkit-flex-flow: row;
+           flex-flow: row;
+   }
+ 
+ /* THIS IS THE MAIN COLUMN WITH EVERYTHING IN IT */
+  #main > article {
+  display: block;
+  position: relative;
+  float: left;
+   margin-top: 35px;	/* pushes it down below the header */
+   padding-top: 10px;
+   padding-left: 0px;
+   background: #f5f5f5;
+   -webkit-flex: 3 1 60%;
+           flex: 3 1 60%;
+   -webkit-order: 2;
+           order: 2;
+    max-width: 600px;
+   }
+   
+  #main > article > weather {
+  	background: #FF0000;
+  } 
+  
+   notes {
+   size: 14px;
+   display: block;
+   padding: 5px;
+   margin: 10px;
+   }
+  }
+	
+  #main > nav {
+   margin-top: 52px;	/* pushes it down below the header */
+   padding: 0px;
+   /*border: 1px solid #8888bb;
+   border-radius: 7pt;*/
+   background: #ffffff;
+   -webkit-flex: 1 6 20%;
+           flex: 1 6 20%;
+   -webkit-order: 1;
+           order: 1;
+   }
+  
+  #main > aside {
+  clear: both;
+   margin-top: 45px;	/* pushes it down below the header */
+   display: block;
+   float: left;
+   position: relative;
+  /*  padding: 5px; */
+   /*border: 1px solid #8888bb;
+   border-radius: 7pt;*/
+   /* background: #ffffff; */
+   -webkit-flex: 1 6 20%;
+           flex: 1 6 20%;
+   -webkit-order: 3;
+           order: 3;
+    max-width: 275px;
+        
+   }
+   
+   
+   
+  #main > debug {
+		font: 10px Monaco;
+	}
+
+ 
+  /* Too narrow to support three columns */
+  @media all and (max-width: 640px) {
+  
+   #main, #page {
+    -webkit-flex-flow: column;
+            flex-flow: column;
+   }
+
+   #main > article, #main > nav, #main > aside {
+    /* Return them to document order */
+    -webkit-order: 0;
+            order: 0;
+   }
+  
+   #main > nav, #main > aside, header, footer {
+    min-height: 50px;
+    max-height: 50px;
+   }
+  }
+  
+  /* GOOGLE MAP */
+  map {
+  	width: 95%; 
+  	height: 400;
+  }
+  
+.circular,.circularbigger {
+	height: 40px;
+	width: 40px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	}
+	
+.circularbigger {
+	height: 80px;
+	width: 80px;
+	}
+  
+hr {
+     color: #f5f5f5;
+     width: 100%; 
+     height: 2px;
+}   
+   
+
+ 
+  
+

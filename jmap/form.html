@@ -1,0 +1,82 @@
+<?php
+session_start();
+/* USER PAGE- PROFILE PAGE!
+
+this page will show information about the currently
+logged-in user
+
+
+(stats!)
+*/
+?>
+<link rel='stylesheet' href='style.css' type="text/css" />
+<?php
+set_include_path('/home/chrisbeckstrom/cbfishes.com/log')
+include 'header.php';
+include 'footer.php';
+include 'connect.php';
+
+print $header;
+
+$username = $_GET['username'];
+
+// if there is no user logged in, redirect to login.php
+if(!isset($_SESSION['myusername']))
+	{
+	print "You gotta log in to do that!";
+	header( 'Location: login.php' );
+	}
+?>
+
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>Google Maps Latitude and Longitude Picker jQuery plugin</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="stylesheet" type="text/css" href="css/demo.css"/>
+
+	<!-- Dependencies: JQuery and GMaps API should be loaded first -->
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+	<!-- CSS and JS for our code -->
+	<link rel="stylesheet" type="text/css" href="css/jquery-gmaps-latlon-picker.css"/>
+	<script src="js/jquery-gmaps-latlon-picker.js"></script>
+</head>
+<body>
+
+<!-- this decides what happens when you submit the form -->
+<form action="results.php" method="get" target="_blank">
+
+	<fieldset class="gllpLatlonPicker">
+		<input type="text" class="gllpSearchField">
+		<input type="button" class="gllpSearchButton" value="search">
+		<br/><br/>
+		<div class="gllpMap">Google Maps</div>
+		<br/>
+		lat/lon:
+			<input type="text" class="gllpLatitude" value="20" name="lat"/>
+			/
+			<input type="text" class="gllpLongitude" value="20" name="lon"/>
+		zoom: <input type="text" class="gllpZoom" value="3"/>
+		<!-- <input type="button" class="gllpUpdateButton" value="update map"> -->
+		<br/>
+	</fieldset>
+
+<!-- SUBMIT BUTTON -->
+<input type="submit" value="Submit" name="submit">
+
+</form>
+<div header>
+	here is some text
+	<? include '../bang.php';
+	print "testing!";
+	?>
+	</div>
+
+<?
+
+?>
+	
+</body>
+</html>

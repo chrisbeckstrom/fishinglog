@@ -1,0 +1,325 @@
+  /* started from https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes */
+
+ body {
+  /*font-family: 'Lato', sans-serif;*/
+ font-family: 'Helvetica', sans-serif;
+   background: #f5f5f5;
+   margin: 0px;
+   padding: 0px;
+  }  
+  
+/* LINKS */
+a:link {color:#000000; text-decoration:none;}
+a:visited {color:#000000; text-decoration:none;}
+a:hover {color:#606060 ; text-decoration:none;}
+a:active {color:#000000;text-decoration:none;}
+
+/* THE BAR AT THE TOP OF THE PAGE */
+header-wrap {
+/*font-family: 'Press Start 2P', cursive;*/
+/*font-family: 'Lato', sans-serif;*/
+width: 100%;
+padding: 2;
+z-index: 1;
+background: #fff;
+border-bottom: 1px solid rgba(0,0,0,0.2);
+overflow: hidden;
+position: relative;
+min-height: 35px;
+position: fixed;
+-webkit-box-shadow: 0 0 10px black !important;
+-moz-box-shadow: 0 0 10px black !important;
+-o-box-shadow: 0 0 10px black !important;
+-ms-box-shadow: 0 0 10px black !important;
+-khtml-box-shadow: 0 0 10px black !important;
+}
+
+/* header links */
+   header a:link {color:#E0E0E0 ; text-decoration:none;}
+   header a:visited {color:#E0E0E0; text-decoration:none;}
+   header a:hover {color:#ffffff; text-decoration:none;}
+   header a:active {color:#E0E0E0; text-decoration:none;} 
+
+headermenu {	/* the text in the header at the top */
+	font-size: 12px;
+	color: #FF0000;
+}
+
+box {
+margin: 6px;
+display: block;
+padding: 1em;
+background: #f5f5f5;
+border: 1px solid #ccc;
+}
+
+.select:hover {
+	background: #FFFFF0;
+}
+
+
+box-title {
+font-size: 20px;
+margin: 0 0 .5em;
+padding: 0;
+}
+
+.whiteonwhite {
+	color: #ffffff;
+	background: #ffffff;
+}
+   
+  h1 {
+   	/*font-family: 'Press Start 2P', cursive;*/
+   	/*font-family: 'Lato', sans-serif;*/
+  	font-size: 60px;
+  	line-height: 10%;	/* MAKE SURE THERE ARE NO H1's on 2 lines! they'll get squashy */
+  }
+  
+  h2 {
+   	/*font-family: 'Press Start 2P', cursive;*/
+   	/*font-family: 'Lato', sans-serif;*/  	
+   	font-size: 30px;
+  }
+  
+  h3 {
+   	/*font-family: 'Press Start 2P', cursive;*/
+   	/*font-family: 'Lato', sans-serif;  */	
+   	font-size: 20px;
+  }
+  
+	
+.alignleft {
+	float: left;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.alignright {
+	float: right;
+	text-align: right;
+	padding-right: 10px;
+}
+
+formitem {
+  margin: 10px;
+  padding: 2px;
+  display: inline;
+  clear: none;
+  white-space: nowrap;
+  }
+
+.login { 	/* the login box */
+	margin-left: 33%;
+	margin-right: 33%;
+	margin-top: 75px;
+}
+
+.input, .longinput, .seethrough, .findfish, .shortinput, .login input {
+	color: #555;
+	font-weight: 200;
+	font-size: 24px;
+	line-height: 1;
+	padding: 3px;
+	margin-top: 2px;
+	margin-right: 6px;
+	margin-bottom: 16px;
+	border: 1px solid #e5e5e5;
+	background: #fbfbfb;
+	outline: 0;
+	-webkit-box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+	box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+}
+
+.fancybutton {
+	-webkit-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	-moz-box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	box-shadow:rgba(0,0,0,0.2) 0 1px 0 0;
+	color:#333;
+	background-color:#FFFFFF;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:none;
+	font-size:16px;
+	/*font-weight:700;*/
+	height:32px;
+	padding:4px 16px;
+	/*text-shadow:#FE6 0 1px 0*/
+}
+
+.fancybutton:hover {
+	background-color:#FA2;
+}
+
+
+
+.highlight {
+	background: #FF0000;
+}
+
+.longinput {
+	width: 100%;
+}
+
+.shortinput {
+	width: 75px;
+}
+
+.input {
+	width: 200px;
+}
+
+.checkbox {
+	padding: 3px;
+	margin: 10px;
+}
+
+.seethrough {
+	background-color: transparent; 
+	border-style:hidden; 
+	border-width: 0px 0px 0px 0px; 
+}
+
+/* from http://css-tricks.com/fun-with-blurred-text/ */
+.blurry-text {
+   color: transparent;
+   text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+#pup {
+  position:absolute;
+  z-index:200; /* aaaalways on top*/
+  padding: 10px;
+  margin: 15px;
+  width: 250px;
+  border: 1px solid black;
+  background-color: #777;
+  color: white;
+  font-size: 0.95em;
+}
+
+
+
+.myFormClass input[type=submit] {
+  margin: 10px;
+  color: white;
+  background-color: blue;
+}
+
+.smallinfo {
+	font-family: Monaco, monospace;
+	font-size: 9px;
+	padding: 15px;
+	margin: 15px;
+}
+
+.submit:hover {
+	background-color: #FF0000;
+}
+	
+
+
+
+  #main {
+   min-height: 800px;
+   padding: 0px;
+   display: -webkit-flex;
+   display:         flex;
+   -webkit-flex-flow: row;
+           flex-flow: row;
+   }
+ 
+  #main > article {
+   margin-top: 40px;	/* pushes it down below the header */
+   padding: 20px;
+   /*border: 1px solid #cccc33;
+   border-radius: 0pt;*/
+   background: #f5f5f5;
+   -webkit-flex: 3 1 60%;
+           flex: 3 1 60%;
+   -webkit-order: 2;
+           order: 2;
+   }
+   
+  #main > article > weather {
+  	background: #f5f5f5;
+  } 
+  
+   notes {
+   font-family: Monaco;
+   size: 14px;
+   display: block;
+   padding: 5px;
+   margin: 10px;
+   }
+  }
+	
+  #main > nav {
+   margin-top: 52px;	/* pushes it down below the header */
+   padding: 5px;
+   /*border: 1px solid #8888bb;
+   border-radius: 7pt;*/
+   background: #f5f5f5;
+   -webkit-flex: 1 6 20%;
+           flex: 1 6 20%;
+   -webkit-order: 1;
+           order: 1;
+   }
+  
+  #main > aside {
+   margin-top: 52px;	/* pushes it down below the header */
+   padding: 5px;
+   /*border: 1px solid #8888bb;
+   border-radius: 7pt;*/
+   background: #ffffff;
+   -webkit-flex: 1 6 20%;
+           flex: 1 6 20%;
+   -webkit-order: 3;
+           order: 3;
+   }
+   
+   
+   
+  #main > debug {
+		font: 10px Monaco;
+	}
+
+ 
+  /* Too narrow to support three columns */
+  @media all and (max-width: 640px) {
+  
+   #main, #page {
+    -webkit-flex-flow: column;
+            flex-flow: column;
+   }
+
+   #main > article, #main > nav, #main > aside {
+    /* Return them to document order */
+    -webkit-order: 0;
+            order: 0;
+   }
+  
+   #main > nav, #main > aside, header, footer {
+    min-height: 50px;
+    max-height: 50px;
+   }
+  }
+  
+  /* GOOGLE MAP */
+  map {
+  	width: 95%; 
+  	height: 400;
+  }
+  
+   
+footer {
+display: block;
+padding: 70px 0;
+min-height: 100px;
+border-top: 1px solid #e5e5e5;
+background-color: #f5f5f5;
+}
+ 
+  
+

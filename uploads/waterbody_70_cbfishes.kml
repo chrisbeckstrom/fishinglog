@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>fox.kml</name>
+	<Style id="sn_placemark_circle8">
+		<IconStyle>
+			<scale>0.6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_placemark_circle_highlight1">
+		<IconStyle>
+			<scale>0.6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_placemark_circle6">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_placemark_circle_highlight19">
+		<IconStyle>
+			<scale>0.6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_placemark_circle">
+		<IconStyle>
+			<scale>0.7</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_placemark_circle_highlight6">
+		<IconStyle>
+			<scale>0.6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_placemark_circle18">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin31">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin101</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl111</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_placemark_circle_highlight22">
+		<IconStyle>
+			<scale>0.7</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_placemark_circle1">
+		<IconStyle>
+			<scale>0.6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_placemark_circle17">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle7</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_placemark_circle2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle5</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight19</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_placemark_circle_highlight20">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_placemark_circle">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle9</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight18</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_placemark_circle3">
+		<IconStyle>
+			<scale>0.7</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_placemark_circle12">
+		<IconStyle>
+			<scale>0.6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_placemark_circle7">
+		<IconStyle>
+			<scale>0.6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_placemark_circle9">
+		<IconStyle>
+			<scale>0.7</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_cabs000">
+		<IconStyle>
+			<color>80ffffff</color>
+			<scale>0.5</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_placemark_circle_highlight0">
+		<IconStyle>
+			<scale>0.6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_placemark_circle5">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_placemark_circle2">
+		<IconStyle>
+			<scale>0.6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_placemark_circle_highlight8">
+		<IconStyle>
+			<scale>0.6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_placemark_circle_highlight5">
+		<IconStyle>
+			<scale>0.6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_cabs000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_cabs000</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_cabs000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_placemark_circle15">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle16</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight6</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_cabs000">
+		<IconStyle>
+			<color>80ffffff</color>
+			<scale>0.590909</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_placemark_circle_highlight">
+		<IconStyle>
+			<scale>0.6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_placemark_circle0">
+		<IconStyle>
+			<scale>0.6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_placemark_circle10">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight22</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_placemark_circle17">
+		<IconStyle>
+			<scale>0.6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_placemark_circle_highlight3">
+		<IconStyle>
+			<scale>0.6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_placemark_circle3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight12</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_placemark_circle_highlight12">
+		<IconStyle>
+			<scale>0.7</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_placemark_circle4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle17</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight8</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_placemark_circle0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_placemark_circle_highlight4">
+		<IconStyle>
+			<scale>0.6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_placemark_circle5">
+		<IconStyle>
+			<scale>0.6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/cabs.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_placemark_circle16">
+		<IconStyle>
+			<scale>0.6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/fishing.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_placemark_circle16">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle8</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl111">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_placemark_circle_highlight18">
+		<IconStyle>
+			<scale>0.7</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin101">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_placemark_circle1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle6</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight20</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_placemark_circle6">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle12</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Fox River</name>
+		<Placemark>
+			<name>Red Oak Nature Center</name>
+			<LookAt>
+				<longitude>-88.32133078581499</longitude>
+				<latitude>41.82029701039634</latitude>
+				<altitude>0</altitude>
+				<heading>-58.55404071219403</heading>
+				<tilt>0.1944264286114737</tilt>
+				<range>109.3798449490321</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_cabs000</styleUrl>
+			<Point>
+				<coordinates>-88.32151987258841,41.82027207175725,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Dry creekbed</name>
+			<LookAt>
+				<longitude>-88.3213341921349</longitude>
+				<latitude>41.82221583138512</latitude>
+				<altitude>0</altitude>
+				<heading>-58.55425813149243</heading>
+				<tilt>0.1946032288143464</tilt>
+				<range>103.0771164363141</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_placemark_circle1</styleUrl>
+			<Point>
+				<coordinates>-88.32132751229517,41.8222351839178,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Red Oak parking</name>
+			<LookAt>
+				<longitude>-88.32018838563791</longitude>
+				<latitude>41.8207636286764</latitude>
+				<altitude>0</altitude>
+				<heading>-58.55346376465975</heading>
+				<tilt>0.1946695703221163</tilt>
+				<range>192.6555913068812</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_placemark_circle5</styleUrl>
+			<Point>
+				<coordinates>-88.32013384242335,41.82072254251703,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>parking</name>
+			<LookAt>
+				<longitude>-88.31532987374538</longitude>
+				<latitude>41.8286209528122</latitude>
+				<altitude>0</altitude>
+				<heading>-54.6117149760937</heading>
+				<tilt>0</tilt>
+				<range>526.2531045050742</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_placemark_circle2</styleUrl>
+			<Point>
+				<coordinates>-88.31428443476874,41.82789907914604,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>machine building</name>
+			<LookAt>
+				<longitude>-88.31975945459912</longitude>
+				<latitude>41.82445042413826</latitude>
+				<altitude>0</altitude>
+				<heading>-54.61442259544826</heading>
+				<tilt>0</tilt>
+				<range>36.39437900724553</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_placemark_circle</styleUrl>
+			<Point>
+				<coordinates>-88.31968409464527,41.8245059498635,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>funway</name>
+			<LookAt>
+				<longitude>-88.30668261995903</longitude>
+				<latitude>41.83586714456045</latitude>
+				<altitude>0</altitude>
+				<heading>-54.60612347278514</heading>
+				<tilt>0</tilt>
+				<range>429.021843412957</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_placemark_circle17</styleUrl>
+			<Point>
+				<coordinates>-88.3080242769165,41.83603782449001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>baseball parking</name>
+			<LookAt>
+				<longitude>-88.30671859858396</longitude>
+				<latitude>41.84511558465155</latitude>
+				<altitude>0</altitude>
+				<heading>-84.27863670674044</heading>
+				<tilt>0</tilt>
+				<range>442.8633967302882</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_placemark_circle6</styleUrl>
+			<Point>
+				<coordinates>-88.30618807214124,41.84494297290518,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mill creek mouth</name>
+			<LookAt>
+				<longitude>-88.3230172204685</longitude>
+				<latitude>41.82154373147312</latitude>
+				<altitude>0</altitude>
+				<heading>-64.59513585373529</heading>
+				<tilt>0</tilt>
+				<range>196.0675737437698</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_placemark_circle3</styleUrl>
+			<Point>
+				<coordinates>-88.32299475928943,41.82142164636771,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>red oak &gt; buiding</name>
+			<description>0.37 miles</description>
+			<styleUrl>#m_ylw-pushpin31</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-88.32021792782217,41.82062347772887,0 -88.32048084846799,41.82031966040805,0 -88.32081549356599,41.8204186940746,0 -88.32068321458765,41.82087088243658,0 -88.32023865175496,41.82132525426157,0 -88.31985661063395,41.82191546734112,0 -88.31915660261969,41.82279123006608,0 -88.31896828188327,41.82310920528278,0 -88.31908657581177,41.82416353251661,0 -88.3190993073126,41.82428242378046,0 -88.3195013042954,41.8244605758169,0 -88.31976278407254,41.82457237519455,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>other park &gt; building</name>
+			<description>0.36 miles</description>
+			<styleUrl>#m_ylw-pushpin31</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-88.31542551921191,41.82704418572568,0 -88.3161018501192,41.82676874225621,0 -88.31612925082939,41.8267874102449,0 -88.31628709449922,41.82701742500402,0 -88.31690912773226,41.82648509873882,0 -88.31691549463983,41.82645653998329,0 -88.31692226817583,41.82643939940181,0 -88.31701018941517,41.82612405111617,0 -88.31723668821724,41.825831461443,0 -88.31795110750119,41.82562883650638,0 -88.31897480317245,41.82517385074762,0 -88.31906780490471,41.82484842394361,0 -88.31903790342606,41.82430680059915,0 -88.31971980985699,41.82459581340812,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>rifles</name>
+			<LookAt>
+				<gx:TimeStamp><when>1996-04</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-88.31907202157534</longitude>
+				<latitude>41.82596463814646</latitude>
+				<altitude>0</altitude>
+				<heading>-59.34991977972683</heading>
+				<tilt>0</tilt>
+				<range>368.4103053635254</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_placemark_circle10</styleUrl>
+			<Point>
+				<coordinates>-88.31893764455155,41.82618556035293,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Les Arendes</name>
+			<LookAt>
+				<gx:TimeStamp><when>2002-03-31</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-88.32057624996926</longitude>
+				<latitude>41.82572410918083</latitude>
+				<altitude>0</altitude>
+				<heading>-59.35082775692374</heading>
+				<tilt>0</tilt>
+				<range>782.8794917233371</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_placemark_circle16</styleUrl>
+			<Point>
+				<coordinates>-88.32173059357039,41.82716,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>leo/chris smallie spot</name>
+			<LookAt>
+				<gx:TimeStamp><when>2002-03-31</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-88.31564119881658</longitude>
+				<latitude>41.82918380506474</latitude>
+				<altitude>0</altitude>
+				<heading>-59.34768218120467</heading>
+				<tilt>0</tilt>
+				<range>102.019968656124</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_placemark_circle18</styleUrl>
+			<Point>
+				<coordinates>-88.31540407252776,41.82906787624447,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>old dam.. deeper water?</name>
+			<LookAt>
+				<gx:TimeStamp><when>2002-03-31</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-88.31086225728819</longitude>
+				<latitude>41.83662892963414</latitude>
+				<altitude>0</altitude>
+				<heading>-59.34431077349531</heading>
+				<tilt>0</tilt>
+				<range>333.9661729870528</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_placemark_circle0</styleUrl>
+			<Point>
+				<coordinates>-88.31088438326101,41.83639050329168,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>3rd park</name>
+			<LookAt>
+				<gx:TimeStamp><when>2011-11-07</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-88.31110324040998</longitude>
+				<latitude>41.83310791949602</latitude>
+				<altitude>0</altitude>
+				<heading>-59.35099722264966</heading>
+				<tilt>0</tilt>
+				<range>326.2819668040501</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_placemark_circle4</styleUrl>
+			<Point>
+				<coordinates>-88.3110722610063,41.833222,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>deep hole</name>
+			<LookAt>
+				<gx:TimeStamp><when>2011-11-07</when>
+</gx:TimeStamp>
+				<gx:ViewerOptions>
+					<gx:option name="historicalimagery"></gx:option>
+					<gx:option enabled="0" name="sunlight"></gx:option>
+					<gx:option enabled="0" name="streetview"></gx:option>
+				</gx:ViewerOptions>
+				<longitude>-88.31073183606291</longitude>
+				<latitude>41.83451260917268</latitude>
+				<altitude>0</altitude>
+				<heading>-59.35053698405002</heading>
+				<tilt>0</tilt>
+				<range>128.981880352961</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_placemark_circle15</styleUrl>
+			<Point>
+				<coordinates>-88.31065414997717,41.83445619098828,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
