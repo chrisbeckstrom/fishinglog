@@ -19,11 +19,20 @@
 
 $date = $tripdate;
 
+		$logthis = "\n -- starting getstreamflow.php --";
+		fwrite($fh, $logthis);
+		
 print "getstreamflow: using $date as date, and $site_no as site number <br>";
+		$logthis = "\n using $date as date, and $site_no as the site number";
+		fwrite($fh, $logthis);
+		
 print "getphp/streamflow.php site_no is<br>$site_no<br>";
 
 // parameters: 00060 = discharge, 00065 = gauge height
 $usgsurl = "http://waterservices.usgs.gov/nwis/iv/?format=json&sites=$site_no&startDT=$date&endDT=$date&parameterCd=00060,00065";
+		$logthis = "\n USGSURL = $usgsurl";
+		fwrite($fh, $logthis);
+		
 print "<b>----- getphp/streamflow.php ----</b><br>";
 print "the url is <pre>$usgsurl</pre> <br>";
 
@@ -100,3 +109,8 @@ echo $datetime;
 
 // show what we found
 print "<br> discharge is $discharge cfs <br> gaugeheight is $gaugeheight ft<br>";
+		$logthis = "\n what we found: \n discharge: $discharge cfs, gaugeheight: $gaugeheight ft";
+		fwrite($fh, $logthis);
+		
+		$logthis = "\n -- end of getstreamflow.php --";
+		fwrite($fh, $logthis);

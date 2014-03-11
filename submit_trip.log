@@ -1,0 +1,603 @@
+
+ TEST- writing to file
+ TEST- writing to file
+ TEST- writing to file
+ TEST- writing to file
+ TEST- writing to file
+ TEST- another string
+ TEST- writing to file - logthis
+ TEST- another string - logthis
+--------------form.php submitted---------------
+ user: cbfishes
+--------------form.php submitted---------------
+ user: cbfishes
+ date: 2014-03-11 09:22:57
+ notes: <p>Here are test notes</p>
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 42.86817961466133,-85.43597625781251
+ tripnumber is: 453
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=42.86817961466133&lng=-85.43597625781251&username=chrisbeckstrom&maxRows=1
+ zipcode: 49302
+ city: Alto
+ state: MI
+ county: Kent
+ -- end of findcity.php --
+ fixed notes: <p>Here are test notes</p>
+ sql query: INSERT INTO trips (
+	private,
+	lat,
+	lon,
+	latlon,
+	lastupdate,
+	date, 
+	skunked, 
+	time, 
+	timeofday,
+	adventure,
+	scenery,
+	ninja,
+	waterbody,
+	watertype,
+	watercolor,
+	sitecode,
+	gaugeheight,
+	discharge,
+	temp,
+	hum,
+	wspdi,
+	wgusti,
+	wdir,
+	pressure,
+	conds,
+	metar,
+	gear,
+	method,
+	watertemp,
+	notes,
+	lures,
+	lureimage,
+	username,
+	tripnumber,
+	city,
+	state,
+	zip,
+	newwater,
+	points,
+	fishcaught
+	)
+VALUES ('0',
+	'42.86817961466133',
+	'-85.43597625781251',
+	'42.86817961466133,-85.43597625781251',
+	'2014-03-11 09:22:57',
+	'2014-03-12',
+	'',
+	'2',
+	'morning',
+	'2',
+	'1',
+	'1',
+	'Thornapple River',
+	'river',
+	'clear',
+	'',
+	'',
+	'',
+	'39.0',
+	'79',
+	'5.8',
+	'0',
+	'WSW',
+	'29.65',
+	'Clear',
+	'METAR KGRR 110553Z AUTO 24005KT 8SM CLR 04/01 A2964 RMK AO2 SLP040 T00390006 10067 20039 51006',
+	'fly',
+	'shore',
+	'',
+	'<p>Here are test notes</p>',
+	'',
+	'',
+	'cbfishes',
+	'453',
+	'Alto',
+	'MI',
+	'49302',
+	'',
+	'',
+	'2'
+	)
+ end of submit.php, closing the logfile now
+--------------form.php submitted---------------
+ user: cbfishes
+ date: 2014-03-11 09:38:48
+ notes: <p>Although the temp was supposedly around 45-50, it felt much colder. It was nice to see the river. Most of it was iceless, but no signs of life in the water. The shore was absolutely chock full of deer tracks and deer poop, and it looked like others had walked my path recently (who knows if they fished). Fished with 1/16oz jig and twisters, some heavy marabou jigs, a tiny spoon, a few inline spinners, but nothing. I bet the fish are still sitting at the bottom waiting for spring like the rest of us.</p>
+<p>Note to self: It might be fun to kayak [the pool below the dam] as long as I could avoid getting sucked under...</p>
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 42.910488446767324,-85.49805164337158
+ tripnumber is: 454
+ privacy: 2
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=42.910488446767324&lng=-85.49805164337158&username=chrisbeckstrom&maxRows=1
+ zipcode: 49546
+ city: Grand Rapids
+ state: MI
+ county: Kent
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Thornapple River%' AND state like 'MI'
+ newwaterbodyresult_count: 1
+ the waterbody Thornapple River is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Thornapple River near Grand Rapids
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Thornapple River%'
+AND station_nm
+LIKE '%Grand Rapids%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Thornapple River%'
+ the newqueryresult count is: 2
+ old site number is: 
+ site number: 04117500 station name: THORNAPPLE RIVER NEAR HASTINGS, MI
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2014-03-10 as date, and 04117500 as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=04117500&startDT=2014-03-10&endDT=2014-03-10&parameterCd=00060,00065
+ what we found: 
+ discharge: 245 cfs, gaugeheight: 3.47 ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20140310 
+
+					zip: 49546 
+
+					time of day: evening
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20140310/q/49546.json
+ here's what we found: 
+
+			temp: 41.0 degrees F 
+
+			humidity: 70 
+
+			wind speed 11.5 
+
+			wind gusts 0 
+
+			wind direction: WSW 
+
+			pressure: 29.65 
+
+			metar: METAR KGRR 110153Z 24010KT 10SM OVC250 05/00 A2963 RMK AO2 SLP038 T00500000
+ -- end of getweather_new.php --
+ fixed notes: <p>Although the temp was supposedly around 45-50, it felt much colder. It was nice to see the river. Most of it was iceless, but no signs of life in the water. The shore was absolutely chock full of deer tracks and deer poop, and it looked like others had walked my path recently (who knows if they fished). Fished with 1/16oz jig and twisters, some heavy marabou jigs, a tiny spoon, a few inline spinners, but nothing. I bet the fish are still sitting at the bottom waiting for spring like the rest of us.</p>\r\n<p>Note to self: It might be fun to kayak [the pool below the dam] as long as I could avoid getting sucked under...</p>
+ sql query: INSERT INTO trips (
+	private,
+	lat,
+	lon,
+	latlon,
+	lastupdate,
+	date, 
+	skunked, 
+	time, 
+	timeofday,
+	adventure,
+	scenery,
+	ninja,
+	waterbody,
+	watertype,
+	watercolor,
+	sitecode,
+	gaugeheight,
+	discharge,
+	temp,
+	hum,
+	wspdi,
+	wgusti,
+	wdir,
+	pressure,
+	conds,
+	metar,
+	gear,
+	method,
+	watertemp,
+	notes,
+	lures,
+	lureimage,
+	username,
+	tripnumber,
+	city,
+	state,
+	zip,
+	newwater,
+	points,
+	fishcaught
+	)
+VALUES ('2',
+	'42.910488446767324',
+	'-85.49805164337158',
+	'42.910488446767324,-85.49805164337158',
+	'2014-03-11 09:38:48',
+	'2014-03-10',
+	'',
+	'1',
+	'evening',
+	'1',
+	'2',
+	'0',
+	'Thornapple River',
+	'river',
+	'clear',
+	'04117500',
+	'3.47',
+	'245',
+	'41.0',
+	'70',
+	'11.5',
+	'0',
+	'WSW',
+	'29.65',
+	'Overcast',
+	'METAR KGRR 110153Z 24010KT 10SM OVC250 05/00 A2963 RMK AO2 SLP038 T00500000',
+	'spin',
+	'shore',
+	'',
+	'<p>Although the temp was supposedly around 45-50, it felt much colder. It was nice to see the river. Most of it was iceless, but no signs of life in the water. The shore was absolutely chock full of deer tracks and deer poop, and it looked like others had walked my path recently (who knows if they fished). Fished with 1/16oz jig and twisters, some heavy marabou jigs, a tiny spoon, a few inline spinners, but nothing. I bet the fish are still sitting at the bottom waiting for spring like the rest of us.</p>\r\n<p>Note to self: It might be fun to kayak [the pool below the dam] as long as I could avoid getting sucked under...</p>',
+	'',
+	'',
+	'cbfishes',
+	'454',
+	'Grand Rapids',
+	'MI',
+	'49546',
+	'',
+	'',
+	'0'
+	)
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ date: 2014-03-11 09:50:59
+ notes: <p>Although the temp was supposedly around 45-50, it felt much colder. It was nice to see the river. Most of it was iceless, but no signs of life in the water. The shore was absolutely chock full of deer tracks and deer poop, and it looked like others had walked my path recently (who knows if they fished). Fished with 1/16oz jig and twisters, some heavy marabou jigs, a tiny spoon, a few inline spinners, but nothing. I bet the fish are still sitting at the bottom waiting for spring like the rest of us.</p>
+<p>Note to self: It might be fun to kayak [the pool below the dam] as long as I could avoid getting sucked under...</p>
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 42.910488446767324,-85.49805164337158
+ tripnumber is: 454
+ privacy: 2
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=42.910488446767324&lng=-85.49805164337158&username=chrisbeckstrom&maxRows=1
+ zipcode: 49546
+ city: Grand Rapids
+ state: MI
+ county: Kent
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Thornapple River%' AND state like 'MI'
+ newwaterbodyresult_count: 1
+ the waterbody Thornapple River is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Thornapple River near Grand Rapids
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Thornapple River%'
+AND station_nm
+LIKE '%Grand Rapids%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Thornapple River%'
+ the newqueryresult count is: 2
+ old site number is: 
+ site number: 04117500 station name: THORNAPPLE RIVER NEAR HASTINGS, MI
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2014-03-10 as date, and 04117500 as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=04117500&startDT=2014-03-10&endDT=2014-03-10&parameterCd=00060,00065
+ what we found: 
+ discharge: 245 cfs, gaugeheight: 3.47 ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20140310 
+
+					zip: 49546 
+
+					time of day: evening
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20140310/q/49546.json
+ here's what we found: 
+
+			temp: 41.0 degrees F 
+
+			humidity: 70 
+
+			wind speed 11.5 
+
+			wind gusts 0 
+
+			wind direction: WSW 
+
+			pressure: 29.65 
+
+			metar: METAR KGRR 110153Z 24010KT 10SM OVC250 05/00 A2963 RMK AO2 SLP038 T00500000
+ -- end of getweather_new.php --
+ fixed notes: <p>Although the temp was supposedly around 45-50, it felt much colder. It was nice to see the river. Most of it was iceless, but no signs of life in the water. The shore was absolutely chock full of deer tracks and deer poop, and it looked like others had walked my path recently (who knows if they fished). Fished with 1/16oz jig and twisters, some heavy marabou jigs, a tiny spoon, a few inline spinners, but nothing. I bet the fish are still sitting at the bottom waiting for spring like the rest of us.</p>\r\n<p>Note to self: It might be fun to kayak [the pool below the dam] as long as I could avoid getting sucked under...</p>
+ -- starting points.php --
+ not new water
+ fish points:  
+
+				new water points: 0 
+
+				adventure points: 1 
+
+				scenic points: 2 
+
+				ninja points: 0
+ total points: 8
+ -- end of points.php --
+ sql query: INSERT INTO trips (
+	private,
+	lat,
+	lon,
+	latlon,
+	lastupdate,
+	date, 
+	skunked, 
+	time, 
+	timeofday,
+	adventure,
+	scenery,
+	ninja,
+	waterbody,
+	watertype,
+	watercolor,
+	sitecode,
+	gaugeheight,
+	discharge,
+	temp,
+	hum,
+	wspdi,
+	wgusti,
+	wdir,
+	pressure,
+	conds,
+	metar,
+	gear,
+	method,
+	watertemp,
+	notes,
+	lures,
+	lureimage,
+	username,
+	tripnumber,
+	city,
+	state,
+	zip,
+	newwater,
+	points,
+	fishcaught
+	)
+VALUES ('2',
+	'42.910488446767324',
+	'-85.49805164337158',
+	'42.910488446767324,-85.49805164337158',
+	'2014-03-11 09:50:59',
+	'2014-03-10',
+	'',
+	'1',
+	'evening',
+	'1',
+	'2',
+	'0',
+	'Thornapple River',
+	'river',
+	'clear',
+	'04117500',
+	'3.47',
+	'245',
+	'41.0',
+	'70',
+	'11.5',
+	'0',
+	'WSW',
+	'29.65',
+	'Overcast',
+	'METAR KGRR 110153Z 24010KT 10SM OVC250 05/00 A2963 RMK AO2 SLP038 T00500000',
+	'spin',
+	'shore',
+	'',
+	'<p>Although the temp was supposedly around 45-50, it felt much colder. It was nice to see the river. Most of it was iceless, but no signs of life in the water. The shore was absolutely chock full of deer tracks and deer poop, and it looked like others had walked my path recently (who knows if they fished). Fished with 1/16oz jig and twisters, some heavy marabou jigs, a tiny spoon, a few inline spinners, but nothing. I bet the fish are still sitting at the bottom waiting for spring like the rest of us.</p>\r\n<p>Note to self: It might be fun to kayak [the pool below the dam] as long as I could avoid getting sucked under...</p>',
+	'',
+	'',
+	'cbfishes',
+	'454',
+	'Grand Rapids',
+	'MI',
+	'49546',
+	'',
+	'8',
+	'0'
+	)
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ date: 2014-03-11 09:52:49
+ notes: <p>Although the temp was supposedly around 45-50, it felt much colder. It was nice to see the river. Most of it was iceless, but no signs of life in the water. The shore was absolutely chock full of deer tracks and deer poop, and it looked like others had walked my path recently (who knows if they fished). Fished with 1/16oz jig and twisters, some heavy marabou jigs, a tiny spoon, a few inline spinners, but nothing. I bet the fish are still sitting at the bottom waiting for spring like the rest of us.</p>
+<p>Note to self: It might be fun to kayak [the pool below the dam] as long as I could avoid getting sucked under...</p>
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 42.910488446767324,-85.49805164337158
+ tripnumber is: 454
+ privacy: 2
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=42.910488446767324&lng=-85.49805164337158&username=chrisbeckstrom&maxRows=1
+ zipcode: 49546
+ city: Grand Rapids
+ state: MI
+ county: Kent
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Thornapple River%' AND state like 'MI'
+ newwaterbodyresult_count: 1
+ the waterbody Thornapple River is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Thornapple River near Grand Rapids
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Thornapple River%'
+AND station_nm
+LIKE '%Grand Rapids%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Thornapple River%'
+ the newqueryresult count is: 2
+ old site number is: 
+ site number: 04117500 station name: THORNAPPLE RIVER NEAR HASTINGS, MI
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2014-03-10 as date, and 04117500 as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=04117500&startDT=2014-03-10&endDT=2014-03-10&parameterCd=00060,00065
+ what we found: 
+ discharge: 245 cfs, gaugeheight: 3.47 ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20140310 
+
+					zip: 49546 
+
+					time of day: evening
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20140310/q/49546.json
+ here's what we found: 
+
+			temp: 41.0 degrees F 
+
+			humidity: 70 
+
+			wind speed 11.5 
+
+			wind gusts 0 
+
+			wind direction: WSW 
+
+			pressure: 29.65 
+
+			metar: METAR KGRR 110153Z 24010KT 10SM OVC250 05/00 A2963 RMK AO2 SLP038 T00500000
+ -- end of getweather_new.php --
+ fixed notes: <p>Although the temp was supposedly around 45-50, it felt much colder. It was nice to see the river. Most of it was iceless, but no signs of life in the water. The shore was absolutely chock full of deer tracks and deer poop, and it looked like others had walked my path recently (who knows if they fished). Fished with 1/16oz jig and twisters, some heavy marabou jigs, a tiny spoon, a few inline spinners, but nothing. I bet the fish are still sitting at the bottom waiting for spring like the rest of us.</p>\r\n<p>Note to self: It might be fun to kayak [the pool below the dam] as long as I could avoid getting sucked under...</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 1 
+
+				scenic points: 2 
+
+				ninja points: 0
+ total points: 8
+ -- end of points.php --
+ sql query: INSERT INTO trips (
+	private,
+	lat,
+	lon,
+	latlon,
+	lastupdate,
+	date, 
+	skunked, 
+	time, 
+	timeofday,
+	adventure,
+	scenery,
+	ninja,
+	waterbody,
+	watertype,
+	watercolor,
+	sitecode,
+	gaugeheight,
+	discharge,
+	temp,
+	hum,
+	wspdi,
+	wgusti,
+	wdir,
+	pressure,
+	conds,
+	metar,
+	gear,
+	method,
+	watertemp,
+	notes,
+	lures,
+	lureimage,
+	username,
+	tripnumber,
+	city,
+	state,
+	zip,
+	newwater,
+	points,
+	fishcaught
+	)
+VALUES ('2',
+	'42.910488446767324',
+	'-85.49805164337158',
+	'42.910488446767324,-85.49805164337158',
+	'2014-03-11 09:52:49',
+	'2014-03-10',
+	'',
+	'1',
+	'evening',
+	'1',
+	'2',
+	'0',
+	'Thornapple River',
+	'river',
+	'clear',
+	'04117500',
+	'3.47',
+	'245',
+	'41.0',
+	'70',
+	'11.5',
+	'0',
+	'WSW',
+	'29.65',
+	'Overcast',
+	'METAR KGRR 110153Z 24010KT 10SM OVC250 05/00 A2963 RMK AO2 SLP038 T00500000',
+	'spin',
+	'shore',
+	'',
+	'<p>Although the temp was supposedly around 45-50, it felt much colder. It was nice to see the river. Most of it was iceless, but no signs of life in the water. The shore was absolutely chock full of deer tracks and deer poop, and it looked like others had walked my path recently (who knows if they fished). Fished with 1/16oz jig and twisters, some heavy marabou jigs, a tiny spoon, a few inline spinners, but nothing. I bet the fish are still sitting at the bottom waiting for spring like the rest of us.</p>\r\n<p>Note to self: It might be fun to kayak [the pool below the dam] as long as I could avoid getting sucked under...</p>',
+	'',
+	'',
+	'cbfishes',
+	'454',
+	'Grand Rapids',
+	'MI',
+	'49546',
+	'',
+	'8',
+	'0'
+	)
+ end of submit.php, closing the logfile now

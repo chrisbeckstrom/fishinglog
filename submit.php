@@ -15,13 +15,32 @@ include 'header.php';
 
 print $header;
 
+print "<br><br><br><h1>THIS PAGE IS TEMPORARY AND JUST FOR DEBUGGING- IT WILL BE HIDDEN IN FUTURE UPDATES</h1>";
+
+
+// OPEN UP A LOG FILE TO WRITE STUFF
+$logfile = "submit_trip.log";
+$fh = fopen($logfile, 'a') or die("can't open file");
+
+// write to log: basic info
+	$logthis = "\n *************** NEW form.php submitted **********************";
+	fwrite($fh, $logthis);
+	
+	$logthis = "\n user: " . $_SESSION[myusername];
+	fwrite($fh, $logthis);
+
 ///////////////////// RESULTS //////////////////////
 print "<br><br><br><br>";
 // get the current time (for "last updated" field in DB)
 $now = date("Y-m-d H:i:s");		// set the $now in UTC (for "last update" column)
-
+	$logthis = "\n date: $now";
+	fwrite($fh, $logthis);
+	
 $notes = $_GET[notes];
 print "Notes is $notes <br>";
+	$logthis = "\n notes: $notes";
+	fwrite($fh, $logthis);
+	
 
 ///////////////////// FIX THE DATE //////////////////////
 print "date is is $_GET[date]";
@@ -34,6 +53,11 @@ print "tripdate is $tripdate";
 $tripnumber = $_POST[tripnumber];
 $url = 'viewtrip.php?tripnumber=$tripnumber';
 print "the trip page for this trip is $url";
+	$logthis = "\n tripnumber: $tripnumber";
+	fwrite($fh, $logthis);
+
+	$logthis = "\n url: $url";
+	fwrite($fh, $logthis);
 
 $lat = $_GET['lat'];
 $lon = $_GET['lon'];
@@ -41,8 +65,14 @@ $latlon = $lat . "," . $lon;
 print "lat is $lat<br>";
 print "lon is $lon<br>";
 print "latlon is $latlon<br>";
+	$logthis = "\n latlon is: $latlon";
+	fwrite($fh, $logthis);
+	
 $tripnumber = $_GET[tripnumber];
 print "the tripnumber is $tripnumber<br>";
+	$logthis = "\n tripnumber is: $tripnumber";
+	fwrite($fh, $logthis);
+	
 $timeofday = $_GET[timeofday];
 $waterbody = $_GET[waterbody];
 $watertype = $_GET[watertype];
@@ -53,6 +83,8 @@ $ninja = $_GET[ninja];
 $privacy = $_GET[privacy];
 	print "<h1>private = $privacy </h1>";
 	print "<b> 0 = public, 1 = users, 2 = friends, 3 = private <br></b>";
+	$logthis = "\n privacy: $privacy";
+	fwrite($fh, $logthis);
 
 	// get info about the fish caught
 $getarray = $_GET['fishbox'];
@@ -74,7 +106,7 @@ include 'php/findgauge.php';
 
 //////////////////// GET THE STREAMFLOW FOR THAT GAUGE, PLACE, RIVER, and DATE
 print "<hr>";
-include 'php/getphp/streamflow.php';
+include 'php/getstreamflow.php';
 
 //////////////////// GET THE WEATHER /////////////////////////////////////////
 print "<hr>";
@@ -87,6 +119,8 @@ $waterbody = mysql_real_escape_string($_GET[waterbody]);
 $lures = mysql_real_escape_string($_GET[lures]);
 
 print "the notes are $notes<br>";
+	$logthis = "\n fixed notes: $notes";
+	fwrite($fh, $logthis);
 
 //////////////////// FIGURE OUT WHAT FISH WERE CAUGHT etc ///////////////////
 include 'php/submitfish.php';
@@ -102,7 +136,7 @@ print "<hr>";
 include 'php/newwatertest.php';
 	
 //////////////////// ADD UP THE POINTS /////////////////////////////////////////
-	//include 'php/points.php';
+	include 'php/points.php';
 	
 //////////////////// SEND EVERYTHING TO THE DB /////////////////////////////////////////
 print "<br>SENDING STUFF TO THE DB<br>";
@@ -192,11 +226,15 @@ VALUES ('$privacy',
 	
 // show us the query
 print "<br> -------- THE SQL QUERY --------- <br><pre> $sql </pre>";
+	$logthis = "\n sql query: $sql";
+	fwrite($fh, $logthis);
 
 // Tell us the results
 if (!mysql_query($sql,$con))
   {
   die('Error: ' . mysql_error());							// error message
+  	$logthis = "\n ***SQL ERROR: " . mysql_error();
+	fwrite($fh, $logthis);
 	}
 
 mysql_close($con);
@@ -205,6 +243,8 @@ mysql_close($con);
 //////////////// NEW WATERBODY? ////////////////////
 if ( $isnewwaterbody == 1)
 {
+	$logthis = "\n new waterbody: YES";
+	fwrite($fh, $logthis);
 	?>
 	<box>
 		<h2>New waterbody</h2>
@@ -215,3 +255,8 @@ if ( $isnewwaterbody == 1)
 	<?
 }
 
+// close the log file
+	$logthis = "\n end of submit.php, closing the logfile now";
+	fwrite($fh, $logthis);
+	fclose($fh);
+?>

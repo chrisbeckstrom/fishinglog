@@ -18,10 +18,20 @@ $date = str_replace('-', '', $date);
 
 
 print "<b> ----- getweather_new.php ---------</b><br>";
+
+		$logthis = "\n -- starting getweather_new.php --";
+		fwrite($fh, $logthis);
+		
 print "looking for weather<br>
 	date: $date<br>
 	zip: $zip<br>
 	time of day: $timeofday";
+	
+		$logthis = "\n looking for weather \n
+					date: $date \n
+					zip: $zip \n
+					time of day: $timeofday";
+		fwrite($fh, $logthis);
 
 
 // get 
@@ -55,6 +65,8 @@ default:
 
 $weatherurl = "http://api.wunderground.com/api/$wunderground_key/history_$date/q/$zip.json";
 print "<br>The URL we're using now is <br><pre>$weatherurl</pre><BR>";
+		$logthis = "\n weather URL: $weatherurl";
+		fwrite($fh, $logthis);
 
 // load the json file from wunderground
 $weather = file_get_contents($weatherurl);
@@ -84,6 +96,17 @@ print "the temp was $temp degrees F<br>
 	conditions were $conds<br>
 	metar was $metar
 	";
+	
+		$logthis = "\n here's what we found: \n
+			temp: $temp degrees F \n
+			humidity: $hum \n
+			wind speed $wspdi \n
+			wind gusts $wgusti \n
+			wind direction: $wdir \n
+			pressure: $pressure \n
+			metar: $metar";
+		fwrite($fh, $logthis);
 
-
+		$logthis = "\n -- end of getweather_new.php --";
+		fwrite($fh, $logthis);
 ?>
