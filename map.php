@@ -23,20 +23,19 @@ include 'php/disguise.php';
 
 print "<link rel='stylesheet' href='css/style.css' type='text/css' />";
 
-print $header;
+//print $header;
 
-if ($tripnumber == "" )	// tell us if there's no ID loaded
-	{
-	print "<debug='debug'>the \$tripnumber variable is null!</debug><br>";
-	}
+// if ($tripnumber == "" )	// tell us if there's no ID loaded
+// 	{
+// 	print "<debug='debug'>the \$tripnumber variable is null!</debug><br>";
+// 	}
 	
-	
+$mapquery = ("SELECT * FROM trips");
+print "mapquery is : $mapquery<br>";
 
-$result = mysql_query("
-SELECT *
-FROM trips
-WHERE tripnumber = 437
-		");
+$result = mysql_query($mapquery);
+		$num_rows = mysql_num_rows($result);
+		print "results : $num_rows<br>";
 
 	
 	// take the data and put it into an array

@@ -143,7 +143,7 @@ if(isset($_GET['q']))
 	}
 
 	$query = "
-	SELECT * FROM trips $search ORDER BY tripnumber DESC
+	SELECT * FROM trips $search ORDER BY date DESC
 	LIMIT $limit";	
 
 
@@ -214,3 +214,10 @@ print "</div>";
 
 // FOOTER
 print "<footer>here's the footer</footer>";
+
+?>
+<head>
+	<title>
+	<?php print "Trips | $sitename"; ?>
+</title>
+<?

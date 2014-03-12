@@ -18,6 +18,7 @@ print $header;
 print "<br><br><br><h1>THIS PAGE IS TEMPORARY AND JUST FOR DEBUGGING- IT WILL BE HIDDEN IN FUTURE UPDATES</h1>";
 
 
+
 // OPEN UP A LOG FILE TO WRITE STUFF
 $logfile = "submit_trip.log";
 $fh = fopen($logfile, 'a') or die("can't open file");
@@ -28,9 +29,26 @@ $fh = fopen($logfile, 'a') or die("can't open file");
 	
 	$logthis = "\n user: " . $_SESSION[myusername];
 	fwrite($fh, $logthis);
+	
+print "<br><br><br><br>";
+
+// is this an update to a trip (edit) or a new trip?
+if ($_GET['edit'] == 1)
+	{
+	print "THIS IS AN UPDATE TO A TRIP! <br>";
+		$logthis = "\n THIS IS AN UPDATE TO A TRIP (edit)";
+		fwrite($fh, $logthis);
+	}
+	else
+	{
+	print "THIS is NOT an update to a trip <br>";
+		$logthis = "\n THIS IS **NOT** AN UPDATE TO A TRIP (new trip)";
+		fwrite($fh, $logthis);
+	}
+	
 
 ///////////////////// RESULTS //////////////////////
-print "<br><br><br><br>";
+
 // get the current time (for "last updated" field in DB)
 $now = date("Y-m-d H:i:s");		// set the $now in UTC (for "last update" column)
 	$logthis = "\n date: $now";
@@ -140,104 +158,166 @@ include 'php/newwatertest.php';
 	
 //////////////////// SEND EVERYTHING TO THE DB /////////////////////////////////////////
 print "<br>SENDING STUFF TO THE DB<br>";
-$sql="INSERT INTO trips (
-	private,
-	lat,
-	lon,
-	latlon,
-	lastupdate,
-	date, 
-	skunked, 
-	time, 
-	timeofday,
-	adventure,
-	scenery,
-	ninja,
-	waterbody,
-	watertype,
-	watercolor,
-	sitecode,
-	gaugeheight,
-	discharge,
-	temp,
-	hum,
-	wspdi,
-	wgusti,
-	wdir,
-	pressure,
-	conds,
-	metar,
-	gear,
-	method,
-	watertemp,
-	notes,
-	lures,
-	lureimage,
-	username,
-	tripnumber,
-	city,
-	state,
-	zip,
-	newwater,
-	points,
-	fishcaught
-	)
-VALUES ('$privacy',
-	'$lat',
-	'$lon',
-	'$latlon',
-	'$now',
-	'$tripdate',
-	'$_GET[skunked]',
-	'$_GET[time]',
-	'$timeofday',
-	'$adventure',
-	'$scenic',
-	'$ninja',
-	'$waterbody',
-	'$_GET[watertype]',
-	'$_GET[watercolor]',
-	'$sitecode',
-	'$gaugeheight',
-	'$discharge',
-	'$temp',
-	'$hum',
-	'$wspdi',
-	'$wgusti',
-	'$wdir',
-	'$pressure',
-	'$conds',
-	'$metar',
-	'$_GET[gear]',
-	'$_GET[method]',
-	'$_GET[watertemp]',
-	'$notes',
-	'$lures',
-	'$_GET[lureimage]',
-	'$_SESSION[myusername]',
-	'$tripnumber',
-	'$city',
-	'$state',
-	'$zip',
-	'$newwater',
-	'$points',
-	'$fishcaught'
-	)";
-	
-// show us the query
-print "<br> -------- THE SQL QUERY --------- <br><pre> $sql </pre>";
-	$logthis = "\n sql query: $sql";
-	fwrite($fh, $logthis);
-
-// Tell us the results
-if (!mysql_query($sql,$con))
-  {
-  die('Error: ' . mysql_error());							// error message
-  	$logthis = "\n ***SQL ERROR: " . mysql_error();
-	fwrite($fh, $logthis);
+if ( $_GET['edit'] == 1 )
+	{
+	// if this is just an update, update instead of add new row
+	// UPDATE table SET item = value, item2 = value, item3 = value WHERE something = somethingelse
+	$sql="UPDATE trips SET
+		private = '$privacy', 
+		lat = '$lat', 
+		lon = '$lon', 
+		latlon = '$latlon', 
+		lastupdate = '$now', 
+		date = '$tripdate', 
+		skunked = '$_GET[skunked]', 
+		time = '$_GET[time]', 
+		timeofday = '$timeofday', 
+		adventure = '$adventure', 
+		scenery = '$scenery', 
+		ninja = '$ninja', 
+		waterbody = '$waterbody', 
+		watertype = '$_GET[watertype]', 
+		watercolor = '$_GET[watercolor]', 
+		sitecode = '$sitecode', 
+		gaugeheight = '$gaugeheight', 
+		discharge = '$discharge', 
+		temp = '$temp', 
+		hum = '$hum', 
+		wspdi = '$wspdi', 
+		wgusti = '$wgusti', 
+		wdir = '$wdir', 
+		pressure = '$pressure', 
+		conds = '$conds', 
+		metar = '$metar', 
+		gear = '$_GET[gear]', 
+		method = '$_GET[method]', 
+		watertemp = '$_GET[watertemp]', 
+		notes = '$notes', 
+		lures = '$lures', 
+		lureimage = '$_GET[lureimage]', 
+		username = '$_SESSION[myusername]', 
+		tripnumber = '$tripnumber', 
+		city = '$city', 
+		state = '$state', 
+		zip = '$zip', 
+		newwater = '$newwater', 
+		points = '$points', 
+		fishcaught = '$fishcaught'
+		WHERE tripid = '$tripnumber'
+		AND username = '$_SESSION[myusername]'
+		";
 	}
-
-mysql_close($con);
+	else
+	{
+	// if this is just a NEW trip (not an update)
+	
+	$sql="INSERT INTO trips (
+		private,
+		lat,
+		lon,
+		latlon,
+		lastupdate,
+		date, 
+		skunked, 
+		time, 
+		timeofday,
+		adventure,
+		scenery,
+		ninja,
+		waterbody,
+		watertype,
+		watercolor,
+		sitecode,
+		gaugeheight,
+		discharge,
+		temp,
+		hum,
+		wspdi,
+		wgusti,
+		wdir,
+		pressure,
+		conds,
+		metar,
+		gear,
+		method,
+		watertemp,
+		notes,
+		lures,
+		lureimage,
+		username,
+		tripnumber,
+		city,
+		state,
+		zip,
+		newwater,
+		points,
+		fishcaught
+		)
+	VALUES ('$privacy',
+		'$lat',
+		'$lon',
+		'$latlon',
+		'$now',
+		'$tripdate',
+		'$_GET[skunked]',
+		'$_GET[time]',
+		'$timeofday',
+		'$adventure',
+		'$scenic',
+		'$ninja',
+		'$waterbody',
+		'$_GET[watertype]',
+		'$_GET[watercolor]',
+		'$sitecode',
+		'$gaugeheight',
+		'$discharge',
+		'$temp',
+		'$hum',
+		'$wspdi',
+		'$wgusti',
+		'$wdir',
+		'$pressure',
+		'$conds',
+		'$metar',
+		'$_GET[gear]',
+		'$_GET[method]',
+		'$_GET[watertemp]',
+		'$notes',
+		'$lures',
+		'$_GET[lureimage]',
+		'$_SESSION[myusername]',
+		'$tripnumber',
+		'$city',
+		'$state',
+		'$zip',
+		'$newwater',
+		'$points',
+		'$fishcaught'
+		)";
+}		
+		
+	// show us the query
+	print "<br> -------- THE SQL QUERY --------- <br><pre> $sql </pre>";
+		$logthis = "\n sql query: $sql";
+		fwrite($fh, $logthis);
+	
+	// Tell us the results
+	if (!mysql_query($sql,$con))
+	  {
+	  die('Error: ' . mysql_error());							// error message
+		$logthis = "\n ***SQL ERROR: " . mysql_error();
+		fwrite($fh, $logthis);
+		}
+	
+	mysql_close($con);
+	
+////////////////// SHARE ON SOCIAL MEDIA? ////////////////////
+	// FACEBOOK
+		if ($_GET['posttofb'] == 'posttofb' )
+			{
+			// we're going to share this on facebook!
+			include 'post_to_fb.php';
+			}
 
 
 //////////////// NEW WATERBODY? ////////////////////

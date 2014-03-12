@@ -38,7 +38,6 @@ include 'header.php';
 include 'config/connect.php';
 include 'php/disguise.php';
 
-
 print $header;
 
 if ($tripnumber == "" )	// tell us if there's no ID loaded
@@ -147,7 +146,7 @@ include 'php/privacy.php';
     <meta http-equiv="content-type" content="text/html;
     charset=utf-8"/>
     
-    <title>Google Maps JavaScript API Example</title>
+    <!-- <title>Google Maps JavaScript API Example</title> -->
     <script src="http://maps.google.com/maps?file=api&amp;v=3&amp;key=AIzaSyCKgYN-19kduAW-dvjZADLJ48VEOV2PxP4"
       type="text/javascript"></script>
       
@@ -253,3 +252,10 @@ include 'php/privacy.php';
 print "</div>
 <footer>here's the footer</footer>";
 ?>
+
+
+<head>
+	<title>
+	<?php print "$tripusername @ $waterbody | $sitename"; ?>
+</title>
+

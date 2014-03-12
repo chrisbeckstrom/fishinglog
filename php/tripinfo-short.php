@@ -264,11 +264,7 @@ print "<small><br>$watertype in $city, $state<br></small></h3>
 
 
 // SMALL INFO AT THE BOTTOM
-if ( $hidethings = 1 )
-	{
-		print "";
-	}
-else
+if ( $hidethings == '1' )
 	{
 print "<br><span class='smallinfo'>
 		user: <a href='user.php?username=$username'>$username</a> 
@@ -279,6 +275,12 @@ print "<br><span class='smallinfo'>
 		/ <a href='php/deletetrip.php?tripid=$tripid'>delete</a>
 	   </span>";
 	}
+else
+	{
+print "";
+	}
+	
+
 	   
 $privacy = $private;
 
@@ -300,5 +302,12 @@ if ($privacy == '3')
 	print "privacy: private";
 	}
 print "</small>";
+
+// trip stuff
+if ($_SESSION['myusername'] == $username)
+	{
+print "<br><small><a href='form.php?edit=1&tripnumber=$tripnumber'>edit trip</a> - 
+	<a href='php/deletetrip.php?tripid=$tripid'>delete</a></small>";
+	}
 
 // print "</box>";

@@ -8,9 +8,9 @@ include 'config/connect.php';
 <!-- <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'> -->
 <?
-print "<head>
-<title>$sitename</title>
-</head>";
+// print "<head>
+// <title>$sitename</title>
+// </head>";
 
 $username = $_SESSION['myusername'];
 
@@ -62,8 +62,8 @@ if(isset($_SESSION['myusername']))
 $header =
 	"<header-wrap>
 		<p class='alignleft' style='a:link:#fff'>
-			<a href='index.php' class='headerlink'>CB's Fishing Log</a> | 
-			<a href='map.php' class='headerlink'>map</a> | 
+			<a href='index.php' class='headerlink'>$sitename</a> | 
+			<a href='map600.php' class='headerlink'>map</a> | 
 			<a href='form.php' class='headerlink'>log a trip</a> | 
 			<a href='trips.php' class='headerlink'>trips</a> | 
 			<a href='waterbodies.php' class='headerlink'>waters</a> |

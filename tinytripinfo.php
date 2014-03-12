@@ -10,13 +10,13 @@
 	
 	// HIDE THE WATERBODY?
 	$watertype = $row['watertype'];
-	$waterbody = $row['waterbody'];
+	$tripwaterbody = $row['waterbody'];
 	if ( $hidethings == 1 )
 		{
-		$waterbody = disguise($waterbody);
+		$tripwaterbody = disguise($tripwaterbody);
 		}
 		else {
-			$waterbody = $waterbody;
+			$tripwaterbody = $tripwaterbody;
 		}
 	
 	$newwater = $row['newwater'];
@@ -41,7 +41,7 @@
 	<small>
 	<? print $date ?> / <a onmouseover="nhpup.popup('<? print $notesbetter ?>');"
 	href='viewtrip.php?tripnumber=<? print $tripnumber ?>'>
-		<b><nobr><? print $waterbody ?></b></a>, 
+		<b><nobr><? print $tripwaterbody ?></b></a>, 
 		<? print $state ?> </nobr><br></small>
 		
 
