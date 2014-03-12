@@ -28,6 +28,7 @@ print "$header";
 $waterbodyname = $_GET['name'];
 $edit = $_GET['edit'];
 
+
 // if there is a map URL in the GET...
 if (isset($_GET['map']))
 	{
@@ -70,10 +71,15 @@ $waterbodyrow = mysql_fetch_array($waterbodyresult);
 	$creator = $waterbodyrow['creator'];
 	$id = $waterbodyrow['id'];
 	$waterbodyid = $id;
+	$waterbody = $waterbodyrow['name'];
 	
 	print "watertype is $waterbodyrow[watertype]<br>";
 
 ?>
+
+<head>
+<title><?php print "$waterbodyname | $sitename"; ?> </title>
+</head>
 
 <div id='main'>
 		   <nav>nav</nav>
@@ -91,29 +97,37 @@ $waterbodyrow = mysql_fetch_array($waterbodyresult);
 	AND watertype = '$watertype'
 	AND state = '$state'";
 	
-	$whofishedresults = mysql_query($whofishedherequery);
-	
 	//print "looking for <pre>$whofishedherequery</pre>";
+	
+	$whofishedresults = mysql_query($whofishedherequery);
+
+	$number_of_results = mysql_num_rows($whofishedresults);
+	
+	//print "results: $number_of_results<br> people have fished here <br><br>";
+
+
+	print_r($whofishedthere);
+	
+			while($whofishedthere = mysql_fetch_array($whofishedresults))
+			{
+			$username = $whofishedthere['username'];
+			//print "<a href='user.php?username=$username'>$username</a>" . " ";
 			
-	//$whofishedthere = mysql_fetch_array($whofishedresults);
-	while($whofishedthere = mysql_fetch_array($whofishedresults))
-	{
-	$username = $whofishedthere['username'];
-	//print "<a href='user.php?username=$username'>$username</a>" . " ";
-	
-		// get info about each friend VALUE=username
-		$friendquery = "SELECT * FROM users WHERE username = '" . $username . "'";
-		//print "$friendquery is: <pre>$friendquery</pre>";
-		$friendresults = mysql_query($friendquery);
-		while($friendrow = mysql_fetch_array($friendresults))
-		{
-			$avatarurl = $friendrow[useravatarurl];
-			print "<a href='user.php?username=$friendrow[username]'><img title='$username' class='circular' height='40px' src='$avatarurl'></class></a>";
-			//print "<a href='user.php?username=$friendrow[username]'>$friendrow[username]</a>";
-   	 	}
-	
-		}
-		?>
+				// get info about each friend VALUE=username
+				$friendquery = "SELECT * FROM users WHERE username = '" . $username . "'";
+				//print "$friendquery is: <pre>$friendquery</pre>";
+				$friendresults = mysql_query($friendquery);
+				
+				while($friendrow = mysql_fetch_array($friendresults))
+				{
+					$avatarurl = $friendrow[useravatarurl];
+					print "<a href='user.php?username=$friendrow[username]'><img title='$username' class='circular' height='40px' src='$avatarurl'></class></a>";
+					//print "<a href='user.php?username=$friendrow[username]'>$friendrow[username]</a>";
+				}
+			
+				}
+		
+				?>
 	</box>
 	
 	<?php include 'sidebar.php'; ?>
@@ -137,6 +151,8 @@ if (!isset($_GET['name']))
 else
 	{
 	print "<h1>$waterbodyname</h1>";
+	?>
+	<?
 	}
 
 ?>
@@ -145,69 +161,10 @@ else
 <!-- THE SUBHEADING - waterbody basic info -->
 
 	<? 
-	print "<small>$watertype in $city, $state</small><br>
-	<pre>privacy is $privacy</pre>";
+	print "<small>$watertype in $city, $state</small><br>";
 	?>	
 </box>
-<?
 
-/////////// SPECIES OF FISH HERE //////////
-print "<box>";
-print "<h3>Species</h3>";
-	print $species;
-	
-	// IT WOULD BE COOL to search past trips and see what
-	// fish were ACTUALLY caught there (i.e. "confirmed" species?)
-	
-	// get information about trips
-	// that happened there
-	$fishcaughtquery = 
-	"SELECT * 
-	FROM trips 
-	WHERE waterbody like '%$waterbodyname%'
-	AND watertype = '$watertype'
-	AND state = '$state'";
-	
-	$fishcaughtthereresults = mysql_query($fishcaughtquery);
-	
-	print "<br>looking for <pre>$fishcaughtquery</pre>";
-			
-	$fishcaughtthere = mysql_fetch_array($fishcaughtthereresults);
-	while($fishcaughtthere = mysql_fetch_array($fishcaughtthereresults))
-	{
-	// $tripdate = $fishcaughtthere['date'];
-	
-		}
-print "</box>";
-		
-/////////// WATERBODY NOTES ////////////////
-	print "<box>";
-	print "<h3>Notes</h3>";
-
-if(isset($_SESSION['myusername']) && $edit ==1 )
-	// if editing is turned on...
-	{
-	// put the notes in an input box
-	?> <script type="text/javascript" src="tinymce/js/tinymce/tinymce.min.js"></script>
-	<script type="text/javascript">
-	tinymce.init({selector: "textarea"});
-	</script>
-	
-	<form action="php/editwaterbodynotes.php" method="get" target="_blank">
-	<textarea style="width: 55%; height: 100px" name="notes" value="notes"><?php echo $notes ?></textarea>
-	editing waterbody ID: <input type="text" class='input' name="waterbodyid" value="<? echo $id ?>" readonly>
-	<input type="submit" value="save" name="submit">
-	</form>
-	
-	<?php
-	}
-	else
-	{
-	print "<p id='notes'>$notes</p>";
-	print "<a href='waternew.php?name=$waterbodyname&edit=1'><i>edit</i></a>";
-	}
-?>
-	</box>
 
 <!-- MAP -->
 	<!-- GOOGLE MAPS API map -->
@@ -220,7 +177,7 @@ if(isset($_SESSION['myusername']) && $edit ==1 )
       html, body, #map-canvas {
         margin: 0;
         padding: 0;
-        height: 100%;
+        height: 300px;
       }
     </style>
 
@@ -331,8 +288,66 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 </box>
 
+
+
+
+<?
+////////////////////////////////////////////////////////////////////////
+/////////// SPECIES OF FISH HERE //////////
+print "<box>";
+print "<h3>Resident species</h3>";
+	// IT WOULD BE COOL to search past trips and see what
+	// fish were ACTUALLY caught there (i.e. "confirmed" species?)
+	
+	// this query goes and gets each distinct fishID of fish caught on trips at this water
+	
+	$fishcaughtquery = 
+	"SELECT DISTINCT(fishcaught.fishID) 
+	FROM fishcaught JOIN trips 
+	ON trips.tripnumber=fishcaught.tripnumber 
+	WHERE trips.waterbody = '$waterbody' AND trips.state = '$state'";
+
+	$fishcaughtthereresults = mysql_query($fishcaughtquery);
+	
+	//print "<br>looking for <pre>$fishcaughtquery</pre>";
+			
+	//$fishcaughtthere = mysql_fetch_array($fishcaughtthereresults);
+	
+	$number_fish_caught = mysql_num_rows($fishcaughtresults);
+	
+	while($fishcaughtthere = mysql_fetch_array($fishcaughtthereresults))
+	{
+		//print "row: $fishcaughtthere[fishID] <br>";
+		// get that fishID and convert it into a nice name
+		$fishnamequery = "SELECT fishbase_name FROM fish WHERE fishID = '$fishcaughtthere[fishID]'";
+		//print "fishnamequery is : $fishnamequery <br>";
+		$fishnameresults = mysql_query($fishnamequery);
+		while($fishname = mysql_fetch_array($fishnameresults))
+			{
+			// PRINT THE NAME OF THE FISH
+			print "$fishname[fishbase_name]<br>";
+			}
+	
+		}
+print "</box>";
+		
+/////////// WATERBODY NOTES ////////////////
+// 	print "<box>";
+// 	print "<h3>Notes</h3>";
+print "<box>";
+print "<h3>Notes</h3>";
+include 'disqus.php';
+print "</box>";
+
+
+
+?>
+	</box>
+
+
 </box>
 </article>
+
 
 
 

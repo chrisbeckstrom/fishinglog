@@ -185,8 +185,15 @@ print "<br>
 
 	<br><a href='viewtrip.php?tripnumber=$tripnumber'>#$tripnumber</a>
 	 privacy: $private
-	</small>
-</otherbox>
+	</small>";
+	
+			// if the current user is the same as the tripuser... give the option to edit the trip
+		$myusername = $_SESSION['myusername'];
+		if ($username == $myusername )
+			{
+			print "<br><a href='form.php?edit=1&tripnumber=$tripnumber'><small>edit trip</small></a>";
+			}
+print "</otherbox>
 	
 	<br>";
 	
@@ -217,7 +224,7 @@ print "<otherbox>";
 			while($catchresultsarray = mysql_fetch_array($catchresults))
 				{
 				$fishID = $catchresultsarray['fishID'];
-				//print "fishID = $fishID<br>";
+				print "fishID = $fishID<br>";
 				}	
 	///// end of figuring out how many fish were caught
 	
@@ -288,6 +295,9 @@ print "<otherbox>";
 	print "</otherbox>";
 	
 // 	print "</div>"; // end of textbox div
+
+
+			
 	print "</box>
 
 	<box>

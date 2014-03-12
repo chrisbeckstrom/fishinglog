@@ -2939,3 +2939,5947 @@ LIKE '%Elgin%'
 		'0'
 		)
  end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 10:00:14
+ notes: <p>this is just a test trip that was updated</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 42.64710711113253,-85.27135299731447
+ tripnumber is: 456
+ privacy: 3
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=42.64710711113253&lng=-85.27135299731447&username=chrisbeckstrom&maxRows=1
+ zipcode: 49058
+ city: Hastings
+ state: MI
+ county: Barry
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Thornapple River%' AND state like 'MI'
+ newwaterbodyresult_count: 1
+ the waterbody Thornapple River is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Thornapple River near Hastings
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Thornapple River%'
+AND station_nm
+LIKE '%Hastings%'
+ result count: 1
+ old site number is: 
+ site number: 04117500 station name: THORNAPPLE RIVER NEAR HASTINGS, MI
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2014-03-11 as date, and 04117500 as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=04117500&startDT=2014-03-11&endDT=2014-03-11&parameterCd=00060,00065
+ what we found: 
+ discharge: 266 cfs, gaugeheight: 3.53 ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20140311 
+
+					zip: 49058 
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20140311/q/49058.json
+ here's what we found: 
+
+			temp: 39.0 degrees F 
+
+			humidity: 79 
+
+			wind speed 5.8 
+
+			wind gusts 0 
+
+			wind direction: WSW 
+
+			pressure: 29.65 
+
+			metar: METAR KGRR 110553Z AUTO 24005KT 8SM CLR 04/01 A2964 RMK AO2 SLP040 T00390006 10067 20039 51006
+ -- end of getweather_new.php --
+ fixed notes: <p>this is just a test trip that was updated</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '3', 
+		lat = '42.64710711113253', 
+		lon = '-85.27135299731447', 
+		latlon = '42.64710711113253,-85.27135299731447', 
+		lastupdate = '2014-03-12 10:00:14', 
+		date = '2014-03-11', 
+		skunked = '', 
+		time = '1', 
+		timeofday = 'morning', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Thornapple River', 
+		watertype = 'river', 
+		watercolor = 'muddy', 
+		sitecode = '04117500', 
+		gaugeheight = '3.53', 
+		discharge = '266', 
+		temp = '39.0', 
+		hum = '79', 
+		wspdi = '5.8', 
+		wgusti = '0', 
+		wdir = 'WSW', 
+		pressure = '29.65', 
+		conds = 'Clear', 
+		metar = 'METAR KGRR 110553Z AUTO 24005KT 8SM CLR 04/01 A2964 RMK AO2 SLP040 T00390006 10067 20039 51006', 
+		gear = 'baitcasting', 
+		method = 'shore', 
+		watertemp = '', 
+		notes = '<p>this is just a test trip that was updated</p>', 
+		lures = '', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '456', 
+		city = 'Hastings', 
+		state = 'MI', 
+		zip = '49058', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '0'
+		WHERE tripid = '456'
+		AND username = 'cbfishes'
+		
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 10:00:41
+ notes: <p>this is just a test trip that was updated</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 42.64710711113253,-85.27135299731447
+ tripnumber is: 456
+ privacy: 1
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=42.64710711113253&lng=-85.27135299731447&username=chrisbeckstrom&maxRows=1
+ zipcode: 49058
+ city: Hastings
+ state: MI
+ county: Barry
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Thornapple River%' AND state like 'MI'
+ newwaterbodyresult_count: 1
+ the waterbody Thornapple River is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Thornapple River near Hastings
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Thornapple River%'
+AND station_nm
+LIKE '%Hastings%'
+ result count: 1
+ old site number is: 
+ site number: 04117500 station name: THORNAPPLE RIVER NEAR HASTINGS, MI
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2014-03-11 as date, and 04117500 as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=04117500&startDT=2014-03-11&endDT=2014-03-11&parameterCd=00060,00065
+ what we found: 
+ discharge: 266 cfs, gaugeheight: 3.53 ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20140311 
+
+					zip: 49058 
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20140311/q/49058.json
+ here's what we found: 
+
+			temp: 39.0 degrees F 
+
+			humidity: 79 
+
+			wind speed 5.8 
+
+			wind gusts 0 
+
+			wind direction: WSW 
+
+			pressure: 29.65 
+
+			metar: METAR KGRR 110553Z AUTO 24005KT 8SM CLR 04/01 A2964 RMK AO2 SLP040 T00390006 10067 20039 51006
+ -- end of getweather_new.php --
+ fixed notes: <p>this is just a test trip that was updated</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '1', 
+		lat = '42.64710711113253', 
+		lon = '-85.27135299731447', 
+		latlon = '42.64710711113253,-85.27135299731447', 
+		lastupdate = '2014-03-12 10:00:41', 
+		date = '2014-03-11', 
+		skunked = '', 
+		time = '1', 
+		timeofday = 'morning', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Thornapple River', 
+		watertype = 'river', 
+		watercolor = 'muddy', 
+		sitecode = '04117500', 
+		gaugeheight = '3.53', 
+		discharge = '266', 
+		temp = '39.0', 
+		hum = '79', 
+		wspdi = '5.8', 
+		wgusti = '0', 
+		wdir = 'WSW', 
+		pressure = '29.65', 
+		conds = 'Clear', 
+		metar = 'METAR KGRR 110553Z AUTO 24005KT 8SM CLR 04/01 A2964 RMK AO2 SLP040 T00390006 10067 20039 51006', 
+		gear = 'baitcasting', 
+		method = 'shore', 
+		watertemp = '', 
+		notes = '<p>this is just a test trip that was updated</p>', 
+		lures = '', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '456', 
+		city = 'Hastings', 
+		state = 'MI', 
+		zip = '49058', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '0'
+		WHERE tripid = '456'
+		AND username = 'cbfishes'
+		
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: juliana
+ THIS IS **NOT** AN UPDATE TO A TRIP (new trip)
+ date: 2014-03-12 10:29:35
+ notes: <p>This is a test trip</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 42.898992692222954,-85.48719406127935
+ tripnumber is: 457
+ privacy: 2
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=42.898992692222954&lng=-85.48719406127935&username=chrisbeckstrom&maxRows=1
+ zipcode: 49546
+ city: Grand Rapids
+ state: MI
+ county: Kent
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Thornapple River%' AND state like 'MI'
+ newwaterbodyresult_count: 1
+ the waterbody Thornapple River is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Thornapple River near Grand Rapids
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Thornapple River%'
+AND station_nm
+LIKE '%Grand Rapids%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Thornapple River%'
+ the newqueryresult count is: 2
+ old site number is: 
+ site number: 04117500 station name: THORNAPPLE RIVER NEAR HASTINGS, MI
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2014-03-08 as date, and 04117500 as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=04117500&startDT=2014-03-08&endDT=2014-03-08&parameterCd=00060,00065
+ what we found: 
+ discharge: 234 cfs, gaugeheight: 3.44 ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20140308 
+
+					zip: 49546 
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20140308/q/49546.json
+ here's what we found: 
+
+			temp: 37.0 degrees F 
+
+			humidity: 70 
+
+			wind speed 9.2 
+
+			wind gusts 0 
+
+			wind direction: NW 
+
+			pressure: 29.94 
+
+			metar: METAR KGRR 080553Z AUTO 32008KT 5SM -RA BKN050 OVC095 03/M02 A2992 RMK AO2 RAB0457E06B27 SLP138 P0000 60000 T00281022 10061 20028 50006
+ -- end of getweather_new.php --
+ fixed notes: <p>This is a test trip</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 2 
+
+				scenic points: 1 
+
+				ninja points: 1
+ total points: 9
+ -- end of points.php --
+ sql query: INSERT INTO trips (
+		private,
+		lat,
+		lon,
+		latlon,
+		lastupdate,
+		date, 
+		skunked, 
+		time, 
+		timeofday,
+		adventure,
+		scenery,
+		ninja,
+		waterbody,
+		watertype,
+		watercolor,
+		sitecode,
+		gaugeheight,
+		discharge,
+		temp,
+		hum,
+		wspdi,
+		wgusti,
+		wdir,
+		pressure,
+		conds,
+		metar,
+		gear,
+		method,
+		watertemp,
+		notes,
+		lures,
+		lureimage,
+		username,
+		tripnumber,
+		city,
+		state,
+		zip,
+		newwater,
+		points,
+		fishcaught
+		)
+	VALUES ('2',
+		'42.898992692222954',
+		'-85.48719406127935',
+		'42.898992692222954,-85.48719406127935',
+		'2014-03-12 10:29:35',
+		'2014-03-08',
+		'',
+		'5',
+		'morning',
+		'2',
+		'1',
+		'1',
+		'Thornapple River',
+		'river',
+		'lightly stained',
+		'04117500',
+		'3.44',
+		'234',
+		'37.0',
+		'70',
+		'9.2',
+		'0',
+		'NW',
+		'29.94',
+		'Light Rain',
+		'METAR KGRR 080553Z AUTO 32008KT 5SM -RA BKN050 OVC095 03/M02 A2992 RMK AO2 RAB0457E06B27 SLP138 P0000 60000 T00281022 10061 20028 50006',
+		'fly',
+		'wading',
+		'',
+		'<p>This is a test trip</p>',
+		'#6 black wooly bugger',
+		'http://media.midcurrent.com.s3.amazonaws.com/wp-content/uploads/2011/03/woolly_1.jpg',
+		'juliana',
+		'457',
+		'Grand Rapids',
+		'MI',
+		'49546',
+		'',
+		'9',
+		'6'
+		)
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: juliana
+ THIS IS **NOT** AN UPDATE TO A TRIP (new trip)
+ date: 2014-03-12 10:34:41
+ notes: <p>test trip</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 43.14911258952788,-85.59817314147944
+ tripnumber is: 458
+ privacy: 2
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=43.14911258952788&lng=-85.59817314147944&username=chrisbeckstrom&maxRows=1
+ zipcode: 49341
+ city: Rockford
+ state: MI
+ county: Kent
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Cedar Creek%' AND state like 'MI'
+ newwaterbodyresult_count: 0
+ this is a new waterbody! adding it to the waterbodies table...
+ adding a new row to the waterbodies table: 
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Cedar Creek near Rockford
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Cedar Creek%'
+AND station_nm
+LIKE '%Rockford%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Cedar Creek%'
+ the newqueryresult count is: 2
+ old site number is: 
+ site number: 04179520 station name: CEDAR CREEK AT 18TH STREET AT AUBURN, IN
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2014-03-06 as date, and 04179520 as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=04179520&startDT=2014-03-06&endDT=2014-03-06&parameterCd=00060,00065
+ what we found: 
+ discharge: 150 cfs, gaugeheight: 2.97 ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20140306 
+
+					zip: 49341 
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20140306/q/49341.json
+ here's what we found: 
+
+			temp: 10.9 degrees F 
+
+			humidity: 81 
+
+			wind speed 11.5 
+
+			wind gusts 0 
+
+			wind direction: East 
+
+			pressure: 30.53 
+
+			metar: METAR KGRR 060653Z AUTO 09010KT 10SM CLR M12/M14 A3048 RMK AO2 SLP337 T11171144
+ -- end of getweather_new.php --
+ fixed notes: <p>test trip</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 2 
+
+				scenic points: 3 
+
+				ninja points: 0
+ total points: 10
+ -- end of points.php --
+ sql query: INSERT INTO trips (
+		private,
+		lat,
+		lon,
+		latlon,
+		lastupdate,
+		date, 
+		skunked, 
+		time, 
+		timeofday,
+		adventure,
+		scenery,
+		ninja,
+		waterbody,
+		watertype,
+		watercolor,
+		sitecode,
+		gaugeheight,
+		discharge,
+		temp,
+		hum,
+		wspdi,
+		wgusti,
+		wdir,
+		pressure,
+		conds,
+		metar,
+		gear,
+		method,
+		watertemp,
+		notes,
+		lures,
+		lureimage,
+		username,
+		tripnumber,
+		city,
+		state,
+		zip,
+		newwater,
+		points,
+		fishcaught
+		)
+	VALUES ('2',
+		'43.14911258952788',
+		'-85.59817314147944',
+		'43.14911258952788,-85.59817314147944',
+		'2014-03-12 10:34:41',
+		'2014-03-06',
+		'',
+		'3',
+		'morning',
+		'2',
+		'3',
+		'0',
+		'Cedar Creek',
+		'creek',
+		'clear',
+		'04179520',
+		'2.97',
+		'150',
+		'10.9',
+		'81',
+		'11.5',
+		'0',
+		'East',
+		'30.53',
+		'Clear',
+		'METAR KGRR 060653Z AUTO 09010KT 10SM CLR M12/M14 A3048 RMK AO2 SLP337 T11171144',
+		'fly',
+		'wading',
+		'',
+		'<p>test trip</p>',
+		'',
+		'',
+		'juliana',
+		'458',
+		'Rockford',
+		'MI',
+		'49341',
+		'',
+		'10',
+		'2'
+		)
+ new waterbody: YES
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: juliana
+ THIS IS **NOT** AN UPDATE TO A TRIP (new trip)
+ date: 2014-03-12 10:48:28
+ notes: <p>test trip</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 41.89573473914779,-88.3011531829834
+ tripnumber is: 459
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=41.89573473914779&lng=-88.3011531829834&username=chrisbeckstrom&maxRows=1
+ zipcode: 60134
+ city: Geneva
+ state: IL
+ county: Kane
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Fox River%' AND state like 'IL'
+ newwaterbodyresult_count: 1
+ the waterbody Fox River is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Fox River near Geneva
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Fox River%'
+AND station_nm
+LIKE '%Geneva%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Fox River%'
+ the newqueryresult count is: 14
+ old site number is: 
+ site number: 5548500 station name: FOX RIVER AT JOHNSBURG, IL
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2014-03-03 as date, and 5548500 as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=5548500&startDT=2014-03-03&endDT=2014-03-03&parameterCd=00060,00065
+ what we found: 
+ discharge:  cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20140303 
+
+					zip: 60134 
+
+					time of day: evening
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20140303/q/60134.json
+ here's what we found: 
+
+			temp: 6.1 degrees F 
+
+			humidity: 63 
+
+			wind speed 0.0 
+
+			wind gusts 0 
+
+			wind direction: North 
+
+			pressure: 30.45 
+
+			metar: METAR KDPA 040152Z 00000KT 10SM CLR M14/M20 A3039 RMK AO2 SLP310 T11441200
+ -- end of getweather_new.php --
+ fixed notes: <p>test trip</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: INSERT INTO trips (
+		private,
+		lat,
+		lon,
+		latlon,
+		lastupdate,
+		date, 
+		skunked, 
+		time, 
+		timeofday,
+		adventure,
+		scenery,
+		ninja,
+		waterbody,
+		watertype,
+		watercolor,
+		sitecode,
+		gaugeheight,
+		discharge,
+		temp,
+		hum,
+		wspdi,
+		wgusti,
+		wdir,
+		pressure,
+		conds,
+		metar,
+		gear,
+		method,
+		watertemp,
+		notes,
+		lures,
+		lureimage,
+		username,
+		tripnumber,
+		city,
+		state,
+		zip,
+		newwater,
+		points,
+		fishcaught
+		)
+	VALUES ('0',
+		'41.89573473914779',
+		'-88.3011531829834',
+		'41.89573473914779,-88.3011531829834',
+		'2014-03-12 10:48:28',
+		'2014-03-03',
+		'',
+		'1',
+		'evening',
+		'0',
+		'0',
+		'0',
+		'Fox River',
+		'river',
+		'clear',
+		'',
+		'',
+		'',
+		'6.1',
+		'63',
+		'0.0',
+		'0',
+		'North',
+		'30.45',
+		'Clear',
+		'METAR KDPA 040152Z 00000KT 10SM CLR M14/M20 A3039 RMK AO2 SLP310 T11441200',
+		'fly',
+		'boat',
+		'',
+		'<p>test trip</p>',
+		'',
+		'',
+		'juliana',
+		'459',
+		'Geneva',
+		'IL',
+		'60134',
+		'',
+		'5',
+		'2'
+		)
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: juliana
+ THIS IS **NOT** AN UPDATE TO A TRIP (new trip)
+ date: 2014-03-12 10:54:48
+ notes: <p>test trip</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 42.8010372155533,-85.57662963867193
+ tripnumber is: 460
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=42.8010372155533&lng=-85.57662963867193&username=chrisbeckstrom&maxRows=1
+ zipcode: 49316
+ city: Caledonia
+ state: MI
+ county: Kent
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Pretend Lake%' AND state like 'MI'
+ newwaterbodyresult_count: 0
+ this is a new waterbody! adding it to the waterbodies table...
+ adding a new row to the waterbodies table: 
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Pretend Lake near Caledonia
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Pretend Lake%'
+AND station_nm
+LIKE '%Caledonia%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Pretend Lake%'
+ the newqueryresult count is: 0
+ old site number is: 
+ site number:  station name: 
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2014-03-11 as date, and  as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=&startDT=2014-03-11&endDT=2014-03-11&parameterCd=00060,00065
+ what we found: 
+ discharge:  cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20140311 
+
+					zip: 49316 
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20140311/q/49316.json
+ here's what we found: 
+
+			temp: 39.0 degrees F 
+
+			humidity: 79 
+
+			wind speed 5.8 
+
+			wind gusts 0 
+
+			wind direction: WSW 
+
+			pressure: 29.65 
+
+			metar: METAR KGRR 110553Z AUTO 24005KT 8SM CLR 04/01 A2964 RMK AO2 SLP040 T00390006 10067 20039 51006
+ -- end of getweather_new.php --
+ fixed notes: <p>test trip</p>
+ -- starting points.php --
+ new water: 1 -> 5 points! whoohooo!
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 5 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 10
+ -- end of points.php --
+ sql query: INSERT INTO trips (
+		private,
+		lat,
+		lon,
+		latlon,
+		lastupdate,
+		date, 
+		skunked, 
+		time, 
+		timeofday,
+		adventure,
+		scenery,
+		ninja,
+		waterbody,
+		watertype,
+		watercolor,
+		sitecode,
+		gaugeheight,
+		discharge,
+		temp,
+		hum,
+		wspdi,
+		wgusti,
+		wdir,
+		pressure,
+		conds,
+		metar,
+		gear,
+		method,
+		watertemp,
+		notes,
+		lures,
+		lureimage,
+		username,
+		tripnumber,
+		city,
+		state,
+		zip,
+		newwater,
+		points,
+		fishcaught
+		)
+	VALUES ('0',
+		'42.8010372155533',
+		'-85.57662963867193',
+		'42.8010372155533,-85.57662963867193',
+		'2014-03-12 10:54:48',
+		'2014-03-11',
+		'',
+		'1',
+		'morning',
+		'0',
+		'0',
+		'0',
+		'Pretend Lake',
+		'lake',
+		'clear',
+		'',
+		'',
+		'',
+		'39.0',
+		'79',
+		'5.8',
+		'0',
+		'WSW',
+		'29.65',
+		'Clear',
+		'METAR KGRR 110553Z AUTO 24005KT 8SM CLR 04/01 A2964 RMK AO2 SLP040 T00390006 10067 20039 51006',
+		'fly',
+		'shore',
+		'',
+		'<p>test trip</p>',
+		'',
+		'',
+		'juliana',
+		'460',
+		'Caledonia',
+		'MI',
+		'49316',
+		'1',
+		'10',
+		'2'
+		)
+ new waterbody: YES
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: juliana
+ THIS IS **NOT** AN UPDATE TO A TRIP (new trip)
+ date: 2014-03-12 11:14:58
+ notes: <p>test trip</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 43.15258790283323,-85.59851646423346
+ tripnumber is: 461
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=43.15258790283323&lng=-85.59851646423346&username=chrisbeckstrom&maxRows=1
+ zipcode: 49341
+ city: Rockford
+ state: MI
+ county: Kent
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Cedar Creek%' AND state like 'MI'
+ newwaterbodyresult_count: 1
+ the waterbody Cedar Creek is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Cedar Creek near Rockford
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Cedar Creek%'
+AND station_nm
+LIKE '%Rockford%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Cedar Creek%'
+ the newqueryresult count is: 2
+ old site number is: 
+ site number: 04179520 station name: CEDAR CREEK AT 18TH STREET AT AUBURN, IN
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2014-03-02 as date, and 04179520 as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=04179520&startDT=2014-03-02&endDT=2014-03-02&parameterCd=00060,00065
+ what we found: 
+ discharge: 191 cfs, gaugeheight: 3.17 ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20140302 
+
+					zip: 49341 
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20140302/q/49341.json
+ here's what we found: 
+
+			temp: 12.9 degrees F 
+
+			humidity: 77 
+
+			wind speed 6.9 
+
+			wind gusts 0 
+
+			wind direction: North 
+
+			pressure: 30.29 
+
+			metar: SPECI KGRR 020640Z AUTO 01006KT 1 3/4SM -SN OVC034 M11/M14 A3029 RMK AO2 P0000 T11061139
+ -- end of getweather_new.php --
+ fixed notes: <p>test trip</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: INSERT INTO trips (
+		private,
+		lat,
+		lon,
+		latlon,
+		lastupdate,
+		date, 
+		skunked, 
+		time, 
+		timeofday,
+		adventure,
+		scenery,
+		ninja,
+		waterbody,
+		watertype,
+		watercolor,
+		sitecode,
+		gaugeheight,
+		discharge,
+		temp,
+		hum,
+		wspdi,
+		wgusti,
+		wdir,
+		pressure,
+		conds,
+		metar,
+		gear,
+		method,
+		watertemp,
+		notes,
+		lures,
+		lureimage,
+		username,
+		tripnumber,
+		city,
+		state,
+		zip,
+		newwater,
+		points,
+		fishcaught
+		)
+	VALUES ('0',
+		'43.15258790283323',
+		'-85.59851646423346',
+		'43.15258790283323,-85.59851646423346',
+		'2014-03-12 11:14:58',
+		'2014-03-02',
+		'',
+		'4',
+		'morning',
+		'0',
+		'0',
+		'0',
+		'Cedar Creek',
+		'creek',
+		'clear',
+		'04179520',
+		'3.17',
+		'191',
+		'12.9',
+		'77',
+		'6.9',
+		'0',
+		'North',
+		'30.29',
+		'Light Snow',
+		'SPECI KGRR 020640Z AUTO 01006KT 1 3/4SM -SN OVC034 M11/M14 A3029 RMK AO2 P0000 T11061139',
+		'fly',
+		'wading',
+		'',
+		'<p>test trip</p>',
+		'',
+		'',
+		'juliana',
+		'461',
+		'Rockford',
+		'MI',
+		'49341',
+		'',
+		'5',
+		'1'
+		)
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: juliana
+ THIS IS **NOT** AN UPDATE TO A TRIP (new trip)
+ date: 2014-03-12 11:20:55
+ notes: <p>test trip</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 43.14873686814487,-85.56590080261225
+ tripnumber is: 462
+ privacy: 1
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=43.14873686814487&lng=-85.56590080261225&username=chrisbeckstrom&maxRows=1
+ zipcode: 49341
+ city: Rockford
+ state: MI
+ county: Kent
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Rogue River%' AND state like 'MI'
+ newwaterbodyresult_count: 1
+ the waterbody Rogue River is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Rogue River near Rockford
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Rogue River%'
+AND station_nm
+LIKE '%Rockford%'
+ result count: 1
+ old site number is: 
+ site number: 04118500 station name: ROGUE RIVER NEAR ROCKFORD, MI
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2013-06-12 as date, and 04118500 as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=04118500&startDT=2013-06-12&endDT=2013-06-12&parameterCd=00060,00065
+ what we found: 
+ discharge: 259 cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20130612 
+
+					zip: 49341 
+
+					time of day: evening
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20130612/q/49341.json
+ here's what we found: 
+
+			temp: 73.0 degrees F 
+
+			humidity: 79 
+
+			wind speed 10.4 
+
+			wind gusts 0 
+
+			wind direction: ENE 
+
+			pressure: 29.69 
+
+			metar: METAR KGRR 130053Z 07009KT 7SM BKN047 BKN080 BKN140 BKN200 23/19 A2970 RMK AO2 SLP053 T02280189
+ -- end of getweather_new.php --
+ fixed notes: <p>test trip</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: INSERT INTO trips (
+		private,
+		lat,
+		lon,
+		latlon,
+		lastupdate,
+		date, 
+		skunked, 
+		time, 
+		timeofday,
+		adventure,
+		scenery,
+		ninja,
+		waterbody,
+		watertype,
+		watercolor,
+		sitecode,
+		gaugeheight,
+		discharge,
+		temp,
+		hum,
+		wspdi,
+		wgusti,
+		wdir,
+		pressure,
+		conds,
+		metar,
+		gear,
+		method,
+		watertemp,
+		notes,
+		lures,
+		lureimage,
+		username,
+		tripnumber,
+		city,
+		state,
+		zip,
+		newwater,
+		points,
+		fishcaught
+		)
+	VALUES ('1',
+		'43.14873686814487',
+		'-85.56590080261225',
+		'43.14873686814487,-85.56590080261225',
+		'2014-03-12 11:20:55',
+		'2013-06-12',
+		'',
+		'1',
+		'evening',
+		'0',
+		'0',
+		'0',
+		'Rogue River',
+		'river',
+		'clear',
+		'04118500',
+		'',
+		'259',
+		'73.0',
+		'79',
+		'10.4',
+		'0',
+		'ENE',
+		'29.69',
+		'Mostly Cloudy',
+		'METAR KGRR 130053Z 07009KT 7SM BKN047 BKN080 BKN140 BKN200 23/19 A2970 RMK AO2 SLP053 T02280189',
+		'',
+		'shore',
+		'',
+		'<p>test trip</p>',
+		'',
+		'',
+		'juliana',
+		'462',
+		'Rockford',
+		'MI',
+		'49341',
+		'',
+		'5',
+		'3'
+		)
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 11:23:29
+ notes: <p>Amazing! Spent 2 hours looking for fish- found some big trout immediately in shallow water at the tails of pools, but they wouldnt take anything I was throwing. Hooked one brownie on a beckstrom special in some light riffles, but he threw the hook. Was going to head to a different spot and noticed some fish by the shore- lots of little trout. Kneeled down and tried fishing for them, got some! the key was movement. They refused if the fly was too slow. If they got a chance to look at it they wouldnt take it. Fished under the Childsdale bridge, caught 30 trout. Amazing. The key was a #12 red/white/brown fly (march brownish) fished right at the surface, downstream and retrieved upstream with quick strips. They ignored larger flies. There were some bigger trout in there but they seemed to be eating nymphs.</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 43.101581,-85.580054
+ tripnumber is: 358
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=43.101581&lng=-85.580054&username=chrisbeckstrom&maxRows=1
+ zipcode: 49341
+ city: Rockford
+ state: MI
+ county: Kent
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Rogue River%' AND state like 'MI'
+ newwaterbodyresult_count: 1
+ the waterbody Rogue River is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Rogue River near Rockford
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Rogue River%'
+AND station_nm
+LIKE '%Rockford%'
+ result count: 1
+ old site number is: 
+ site number: 04118500 station name: ROGUE RIVER NEAR ROCKFORD, MI
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2013-05-18 as date, and 04118500 as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=04118500&startDT=2013-05-18&endDT=2013-05-18&parameterCd=00060,00065
+ what we found: 
+ discharge: 272 cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20130518 
+
+					zip: 49341 
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20130518/q/49341.json
+ here's what we found: 
+
+			temp: 59.0 degrees F 
+
+			humidity: 60 
+
+			wind speed 9.2 
+
+			wind gusts 0 
+
+			wind direction: East 
+
+			pressure: 30.12 
+
+			metar: METAR KGRR 180553Z AUTO 08008KT 10SM BKN085 OVC100 15/07 A3012 RMK AO2 SLP198 T01500072 10178 20150 58000
+ -- end of getweather_new.php --
+ fixed notes: <p>Amazing! Spent 2 hours looking for fish- found some big trout immediately in shallow water at the tails of pools, but they wouldnt take anything I was throwing. Hooked one brownie on a beckstrom special in some light riffles, but he threw the hook. Was going to head to a different spot and noticed some fish by the shore- lots of little trout. Kneeled down and tried fishing for them, got some! the key was movement. They refused if the fly was too slow. If they got a chance to look at it they wouldnt take it. Fished under the Childsdale bridge, caught 30 trout. Amazing. The key was a #12 red/white/brown fly (march brownish) fished right at the surface, downstream and retrieved upstream with quick strips. They ignored larger flies. There were some bigger trout in there but they seemed to be eating nymphs.</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '43.101581', 
+		lon = '-85.580054', 
+		latlon = '43.101581,-85.580054', 
+		lastupdate = '2014-03-12 11:23:29', 
+		date = '2013-05-18', 
+		skunked = '', 
+		time = '5', 
+		timeofday = 'morning', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Rogue River', 
+		watertype = 'river', 
+		watercolor = 'muddy', 
+		sitecode = '04118500', 
+		gaugeheight = '', 
+		discharge = '272', 
+		temp = '59.0', 
+		hum = '60', 
+		wspdi = '9.2', 
+		wgusti = '0', 
+		wdir = 'East', 
+		pressure = '30.12', 
+		conds = 'Overcast', 
+		metar = 'METAR KGRR 180553Z AUTO 08008KT 10SM BKN085 OVC100 15/07 A3012 RMK AO2 SLP198 T01500072 10178 20150 58000', 
+		gear = 'fly', 
+		method = 'wading', 
+		watertemp = '', 
+		notes = '<p>Amazing! Spent 2 hours looking for fish- found some big trout immediately in shallow water at the tails of pools, but they wouldnt take anything I was throwing. Hooked one brownie on a beckstrom special in some light riffles, but he threw the hook. Was going to head to a different spot and noticed some fish by the shore- lots of little trout. Kneeled down and tried fishing for them, got some! the key was movement. They refused if the fly was too slow. If they got a chance to look at it they wouldnt take it. Fished under the Childsdale bridge, caught 30 trout. Amazing. The key was a #12 red/white/brown fly (march brownish) fished right at the surface, downstream and retrieved upstream with quick strips. They ignored larger flies. There were some bigger trout in there but they seemed to be eating nymphs.</p>', 
+		lures = '#12 cb march brown', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '358', 
+		city = 'Rockford', 
+		state = 'MI', 
+		zip = '49341', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '30'
+		WHERE tripid = '358'
+		AND username = 'cbfishes'
+		
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 12:12:21
+ notes: <p>FIRST BROOKIES!! Drove all over the area scouting streams, finally found one I felt comfortable wading (private property?) they were sporadically feeding on the surface. got the first one right as the fly touched the water. second one much later by swinging the same fly- royal coachman wet fly - as a dropper on an EHC.</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 43.189252,-85.611115
+ tripnumber is: 368
+ privacy: 2
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=43.189252&lng=-85.611115&username=chrisbeckstrom&maxRows=1
+ zipcode: 49345
+ city: Sparta
+ state: MI
+ county: Kent
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Cedar Creek%' AND state like 'MI'
+ newwaterbodyresult_count: 1
+ the waterbody Cedar Creek is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Cedar Creek near Sparta
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Cedar Creek%'
+AND station_nm
+LIKE '%Sparta%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Cedar Creek%'
+ the newqueryresult count is: 2
+ old site number is: 
+ site number: 04179520 station name: CEDAR CREEK AT 18TH STREET AT AUBURN, IN
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2013-06-01 as date, and 04179520 as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=04179520&startDT=2013-06-01&endDT=2013-06-01&parameterCd=00060,00065
+ what we found: 
+ discharge: 33 cfs, gaugeheight: 2.95 ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20130601 
+
+					zip: 49345 
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20130601/q/49345.json
+ here's what we found: 
+
+			temp: 71.6 degrees F 
+
+			humidity: 78 
+
+			wind speed 10.4 
+
+			wind gusts 0 
+
+			wind direction: South 
+
+			pressure: 29.79 
+
+			metar: SPECI KGRR 010535Z AUTO 18009KT OVC029 22/18 A2979 RMK AO2 $
+ -- end of getweather_new.php --
+ fixed notes: <p>FIRST BROOKIES!! Drove all over the area scouting streams, finally found one I felt comfortable wading (private property?) they were sporadically feeding on the surface. got the first one right as the fly touched the water. second one much later by swinging the same fly- royal coachman wet fly - as a dropper on an EHC.</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '2', 
+		lat = '43.189252', 
+		lon = '-85.611115', 
+		latlon = '43.189252,-85.611115', 
+		lastupdate = '2014-03-12 12:12:21', 
+		date = '2013-06-01', 
+		skunked = '', 
+		time = '4', 
+		timeofday = 'morning', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Cedar Creek', 
+		watertype = 'creek', 
+		watercolor = 'muddy', 
+		sitecode = '04179520', 
+		gaugeheight = '2.95', 
+		discharge = '33', 
+		temp = '71.6', 
+		hum = '78', 
+		wspdi = '10.4', 
+		wgusti = '0', 
+		wdir = 'South', 
+		pressure = '29.79', 
+		conds = 'Overcast', 
+		metar = 'SPECI KGRR 010535Z AUTO 18009KT OVC029 22/18 A2979 RMK AO2 $', 
+		gear = 'fly', 
+		method = 'wading', 
+		watertemp = '', 
+		notes = '<p>FIRST BROOKIES!! Drove all over the area scouting streams, finally found one I felt comfortable wading (private property?) they were sporadically feeding on the surface. got the first one right as the fly touched the water. second one much later by swinging the same fly- royal coachman wet fly - as a dropper on an EHC.</p>', 
+		lures = '#12 royal coachman wet fly', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '368', 
+		city = 'Sparta', 
+		state = 'MI', 
+		zip = '49345', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '2'
+		WHERE tripid = '368'
+		AND username = 'cbfishes'
+		
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 12:20:04
+ notes: <p>Explored- got a creek chub on a wet fly on Little Muskegon River at County Line rd. then went down to another spot (west of 131 on the highway). Hooked into a fish for a minute. Saw some dead fish, looked like walleyes...!? Then went to a park to the east of 131, looked fishy. Caught an 8" rainbow on a beckstrom special. Fished downstream, lots of fish were around. Many missed fish. Got another rainbow and a brown fishing wet flies downstream. Was going to go home, but instead stopped at Cedar Creek. Spooked all the fish right away! Saw some big ones swimming away. West side of the culvert was FULL of fish- all sizes. Maybe even some 14+ inchers. Tough- finally got one on nightcrawler on a nymph.</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 43.396051569618166,-85.50399707843019
+ tripnumber is: 389
+ privacy: 2
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=43.396051569618166&lng=-85.50399707843019&username=chrisbeckstrom&maxRows=1
+ zipcode: 49329
+ city: Howard City
+ state: MI
+ county: Montcalm
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Tamarack Creek%' AND state like 'MI'
+ newwaterbodyresult_count: 0
+ this is a new waterbody! adding it to the waterbodies table...
+ adding a new row to the waterbodies table: 
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Tamarack Creek near Howard City
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Tamarack Creek%'
+AND station_nm
+LIKE '%Howard City%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Tamarack Creek%'
+ the newqueryresult count is: 0
+ old site number is: 
+ site number:  station name: 
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2013-06-22 as date, and  as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=&startDT=2013-06-22&endDT=2013-06-22&parameterCd=00060,00065
+ what we found: 
+ discharge:  cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20130622 
+
+					zip: 49329 
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20130622/q/49329.json
+ here's what we found: 
+
+			temp: 70.7 degrees F 
+
+			humidity: 69 
+
+			wind speed 8.1 
+
+			wind gusts 0 
+
+			wind direction: SW 
+
+			pressure: 30.05 
+
+			metar: METAR KRQB 220435Z AUTO 23007KT 10SM OVC065 22/16 A3005 RMK AO2 T02150157
+ -- end of getweather_new.php --
+ fixed notes: <p>Explored- got a creek chub on a wet fly on Little Muskegon River at County Line rd. then went down to another spot (west of 131 on the highway). Hooked into a fish for a minute. Saw some dead fish, looked like walleyes...!? Then went to a park to the east of 131, looked fishy. Caught an 8\" rainbow on a beckstrom special. Fished downstream, lots of fish were around. Many missed fish. Got another rainbow and a brown fishing wet flies downstream. Was going to go home, but instead stopped at Cedar Creek. Spooked all the fish right away! Saw some big ones swimming away. West side of the culvert was FULL of fish- all sizes. Maybe even some 14+ inchers. Tough- finally got one on nightcrawler on a nymph.</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '2', 
+		lat = '43.396051569618166', 
+		lon = '-85.50399707843019', 
+		latlon = '43.396051569618166,-85.50399707843019', 
+		lastupdate = '2014-03-12 12:20:04', 
+		date = '2013-06-22', 
+		skunked = '', 
+		time = '6', 
+		timeofday = 'morning', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Tamarack Creek', 
+		watertype = 'river', 
+		watercolor = 'muddy', 
+		sitecode = '', 
+		gaugeheight = '', 
+		discharge = '', 
+		temp = '70.7', 
+		hum = '69', 
+		wspdi = '8.1', 
+		wgusti = '0', 
+		wdir = 'SW', 
+		pressure = '30.05', 
+		conds = 'Overcast', 
+		metar = 'METAR KRQB 220435Z AUTO 23007KT 10SM OVC065 22/16 A3005 RMK AO2 T02150157', 
+		gear = 'fly', 
+		method = 'wading', 
+		watertemp = '', 
+		notes = '<p>Explored- got a creek chub on a wet fly on Little Muskegon River at County Line rd. then went down to another spot (west of 131 on the highway). Hooked into a fish for a minute. Saw some dead fish, looked like walleyes...!? Then went to a park to the east of 131, looked fishy. Caught an 8\" rainbow on a beckstrom special. Fished downstream, lots of fish were around. Many missed fish. Got another rainbow and a brown fishing wet flies downstream. Was going to go home, but instead stopped at Cedar Creek. Spooked all the fish right away! Saw some big ones swimming away. West side of the culvert was FULL of fish- all sizes. Maybe even some 14+ inchers. Tough- finally got one on nightcrawler on a nymph.</p>', 
+		lures = '#12 beckstrom special, #12 red and white wet fly', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '389', 
+		city = 'Howard City', 
+		state = 'MI', 
+		zip = '49329', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '3'
+		WHERE tripid = '389'
+		AND username = 'cbfishes'
+		
+ new waterbody: YES
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 12:21:13
+ notes: <p>Explored a new stretch of the Rogue. Fast and deeper than I expected- saw fish periodically rising (or maybe eating nymphs). Couldn't get them to take my flies. When I slapped down my fly line they would stop feeding for a few minutes. Finally got a little trout letting my #12 beckstrom special hang in the current about 30 feet downstream. Then went to Cedar Creek...</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 43.108174,-85.570646
+ tripnumber is: 380
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=43.108174&lng=-85.570646&username=chrisbeckstrom&maxRows=1
+ zipcode: 49341
+ city: Rockford
+ state: MI
+ county: Kent
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Rogue River%' AND state like 'MI'
+ newwaterbodyresult_count: 1
+ the waterbody Rogue River is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Rogue River near Rockford
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Rogue River%'
+AND station_nm
+LIKE '%Rockford%'
+ result count: 1
+ old site number is: 
+ site number: 04118500 station name: ROGUE RIVER NEAR ROCKFORD, MI
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2013-06-09 as date, and 04118500 as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=04118500&startDT=2013-06-09&endDT=2013-06-09&parameterCd=00060,00065
+ what we found: 
+ discharge: 269 cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20130609 
+
+					zip: 49341 
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20130609/q/49341.json
+ here's what we found: 
+
+			temp: 59.0 degrees F 
+
+			humidity: 78 
+
+			wind speed 5.8 
+
+			wind gusts 0 
+
+			wind direction: ENE 
+
+			pressure: 30.06 
+
+			metar: METAR KGRR 090553Z AUTO 07005KT 10SM CLR 15/11 A3006 RMK AO2 SLP178 T01500111 10228 20150 53004
+ -- end of getweather_new.php --
+ fixed notes: <p>Explored a new stretch of the Rogue. Fast and deeper than I expected- saw fish periodically rising (or maybe eating nymphs). Couldn\'t get them to take my flies. When I slapped down my fly line they would stop feeding for a few minutes. Finally got a little trout letting my #12 beckstrom special hang in the current about 30 feet downstream. Then went to Cedar Creek...</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '43.108174', 
+		lon = '-85.570646', 
+		latlon = '43.108174,-85.570646', 
+		lastupdate = '2014-03-12 12:21:13', 
+		date = '2013-06-09', 
+		skunked = '', 
+		time = '2', 
+		timeofday = 'morning', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Rogue River', 
+		watertype = 'river', 
+		watercolor = 'muddy', 
+		sitecode = '04118500', 
+		gaugeheight = '', 
+		discharge = '269', 
+		temp = '59.0', 
+		hum = '78', 
+		wspdi = '5.8', 
+		wgusti = '0', 
+		wdir = 'ENE', 
+		pressure = '30.06', 
+		conds = 'Clear', 
+		metar = 'METAR KGRR 090553Z AUTO 07005KT 10SM CLR 15/11 A3006 RMK AO2 SLP178 T01500111 10228 20150 53004', 
+		gear = 'fly', 
+		method = 'wading', 
+		watertemp = '', 
+		notes = '<p>Explored a new stretch of the Rogue. Fast and deeper than I expected- saw fish periodically rising (or maybe eating nymphs). Couldn\'t get them to take my flies. When I slapped down my fly line they would stop feeding for a few minutes. Finally got a little trout letting my #12 beckstrom special hang in the current about 30 feet downstream. Then went to Cedar Creek...</p>', 
+		lures = '#12 beckstrom special', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '380', 
+		city = 'Rockford', 
+		state = 'MI', 
+		zip = '49341', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '1'
+		WHERE tripid = '380'
+		AND username = 'cbfishes'
+		
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 12:22:06
+ notes: <p>After a very frustrating hour I finally found out what was in that pool.. Creek chubs! I put on an indicator and a BH nymph. They attacked the indicator and nymph on the first cast to the deepest part of the pool (near the back). It took about 300 more casts to actually hook one, they are super fast little buggers. Also saw some very tiny minnows like ive been seeing in trout streams (steelhead fry?) as well as a few chubs up near the waterfall. They also attacked a dry fly later, but not like that first cast.</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 42.862691,-85.625492
+ tripnumber is: 373
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=42.862691&lng=-85.625492&username=chrisbeckstrom&maxRows=1
+ zipcode: 49508
+ city: Grand Rapids
+ state: MI
+ county: Kent
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Pine Hill Creek%' AND state like 'MI'
+ newwaterbodyresult_count: 0
+ this is a new waterbody! adding it to the waterbodies table...
+ adding a new row to the waterbodies table: 
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Pine Hill Creek near Grand Rapids
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Pine Hill Creek%'
+AND station_nm
+LIKE '%Grand Rapids%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Pine Hill Creek%'
+ the newqueryresult count is: 0
+ old site number is: 
+ site number:  station name: 
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2013-06-05 as date, and  as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=&startDT=2013-06-05&endDT=2013-06-05&parameterCd=00060,00065
+ what we found: 
+ discharge:  cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20130605 
+
+					zip: 49508 
+
+					time of day: noon
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20130605/q/49508.json
+ here's what we found: 
+
+			temp: 66.9 degrees F 
+
+			humidity: 36 
+
+			wind speed 11.5 
+
+			wind gusts 0 
+
+			wind direction: ENE 
+
+			pressure: 30.07 
+
+			metar: METAR KGRR 051953Z 06010KT 10SM BKN090 OVC160 19/04 A3007 RMK AO2 SLP181 T01940039
+ -- end of getweather_new.php --
+ fixed notes: <p>After a very frustrating hour I finally found out what was in that pool.. Creek chubs! I put on an indicator and a BH nymph. They attacked the indicator and nymph on the first cast to the deepest part of the pool (near the back). It took about 300 more casts to actually hook one, they are super fast little buggers. Also saw some very tiny minnows like ive been seeing in trout streams (steelhead fry?) as well as a few chubs up near the waterfall. They also attacked a dry fly later, but not like that first cast.</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '42.862691', 
+		lon = '-85.625492', 
+		latlon = '42.862691,-85.625492', 
+		lastupdate = '2014-03-12 12:22:06', 
+		date = '2013-06-05', 
+		skunked = '', 
+		time = '1', 
+		timeofday = 'noon', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Pine Hill Creek', 
+		watertype = 'creek', 
+		watercolor = 'muddy', 
+		sitecode = '', 
+		gaugeheight = '', 
+		discharge = '', 
+		temp = '66.9', 
+		hum = '36', 
+		wspdi = '11.5', 
+		wgusti = '0', 
+		wdir = 'ENE', 
+		pressure = '30.07', 
+		conds = 'Overcast', 
+		metar = 'METAR KGRR 051953Z 06010KT 10SM BKN090 OVC160 19/04 A3007 RMK AO2 SLP181 T01940039', 
+		gear = 'fly', 
+		method = 'shore', 
+		watertemp = '', 
+		notes = '<p>After a very frustrating hour I finally found out what was in that pool.. Creek chubs! I put on an indicator and a BH nymph. They attacked the indicator and nymph on the first cast to the deepest part of the pool (near the back). It took about 300 more casts to actually hook one, they are super fast little buggers. Also saw some very tiny minnows like ive been seeing in trout streams (steelhead fry?) as well as a few chubs up near the waterfall. They also attacked a dry fly later, but not like that first cast.</p>', 
+		lures = '#12 BH soft hackle hares ear nymph', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '373', 
+		city = 'Grand Rapids', 
+		state = 'MI', 
+		zip = '49508', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '1'
+		WHERE tripid = '373'
+		AND username = 'cbfishes'
+		
+ new waterbody: YES
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 12:23:05
+ notes: <p>Was driving around, looking for spots. Explored a bit of Buck Creek at Ideal park, super duper shallow. A bit downstream looks good, but super muddy right now. Drove west, found a creek that goes into a lake (connects to the Grand). Seems to be pretty shallow. Found panfish right away, took a few flies to catch them- ended up using a #18 nymph tied with only white thread. 3 bluegills and 1 pretty pumpkinseed. Later caught a nice bass on a white wooly bugger! Jumped a bunch, it was epic. A bit later cast to a feeding carp- got his attention, he actually took 3 swipes at the fly, but I was so excited and took it away from him.</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 42.887851,-85.770739
+ tripnumber is: 372
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=42.887851&lng=-85.770739&username=chrisbeckstrom&maxRows=1
+ zipcode: 49418
+ city: Grandville
+ state: MI
+ county: Kent
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Heritage Park Pond%' AND state like 'MI'
+ newwaterbodyresult_count: 0
+ this is a new waterbody! adding it to the waterbodies table...
+ adding a new row to the waterbodies table: 
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Heritage Park Pond near Grandville
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Heritage Park Pond%'
+AND station_nm
+LIKE '%Grandville%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Heritage Park Pond%'
+ the newqueryresult count is: 0
+ old site number is: 
+ site number:  station name: 
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2013-06-04 as date, and  as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=&startDT=2013-06-04&endDT=2013-06-04&parameterCd=00060,00065
+ what we found: 
+ discharge:  cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20130604 
+
+					zip: 49418 
+
+					time of day: evening
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20130604/q/49418.json
+ here's what we found: 
+
+			temp: 64.0 degrees F 
+
+			humidity: 54 
+
+			wind speed 6.9 
+
+			wind gusts 0 
+
+			wind direction: ESE 
+
+			pressure: 30.15 
+
+			metar: METAR KGRR 050153Z 11006KT 10SM BKN160 BKN200 18/08 A3015 RMK AO2 SLP208 T01780083
+ -- end of getweather_new.php --
+ fixed notes: <p>Was driving around, looking for spots. Explored a bit of Buck Creek at Ideal park, super duper shallow. A bit downstream looks good, but super muddy right now. Drove west, found a creek that goes into a lake (connects to the Grand). Seems to be pretty shallow. Found panfish right away, took a few flies to catch them- ended up using a #18 nymph tied with only white thread. 3 bluegills and 1 pretty pumpkinseed. Later caught a nice bass on a white wooly bugger! Jumped a bunch, it was epic. A bit later cast to a feeding carp- got his attention, he actually took 3 swipes at the fly, but I was so excited and took it away from him.</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '42.887851', 
+		lon = '-85.770739', 
+		latlon = '42.887851,-85.770739', 
+		lastupdate = '2014-03-12 12:23:05', 
+		date = '2013-06-04', 
+		skunked = '', 
+		time = '2', 
+		timeofday = 'evening', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Heritage Park Pond', 
+		watertype = 'pond', 
+		watercolor = 'muddy', 
+		sitecode = '', 
+		gaugeheight = '', 
+		discharge = '', 
+		temp = '64.0', 
+		hum = '54', 
+		wspdi = '6.9', 
+		wgusti = '0', 
+		wdir = 'ESE', 
+		pressure = '30.15', 
+		conds = 'Mostly Cloudy', 
+		metar = 'METAR KGRR 050153Z 11006KT 10SM BKN160 BKN200 18/08 A3015 RMK AO2 SLP208 T01780083', 
+		gear = 'fly', 
+		method = 'shore', 
+		watertemp = '', 
+		notes = '<p>Was driving around, looking for spots. Explored a bit of Buck Creek at Ideal park, super duper shallow. A bit downstream looks good, but super muddy right now. Drove west, found a creek that goes into a lake (connects to the Grand). Seems to be pretty shallow. Found panfish right away, took a few flies to catch them- ended up using a #18 nymph tied with only white thread. 3 bluegills and 1 pretty pumpkinseed. Later caught a nice bass on a white wooly bugger! Jumped a bunch, it was epic. A bit later cast to a feeding carp- got his attention, he actually took 3 swipes at the fly, but I was so excited and took it away from him.</p>', 
+		lures = '#18 white thread nymph, #6 white wooly bugger', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '372', 
+		city = 'Grandville', 
+		state = 'MI', 
+		zip = '49418', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '5'
+		WHERE tripid = '372'
+		AND username = 'cbfishes'
+		
+ new waterbody: YES
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 12:24:34
+ notes: <p>with Anthony Mikos et al- saw them catch 4+ bass, couldnt get any myself. Showed Anthony how to cast a fly rod, he caught his first two fish on the fly (little bluegills). Managed to catch a bunch of little bluegills after I gave up trying to catch bass. Thanks, fly rod!</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 42.080056,-88.309534
+ tripnumber is: 363
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=42.080056&lng=-88.309534&username=chrisbeckstrom&maxRows=1
+ zipcode: 60118
+ city: Dundee
+ state: IL
+ county: Kane
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Jelke Bird Sanctuary Ponds%' AND state like 'IL'
+ newwaterbodyresult_count: 0
+ this is a new waterbody! adding it to the waterbodies table...
+ adding a new row to the waterbodies table: 
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Jelke Bird Sanctuary Ponds near Dundee
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Jelke Bird Sanctuary Ponds%'
+AND station_nm
+LIKE '%Dundee%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Jelke Bird Sanctuary Ponds%'
+ the newqueryresult count is: 0
+ old site number is: 
+ site number:  station name: 
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2013-05-22 as date, and  as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=&startDT=2013-05-22&endDT=2013-05-22&parameterCd=00060,00065
+ what we found: 
+ discharge:  cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20130522 
+
+					zip: 60118 
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20130522/q/60118.json
+ here's what we found: 
+
+			temp: 66.2 degrees F 
+
+			humidity: 88 
+
+			wind speed 8.1 
+
+			wind gusts 0 
+
+			wind direction: SSE 
+
+			pressure: 29.69 
+
+			metar: SPECI KDPA 220548Z 15007KT 9SM -RA FEW044 OVC095 19/17 A2969 RMK AO2 TSB18E42RAB06 P0006 402720172
+ -- end of getweather_new.php --
+ fixed notes: <p>with Anthony Mikos et al- saw them catch 4+ bass, couldnt get any myself. Showed Anthony how to cast a fly rod, he caught his first two fish on the fly (little bluegills). Managed to catch a bunch of little bluegills after I gave up trying to catch bass. Thanks, fly rod!</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '42.080056', 
+		lon = '-88.309534', 
+		latlon = '42.080056,-88.309534', 
+		lastupdate = '2014-03-12 12:24:34', 
+		date = '2013-05-22', 
+		skunked = '', 
+		time = '3', 
+		timeofday = 'morning', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Jelke Bird Sanctuary Ponds', 
+		watertype = 'pond', 
+		watercolor = 'muddy', 
+		sitecode = '', 
+		gaugeheight = '', 
+		discharge = '', 
+		temp = '66.2', 
+		hum = '88', 
+		wspdi = '8.1', 
+		wgusti = '0', 
+		wdir = 'SSE', 
+		pressure = '29.69', 
+		conds = 'Light Rain', 
+		metar = 'SPECI KDPA 220548Z 15007KT 9SM -RA FEW044 OVC095 19/17 A2969 RMK AO2 TSB18E42RAB06 P0006 402720172', 
+		gear = '', 
+		method = 'shore', 
+		watertemp = '', 
+		notes = '<p>with Anthony Mikos et al- saw them catch 4+ bass, couldnt get any myself. Showed Anthony how to cast a fly rod, he caught his first two fish on the fly (little bluegills). Managed to catch a bunch of little bluegills after I gave up trying to catch bass. Thanks, fly rod!</p>', 
+		lures = '#12 yellow foam beetle', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '363', 
+		city = 'Dundee', 
+		state = 'IL', 
+		zip = '60118', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '12'
+		WHERE tripid = '363'
+		AND username = 'cbfishes'
+		
+ new waterbody: YES
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 12:25:08
+ notes: <p>Couldnt find any bass.. Finally caught a bunch of bluegill by tying a dropper soft hackle to a 1/8th oz hair jig. They saw the hair jig and hit the soft hackle. Got 12 in quick succession. Fun to use fly fishing techniques on spinning gear, even better to actually catch some fish. Bass were definitely on their beds, hard to tell if they are actually spawning yet though.</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 41.976939,-88.016476
+ tripnumber is: 360
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=41.976939&lng=-88.016476&username=chrisbeckstrom&maxRows=1
+ zipcode: 60143
+ city: Itasca
+ state: IL
+ county: DuPage
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Happy Acres%' AND state like 'IL'
+ newwaterbodyresult_count: 1
+ the waterbody Happy Acres is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Happy Acres near Itasca
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Happy Acres%'
+AND station_nm
+LIKE '%Itasca%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Happy Acres%'
+ the newqueryresult count is: 0
+ old site number is: 
+ site number:  station name: 
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2013-05-17 as date, and  as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=&startDT=2013-05-17&endDT=2013-05-17&parameterCd=00060,00065
+ what we found: 
+ discharge:  cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20130517 
+
+					zip: 60143 
+
+					time of day: evening
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20130517/q/60143.json
+ here's what we found: 
+
+			temp: 60.1 degrees F 
+
+			humidity: 60 
+
+			wind speed 8.1 
+
+			wind gusts 0 
+
+			wind direction: NE 
+
+			pressure: 30.03 
+
+			metar: METAR KORD 180251Z 05007KT 10SM OVC100 16/08 A3003 RMK AO2 SLP168 T01560078 50001 $
+ -- end of getweather_new.php --
+ fixed notes: <p>Couldnt find any bass.. Finally caught a bunch of bluegill by tying a dropper soft hackle to a 1/8th oz hair jig. They saw the hair jig and hit the soft hackle. Got 12 in quick succession. Fun to use fly fishing techniques on spinning gear, even better to actually catch some fish. Bass were definitely on their beds, hard to tell if they are actually spawning yet though.</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '41.976939', 
+		lon = '-88.016476', 
+		latlon = '41.976939,-88.016476', 
+		lastupdate = '2014-03-12 12:25:08', 
+		date = '2013-05-17', 
+		skunked = '', 
+		time = '.5', 
+		timeofday = 'evening', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Happy Acres', 
+		watertype = 'pond', 
+		watercolor = 'muddy', 
+		sitecode = '', 
+		gaugeheight = '', 
+		discharge = '', 
+		temp = '60.1', 
+		hum = '60', 
+		wspdi = '8.1', 
+		wgusti = '0', 
+		wdir = 'NE', 
+		pressure = '30.03', 
+		conds = 'Overcast', 
+		metar = 'METAR KORD 180251Z 05007KT 10SM OVC100 16/08 A3003 RMK AO2 SLP168 T01560078 50001 $', 
+		gear = 'spin', 
+		method = 'shore', 
+		watertemp = '', 
+		notes = '<p>Couldnt find any bass.. Finally caught a bunch of bluegill by tying a dropper soft hackle to a 1/8th oz hair jig. They saw the hair jig and hit the soft hackle. Got 12 in quick succession. Fun to use fly fishing techniques on spinning gear, even better to actually catch some fish. Bass were definitely on their beds, hard to tell if they are actually spawning yet though.</p>', 
+		lures = '#12 brown soft hackle', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '360', 
+		city = 'Itasca', 
+		state = 'IL', 
+		zip = '60143', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '10'
+		WHERE tripid = '360'
+		AND username = 'cbfishes'
+		
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 12:25:33
+ notes: <p>saw plenty of medium sized bass, but couldnt get anybody to bite. brought both spinning gear and fly gear- when I switched to fly gear I caught two little bluegills on an orange and white reverse hackle fly. they were constantly attacking the knot between my leader and tippet- I need to do something about that. found a brand new light action rod in the trash that had the tip broken off- that should be easy enough to fix. whoohoo! at least I beat the skunk.</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 42.030068,-88.018944
+ tripnumber is: 354
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=42.030068&lng=-88.018944&username=chrisbeckstrom&maxRows=1
+ zipcode: 60007
+ city: Elk Grove Village
+ state: IL
+ county: Cook
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Busse Lake%' AND state like 'IL'
+ newwaterbodyresult_count: 1
+ the waterbody Busse Lake is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Busse Lake near Elk Grove Village
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Busse Lake%'
+AND station_nm
+LIKE '%Elk Grove Village%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Busse Lake%'
+ the newqueryresult count is: 0
+ old site number is: 
+ site number:  station name: 
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2013-05-09 as date, and  as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=&startDT=2013-05-09&endDT=2013-05-09&parameterCd=00060,00065
+ what we found: 
+ discharge:  cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20130509 
+
+					zip: 60007 
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20130509/q/60007.json
+ here's what we found: 
+
+			temp: 57.9 degrees F 
+
+			humidity: 60 
+
+			wind speed 0.0 
+
+			wind gusts 0 
+
+			wind direction: North 
+
+			pressure: 29.94 
+
+			metar: METAR KORD 090651Z 00000KT 10SM FEW250 14/07 A2994 RMK AO2 SLP137 T01440067 $
+ -- end of getweather_new.php --
+ fixed notes: <p>saw plenty of medium sized bass, but couldnt get anybody to bite. brought both spinning gear and fly gear- when I switched to fly gear I caught two little bluegills on an orange and white reverse hackle fly. they were constantly attacking the knot between my leader and tippet- I need to do something about that. found a brand new light action rod in the trash that had the tip broken off- that should be easy enough to fix. whoohoo! at least I beat the skunk.</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '42.030068', 
+		lon = '-88.018944', 
+		latlon = '42.030068,-88.018944', 
+		lastupdate = '2014-03-12 12:25:33', 
+		date = '2013-05-09', 
+		skunked = '', 
+		time = '2', 
+		timeofday = 'morning', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Busse Lake', 
+		watertype = 'lake', 
+		watercolor = 'muddy', 
+		sitecode = '', 
+		gaugeheight = '', 
+		discharge = '', 
+		temp = '57.9', 
+		hum = '60', 
+		wspdi = '0.0', 
+		wgusti = '0', 
+		wdir = 'North', 
+		pressure = '29.94', 
+		conds = 'Partly Cloudy', 
+		metar = 'METAR KORD 090651Z 00000KT 10SM FEW250 14/07 A2994 RMK AO2 SLP137 T01440067 $', 
+		gear = '', 
+		method = 'shore', 
+		watertemp = '', 
+		notes = '<p>saw plenty of medium sized bass, but couldnt get anybody to bite. brought both spinning gear and fly gear- when I switched to fly gear I caught two little bluegills on an orange and white reverse hackle fly. they were constantly attacking the knot between my leader and tippet- I need to do something about that. found a brand new light action rod in the trash that had the tip broken off- that should be easy enough to fix. whoohoo! at least I beat the skunk.</p>', 
+		lures = 'orange and white reverse hackle', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '354', 
+		city = 'Elk Grove Village', 
+		state = 'IL', 
+		zip = '60007', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '2'
+		WHERE tripid = '354'
+		AND username = 'cbfishes'
+		
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 12:26:05
+ notes: <p>water was lower; saw some bluegills and pretty big carp swimming around. caught 2 bass, one was fat around 16 inches. best fish of the year so far! missed another one that apparently followed my spinnerbait from the middle of the pond and struck real close to shore. then a security guard came to say I couldnt fish there.... oh yeah? just did, dude. ill be back after hours...</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 41.987697,-88.009717
+ tripnumber is: 352
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=41.987697&lng=-88.009717&username=chrisbeckstrom&maxRows=1
+ zipcode: 60143
+ city: Itasca
+ state: IL
+ county: DuPage
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Corporate pond%' AND state like 'IL'
+ newwaterbodyresult_count: 0
+ this is a new waterbody! adding it to the waterbodies table...
+ adding a new row to the waterbodies table: 
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Corporate pond near Itasca
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Corporate pond%'
+AND station_nm
+LIKE '%Itasca%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Corporate pond%'
+ the newqueryresult count is: 0
+ old site number is: 
+ site number:  station name: 
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2013-05-08 as date, and  as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=&startDT=2013-05-08&endDT=2013-05-08&parameterCd=00060,00065
+ what we found: 
+ discharge:  cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20130508 
+
+					zip: 60143 
+
+					time of day: noon
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20130508/q/60143.json
+ here's what we found: 
+
+			temp: 77.0 degrees F 
+
+			humidity: 26 
+
+			wind speed 11.5 
+
+			wind gusts 21.9 
+
+			wind direction: East 
+
+			pressure: 29.96 
+
+			metar: METAR KORD 082051Z 08010G19KT 10SM SCT070 BKN200 25/04 A2997 RMK AO2 SLP146 T02500044 58010 $
+ -- end of getweather_new.php --
+ fixed notes: <p>water was lower; saw some bluegills and pretty big carp swimming around. caught 2 bass, one was fat around 16 inches. best fish of the year so far! missed another one that apparently followed my spinnerbait from the middle of the pond and struck real close to shore. then a security guard came to say I couldnt fish there.... oh yeah? just did, dude. ill be back after hours...</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '41.987697', 
+		lon = '-88.009717', 
+		latlon = '41.987697,-88.009717', 
+		lastupdate = '2014-03-12 12:26:05', 
+		date = '2013-05-08', 
+		skunked = '', 
+		time = '1', 
+		timeofday = 'noon', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Corporate pond', 
+		watertype = 'pond', 
+		watercolor = 'muddy', 
+		sitecode = '', 
+		gaugeheight = '', 
+		discharge = '', 
+		temp = '77.0', 
+		hum = '26', 
+		wspdi = '11.5', 
+		wgusti = '21.9', 
+		wdir = 'East', 
+		pressure = '29.96', 
+		conds = 'Mostly Cloudy', 
+		metar = 'METAR KORD 082051Z 08010G19KT 10SM SCT070 BKN200 25/04 A2997 RMK AO2 SLP146 T02500044 58010 $', 
+		gear = 'spin', 
+		method = 'shore', 
+		watertemp = '', 
+		notes = '<p>water was lower; saw some bluegills and pretty big carp swimming around. caught 2 bass, one was fat around 16 inches. best fish of the year so far! missed another one that apparently followed my spinnerbait from the middle of the pond and struck real close to shore. then a security guard came to say I couldnt fish there.... oh yeah? just did, dude. ill be back after hours...</p>', 
+		lures = 'chartreuse spinnerbait', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '352', 
+		city = 'Itasca', 
+		state = 'IL', 
+		zip = '60143', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '2'
+		WHERE tripid = '352'
+		AND username = 'cbfishes'
+		
+ new waterbody: YES
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 12:44:59
+ notes: <p>Pond - retention pond - first bass of the year! on green tube jig</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 41.977417, -88.01510
+ tripnumber is: 6
+ privacy: 1
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=41.977417&lng= -88.01510&username=chrisbeckstrom&maxRows=1
+ zipcode: 
+ city: 
+ state: 
+ county: 
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Happy Acres%' AND state like ''
+ newwaterbodyresult_count: 0
+ this is a new waterbody! adding it to the waterbodies table...
+ adding a new row to the waterbodies table: 
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Happy Acres near 
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Happy Acres%'
+AND station_nm
+LIKE '%%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Happy Acres%'
+ the newqueryresult count is: 0
+ old site number is: 
+ site number:  station name: 
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2012-03-13 as date, and  as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=&startDT=2012-03-13&endDT=2012-03-13&parameterCd=00060,00065
+ what we found: 
+ discharge:  cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20120313 
+
+					zip:  
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20120313/q/.json
+ here's what we found: 
+
+			temp:  degrees F 
+
+			humidity:  
+
+			wind speed  
+
+			wind gusts  
+
+			wind direction:  
+
+			pressure:  
+
+			metar: 
+ -- end of getweather_new.php --
+ fixed notes: <p>Pond - retention pond - first bass of the year! on green tube jig</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '1', 
+		lat = '41.977417', 
+		lon = ' -88.01510', 
+		latlon = '41.977417, -88.01510', 
+		lastupdate = '2014-03-12 12:44:59', 
+		date = '2012-03-13', 
+		skunked = '', 
+		time = '1', 
+		timeofday = 'morning', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Happy Acres', 
+		watertype = 'pond', 
+		watercolor = 'muddy', 
+		sitecode = '', 
+		gaugeheight = '', 
+		discharge = '', 
+		temp = '', 
+		hum = '', 
+		wspdi = '', 
+		wgusti = '', 
+		wdir = '', 
+		pressure = '', 
+		conds = '', 
+		metar = '', 
+		gear = 'spin', 
+		method = 'shore', 
+		watertemp = '', 
+		notes = '<p>Pond - retention pond - first bass of the year! on green tube jig</p>', 
+		lures = '', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '6', 
+		city = '', 
+		state = '', 
+		zip = '', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '1'
+		WHERE tripid = '6'
+		AND username = 'cbfishes'
+		
+ new waterbody: YES
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 12:45:36
+ notes: <p>Rogue River, MI - with Rob and Mark - 4 baby brown trout on homemade spinner</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 43.117459, -85.56226
+ tripnumber is: 11
+ privacy: 1
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=43.117459&lng= -85.56226&username=chrisbeckstrom&maxRows=1
+ zipcode: 
+ city: 
+ state: 
+ county: 
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Rogue River%' AND state like ''
+ newwaterbodyresult_count: 0
+ this is a new waterbody! adding it to the waterbodies table...
+ adding a new row to the waterbodies table: 
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Rogue River near 
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Rogue River%'
+AND station_nm
+LIKE '%%'
+ result count: 1
+ old site number is: 
+ site number: 04118500 station name: ROGUE RIVER NEAR ROCKFORD, MI
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2012-03-17 as date, and 04118500 as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=04118500&startDT=2012-03-17&endDT=2012-03-17&parameterCd=00060,00065
+ what we found: 
+ discharge: 394 cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20120317 
+
+					zip:  
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20120317/q/.json
+ here's what we found: 
+
+			temp:  degrees F 
+
+			humidity:  
+
+			wind speed  
+
+			wind gusts  
+
+			wind direction:  
+
+			pressure:  
+
+			metar: 
+ -- end of getweather_new.php --
+ fixed notes: <p>Rogue River, MI - with Rob and Mark - 4 baby brown trout on homemade spinner</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '1', 
+		lat = '43.117459', 
+		lon = ' -85.56226', 
+		latlon = '43.117459, -85.56226', 
+		lastupdate = '2014-03-12 12:45:36', 
+		date = '2012-03-17', 
+		skunked = '', 
+		time = '4', 
+		timeofday = 'morning', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Rogue River', 
+		watertype = 'river', 
+		watercolor = 'muddy', 
+		sitecode = '04118500', 
+		gaugeheight = '', 
+		discharge = '394', 
+		temp = '', 
+		hum = '', 
+		wspdi = '', 
+		wgusti = '', 
+		wdir = '', 
+		pressure = '', 
+		conds = '', 
+		metar = '', 
+		gear = 'spin', 
+		method = 'shore', 
+		watertemp = '', 
+		notes = '<p>Rogue River, MI - with Rob and Mark - 4 baby brown trout on homemade spinner</p>', 
+		lures = '', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '11', 
+		city = '', 
+		state = '', 
+		zip = '', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '4'
+		WHERE tripid = '11'
+		AND username = 'cbfishes'
+		
+ new waterbody: YES
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 12:46:23
+ notes: <p>beck lake - very windy, very cold, nobody caught anything</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 42.072769, -87.87292
+ tripnumber is: 22
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=42.072769&lng= -87.87292&username=chrisbeckstrom&maxRows=1
+ zipcode: 
+ city: 
+ state: 
+ county: 
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Beck Lake%' AND state like ''
+ newwaterbodyresult_count: 0
+ this is a new waterbody! adding it to the waterbodies table...
+ adding a new row to the waterbodies table: 
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Beck Lake near 
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Beck Lake%'
+AND station_nm
+LIKE '%%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Beck Lake%'
+ the newqueryresult count is: 0
+ old site number is: 
+ site number:  station name: 
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2012-03-25 as date, and  as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=&startDT=2012-03-25&endDT=2012-03-25&parameterCd=00060,00065
+ what we found: 
+ discharge:  cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20120325 
+
+					zip:  
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20120325/q/.json
+ here's what we found: 
+
+			temp:  degrees F 
+
+			humidity:  
+
+			wind speed  
+
+			wind gusts  
+
+			wind direction:  
+
+			pressure:  
+
+			metar: 
+ -- end of getweather_new.php --
+ fixed notes: <p>beck lake - very windy, very cold, nobody caught anything</p>
+ -- starting points.php --
+ new water: 1 -> 5 points! whoohooo!
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 5 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 10
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '42.072769', 
+		lon = ' -87.87292', 
+		latlon = '42.072769, -87.87292', 
+		lastupdate = '2014-03-12 12:46:23', 
+		date = '2012-03-25', 
+		skunked = '', 
+		time = '2', 
+		timeofday = 'morning', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Beck Lake', 
+		watertype = 'lake', 
+		watercolor = 'muddy', 
+		sitecode = '', 
+		gaugeheight = '', 
+		discharge = '', 
+		temp = '', 
+		hum = '', 
+		wspdi = '', 
+		wgusti = '', 
+		wdir = '', 
+		pressure = '', 
+		conds = '', 
+		metar = '', 
+		gear = 'spin', 
+		method = 'shore', 
+		watertemp = '', 
+		notes = '<p>beck lake - very windy, very cold, nobody caught anything</p>', 
+		lures = '', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '22', 
+		city = '', 
+		state = '', 
+		zip = '', 
+		newwater = '1', 
+		points = '10', 
+		fishcaught = '0'
+		WHERE tripid = '22'
+		AND username = 'cbfishes'
+		
+ new waterbody: YES
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 12:48:01
+ notes: <p>chicago river @ ping tom park - 2 (channel?) catfish on nightcrawlers 47th</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 41.857346, -87.63484
+ tripnumber is: 47
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=41.857346&lng= -87.63484&username=chrisbeckstrom&maxRows=1
+ zipcode: 
+ city: 
+ state: 
+ county: 
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Chicago River%' AND state like ''
+ newwaterbodyresult_count: 0
+ this is a new waterbody! adding it to the waterbodies table...
+ adding a new row to the waterbodies table: 
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Chicago River near 
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Chicago River%'
+AND station_nm
+LIKE '%%'
+ result count: 7
+ old site number is: 
+ site number: 5534500 station name: NORTH BRANCH CHICAGO RIVER AT DEERFIELD, IL
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2012-04-20 as date, and 5534500 as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=5534500&startDT=2012-04-20&endDT=2012-04-20&parameterCd=00060,00065
+ what we found: 
+ discharge:  cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20120420 
+
+					zip:  
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20120420/q/.json
+ here's what we found: 
+
+			temp:  degrees F 
+
+			humidity:  
+
+			wind speed  
+
+			wind gusts  
+
+			wind direction:  
+
+			pressure:  
+
+			metar: 
+ -- end of getweather_new.php --
+ fixed notes: <p>chicago river @ ping tom park - 2 (channel?) catfish on nightcrawlers 47th</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '41.857346', 
+		lon = ' -87.63484', 
+		latlon = '41.857346, -87.63484', 
+		lastupdate = '2014-03-12 12:48:01', 
+		date = '2012-04-20', 
+		skunked = '', 
+		time = '3', 
+		timeofday = 'morning', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Chicago River', 
+		watertype = 'river', 
+		watercolor = 'muddy', 
+		sitecode = '', 
+		gaugeheight = '', 
+		discharge = '', 
+		temp = '', 
+		hum = '', 
+		wspdi = '', 
+		wgusti = '', 
+		wdir = '', 
+		pressure = '', 
+		conds = '', 
+		metar = '', 
+		gear = 'spin', 
+		method = 'shore', 
+		watertemp = '', 
+		notes = '<p>chicago river @ ping tom park - 2 (channel?) catfish on nightcrawlers 47th</p>', 
+		lures = 'nightcrawlers', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '47', 
+		city = '', 
+		state = '', 
+		zip = '', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '2'
+		WHERE tripid = '47'
+		AND username = 'cbfishes'
+		
+ new waterbody: YES
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 12:49:10
+ notes: <p>wooddale corp pond - chummed with corn, 15 minutes, caught another baby bullhead 70th</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 41.971961, -87.98085
+ tripnumber is: 70
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=41.971961&lng= -87.98085&username=chrisbeckstrom&maxRows=1
+ zipcode: 
+ city: 
+ state: 
+ county: 
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Wood Dale big pond%' AND state like ''
+ newwaterbodyresult_count: 0
+ this is a new waterbody! adding it to the waterbodies table...
+ adding a new row to the waterbodies table: 
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Wood Dale big pond near 
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Wood Dale big pond%'
+AND station_nm
+LIKE '%%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Wood Dale big pond%'
+ the newqueryresult count is: 0
+ old site number is: 
+ site number:  station name: 
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2012-05-15 as date, and  as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=&startDT=2012-05-15&endDT=2012-05-15&parameterCd=00060,00065
+ what we found: 
+ discharge:  cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20120515 
+
+					zip:  
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20120515/q/.json
+ here's what we found: 
+
+			temp:  degrees F 
+
+			humidity:  
+
+			wind speed  
+
+			wind gusts  
+
+			wind direction:  
+
+			pressure:  
+
+			metar: 
+ -- end of getweather_new.php --
+ fixed notes: <p>wooddale corp pond - chummed with corn, 15 minutes, caught another baby bullhead 70th</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '41.971961', 
+		lon = ' -87.98085', 
+		latlon = '41.971961, -87.98085', 
+		lastupdate = '2014-03-12 12:49:10', 
+		date = '2012-05-15', 
+		skunked = '', 
+		time = '1', 
+		timeofday = 'morning', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Wood Dale big pond', 
+		watertype = 'pond', 
+		watercolor = 'muddy', 
+		sitecode = '', 
+		gaugeheight = '', 
+		discharge = '', 
+		temp = '', 
+		hum = '', 
+		wspdi = '', 
+		wgusti = '', 
+		wdir = '', 
+		pressure = '', 
+		conds = '', 
+		metar = '', 
+		gear = 'spin', 
+		method = 'shore', 
+		watertemp = '', 
+		notes = '<p>wooddale corp pond - chummed with corn, 15 minutes, caught another baby bullhead 70th</p>', 
+		lures = '', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '70', 
+		city = '', 
+		state = '', 
+		zip = '', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '1'
+		WHERE tripid = '70'
+		AND username = 'cbfishes'
+		
+ new waterbody: YES
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 12:52:49
+ notes: <p>7 am - big shades creek 155</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 33.475, -86.767
+ tripnumber is: 134
+ privacy: 1
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=33.475&lng= -86.767&username=chrisbeckstrom&maxRows=1
+ zipcode: 
+ city: 
+ state: 
+ county: 
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Big Shades Creek%' AND state like ''
+ newwaterbodyresult_count: 0
+ this is a new waterbody! adding it to the waterbodies table...
+ adding a new row to the waterbodies table: 
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Big Shades Creek near 
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Big Shades Creek%'
+AND station_nm
+LIKE '%%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Big Shades Creek%'
+ the newqueryresult count is: 0
+ old site number is: 
+ site number:  station name: 
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2012-07-02 as date, and  as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=&startDT=2012-07-02&endDT=2012-07-02&parameterCd=00060,00065
+ what we found: 
+ discharge:  cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20120702 
+
+					zip:  
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20120702/q/.json
+ here's what we found: 
+
+			temp:  degrees F 
+
+			humidity:  
+
+			wind speed  
+
+			wind gusts  
+
+			wind direction:  
+
+			pressure:  
+
+			metar: 
+ -- end of getweather_new.php --
+ fixed notes: <p>7 am - big shades creek 155</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '1', 
+		lat = '33.475', 
+		lon = ' -86.767', 
+		latlon = '33.475, -86.767', 
+		lastupdate = '2014-03-12 12:52:49', 
+		date = '2012-07-02', 
+		skunked = '', 
+		time = '2', 
+		timeofday = 'morning', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Big Shades Creek', 
+		watertype = 'creek', 
+		watercolor = 'muddy', 
+		sitecode = '', 
+		gaugeheight = '', 
+		discharge = '', 
+		temp = '', 
+		hum = '', 
+		wspdi = '', 
+		wgusti = '', 
+		wdir = '', 
+		pressure = '', 
+		conds = '', 
+		metar = '', 
+		gear = 'spin', 
+		method = 'shore', 
+		watertemp = '', 
+		notes = '<p>7 am - big shades creek 155</p>', 
+		lures = '', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '134', 
+		city = '', 
+		state = '', 
+		zip = '', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '1'
+		WHERE tripid = '134'
+		AND username = 'cbfishes'
+		
+ new waterbody: YES
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 12:54:43
+ notes: <p>custer - night- dogfish on hotdog! 1 bullhead on hotdog 143</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 42.31230867095382,-85.3604650497436
+ tripnumber is: 145
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=42.31230867095382&lng=-85.3604650497436&username=chrisbeckstrom&maxRows=1
+ zipcode: 49012
+ city: Augusta
+ state: MI
+ county: Kalamazoo
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Whitford Lake%' AND state like 'MI'
+ newwaterbodyresult_count: 0
+ this is a new waterbody! adding it to the waterbodies table...
+ adding a new row to the waterbodies table: 
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Whitford Lake near Augusta
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Whitford Lake%'
+AND station_nm
+LIKE '%Augusta%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Whitford Lake%'
+ the newqueryresult count is: 0
+ old site number is: 
+ site number:  station name: 
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2012-07-11 as date, and  as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=&startDT=2012-07-11&endDT=2012-07-11&parameterCd=00060,00065
+ what we found: 
+ discharge:  cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20120711 
+
+					zip: 49012 
+
+					time of day: night
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20120711/q/49012.json
+ here's what we found: 
+
+			temp: 78.8 degrees F 
+
+			humidity: 32 
+
+			wind speed 4.6 
+
+			wind gusts 0 
+
+			wind direction: ENE 
+
+			pressure: 30.14 
+
+			metar: METAR KBTL 120153Z 07004KT 10SM CLR 26/08 A3014
+ -- end of getweather_new.php --
+ fixed notes: <p>custer - night- dogfish on hotdog! 1 bullhead on hotdog 143</p>
+ -- starting points.php --
+ new water: 1 -> 5 points! whoohooo!
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 5 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 10
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '42.31230867095382', 
+		lon = '-85.3604650497436', 
+		latlon = '42.31230867095382,-85.3604650497436', 
+		lastupdate = '2014-03-12 12:54:43', 
+		date = '2012-07-11', 
+		skunked = '', 
+		time = '2', 
+		timeofday = 'night', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Whitford Lake', 
+		watertype = 'lake', 
+		watercolor = 'muddy', 
+		sitecode = '', 
+		gaugeheight = '', 
+		discharge = '', 
+		temp = '78.8', 
+		hum = '32', 
+		wspdi = '4.6', 
+		wgusti = '0', 
+		wdir = 'ENE', 
+		pressure = '30.14', 
+		conds = 'Clear', 
+		metar = 'METAR KBTL 120153Z 07004KT 10SM CLR 26/08 A3014', 
+		gear = 'spin', 
+		method = 'shore', 
+		watertemp = '', 
+		notes = '<p>custer - night- dogfish on hotdog! 1 bullhead on hotdog 143</p>', 
+		lures = 'hotdogs', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '145', 
+		city = 'Augusta', 
+		state = 'MI', 
+		zip = '49012', 
+		newwater = '1', 
+		points = '10', 
+		fishcaught = '2'
+		WHERE tripid = '145'
+		AND username = 'cbfishes'
+		
+ new waterbody: YES
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 12:55:33
+ notes: <p>Kalamazoo river w/fam 2/5 smallies 145</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 42.323472, -85.35885
+ tripnumber is: 148
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=42.323472&lng= -85.35885&username=chrisbeckstrom&maxRows=1
+ zipcode: 
+ city: 
+ state: 
+ county: 
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Kalamazoo River%' AND state like ''
+ newwaterbodyresult_count: 0
+ this is a new waterbody! adding it to the waterbodies table...
+ adding a new row to the waterbodies table: 
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Kalamazoo River near 
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Kalamazoo River%'
+AND station_nm
+LIKE '%%'
+ result count: 4
+ old site number is: 
+ site number: 04103500 station name: KALAMAZOO RIVER AT MARSHALL, MI
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2012-07-13 as date, and 04103500 as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=04103500&startDT=2012-07-13&endDT=2012-07-13&parameterCd=00060,00065
+ what we found: 
+ discharge: 178 cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20120713 
+
+					zip:  
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20120713/q/.json
+ here's what we found: 
+
+			temp:  degrees F 
+
+			humidity:  
+
+			wind speed  
+
+			wind gusts  
+
+			wind direction:  
+
+			pressure:  
+
+			metar: 
+ -- end of getweather_new.php --
+ fixed notes: <p>Kalamazoo river w/fam 2/5 smallies 145</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '42.323472', 
+		lon = ' -85.35885', 
+		latlon = '42.323472, -85.35885', 
+		lastupdate = '2014-03-12 12:55:33', 
+		date = '2012-07-13', 
+		skunked = '', 
+		time = '1', 
+		timeofday = 'morning', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Kalamazoo River', 
+		watertype = 'river', 
+		watercolor = 'stained', 
+		sitecode = '04103500', 
+		gaugeheight = '', 
+		discharge = '178', 
+		temp = '', 
+		hum = '', 
+		wspdi = '', 
+		wgusti = '', 
+		wdir = '', 
+		pressure = '', 
+		conds = '', 
+		metar = '', 
+		gear = 'spin', 
+		method = 'wading', 
+		watertemp = '', 
+		notes = '<p>Kalamazoo river w/fam 2/5 smallies 145</p>', 
+		lures = 'white jig and twister', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '148', 
+		city = '', 
+		state = '', 
+		zip = '', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '2'
+		WHERE tripid = '148'
+		AND username = 'cbfishes'
+		
+ new waterbody: YES
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 12:56:29
+ notes: <p>big will's creek - 1 redeye bass on coffee tube 158</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 34.048330, -86.08103
+ tripnumber is: 160
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=34.048330&lng= -86.08103&username=chrisbeckstrom&maxRows=1
+ zipcode: 
+ city: 
+ state: 
+ county: 
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Big Will's Creek%' AND state like ''
+ newwaterbodyresult_count: 
+ this is a new waterbody! adding it to the waterbodies table...
+ adding a new row to the waterbodies table: 
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 15:03:28
+ notes: <p>Explored a little creek north of [84th street] but it was super small. Met another angler who said there were creek chubs a quarter mile upstream. Fished a bit, but since I was probably on private property I didn't go too deep.</p>
+<p>Went north to a spot I knew. People were arguing and shouting really loudly as I parked across from their house. Quickly made my way into the water hoping they wouldn't see me.</p>
+<p>Caught 5 fish: 4 smallies on various flies (mostly #10 black bead head wooly bugger dead-drifted across the current) and 1 rock bass. Saw the redhorse (?) in the water, but couldn't catch any. They seemed to stop feeding if I casted over them. Great outing!</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 42.847731421344456,-85.48592971850587
+ tripnumber is: 410
+ privacy: 2
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=42.847731421344456&lng=-85.48592971850587&username=chrisbeckstrom&maxRows=1
+ zipcode: 49302
+ city: Alto
+ state: MI
+ county: Kent
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Thornapple River%' AND state like 'MI'
+ newwaterbodyresult_count: 1
+ the waterbody Thornapple River is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Thornapple River near Alto
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Thornapple River%'
+AND station_nm
+LIKE '%Alto%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Thornapple River%'
+ the newqueryresult count is: 2
+ old site number is: 
+ site number: 04117500 station name: THORNAPPLE RIVER NEAR HASTINGS, MI
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2013-07-25 as date, and 04117500 as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=04117500&startDT=2013-07-25&endDT=2013-07-25&parameterCd=00060,00065
+ what we found: 
+ discharge: 142 cfs, gaugeheight: 3.18 ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20130725 
+
+					zip: 49302 
+
+					time of day: evening
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20130725/q/49302.json
+ here's what we found: 
+
+			temp: 68.0 degrees F 
+
+			humidity: 59 
+
+			wind speed 4.6 
+
+			wind gusts 0 
+
+			wind direction: SW 
+
+			pressure: 30.06 
+
+			metar: METAR KGRR 260153Z 23004KT 10SM BKN150 BKN250 20/12 A3007 RMK AO2 SLP180 T02000117
+ -- end of getweather_new.php --
+ fixed notes: <p>Explored a little creek north of [84th street] but it was super small. Met another angler who said there were creek chubs a quarter mile upstream. Fished a bit, but since I was probably on private property I didn\'t go too deep.</p>\r\n<p>Went north to a spot I knew. People were arguing and shouting really loudly as I parked across from their house. Quickly made my way into the water hoping they wouldn\'t see me.</p>\r\n<p>Caught 5 fish: 4 smallies on various flies (mostly #10 black bead head wooly bugger dead-drifted across the current) and 1 rock bass. Saw the redhorse (?) in the water, but couldn\'t catch any. They seemed to stop feeding if I casted over them. Great outing!</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '2', 
+		lat = '42.847731421344456', 
+		lon = '-85.48592971850587', 
+		latlon = '42.847731421344456,-85.48592971850587', 
+		lastupdate = '2014-03-12 15:03:28', 
+		date = '2013-07-25', 
+		skunked = '', 
+		time = '2', 
+		timeofday = 'evening', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Thornapple River', 
+		watertype = 'river', 
+		watercolor = 'muddy', 
+		sitecode = '04117500', 
+		gaugeheight = '3.18', 
+		discharge = '142', 
+		temp = '68.0', 
+		hum = '59', 
+		wspdi = '4.6', 
+		wgusti = '0', 
+		wdir = 'SW', 
+		pressure = '30.06', 
+		conds = 'Mostly Cloudy', 
+		metar = 'METAR KGRR 260153Z 23004KT 10SM BKN150 BKN250 20/12 A3007 RMK AO2 SLP180 T02000117', 
+		gear = 'fly', 
+		method = 'wading', 
+		watertemp = '', 
+		notes = '<p>Explored a little creek north of [84th street] but it was super small. Met another angler who said there were creek chubs a quarter mile upstream. Fished a bit, but since I was probably on private property I didn\'t go too deep.</p>\r\n<p>Went north to a spot I knew. People were arguing and shouting really loudly as I parked across from their house. Quickly made my way into the water hoping they wouldn\'t see me.</p>\r\n<p>Caught 5 fish: 4 smallies on various flies (mostly #10 black bead head wooly bugger dead-drifted across the current) and 1 rock bass. Saw the redhorse (?) in the water, but couldn\'t catch any. They seemed to stop feeding if I casted over them. Great outing!</p>', 
+		lures = '#10 bead head wooly bugger', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '410', 
+		city = 'Alto', 
+		state = 'MI', 
+		zip = '49302', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '5'
+		WHERE tripid = '410'
+		AND username = 'cbfishes'
+		
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 15:15:37
+ notes: <p>took the kayak out to [Campau]&ndash; Claire and Jason also in their kayaks. tons of boat traffic, giant waves, churned water... Found some bluegills, managed to catch them on a jig and twister with a trailing hare's ear nymph. Beckstrom Rig?</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 42.83712715415296,-85.44752048541261
+ tripnumber is: 397
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=42.83712715415296&lng=-85.44752048541261&username=chrisbeckstrom&maxRows=1
+ zipcode: 49302
+ city: Alto
+ state: MI
+ county: Kent
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Campau Lake%' AND state like 'MI'
+ newwaterbodyresult_count: 2
+ the waterbody Campau Lake is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Campau Lake near Alto
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Campau Lake%'
+AND station_nm
+LIKE '%Alto%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Campau Lake%'
+ the newqueryresult count is: 0
+ old site number is: 
+ site number:  station name: 
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2013-07-05 as date, and  as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=&startDT=2013-07-05&endDT=2013-07-05&parameterCd=00060,00065
+ what we found: 
+ discharge:  cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20130705 
+
+					zip: 49302 
+
+					time of day: afternoon
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20130705/q/49302.json
+ here's what we found: 
+
+			temp: 84.0 degrees F 
+
+			humidity: 44 
+
+			wind speed 8.1 
+
+			wind gusts 0 
+
+			wind direction: SE 
+
+			pressure: 30.05 
+
+			metar: METAR KGRR 052153Z 14007KT 10SM FEW055 SCT220 29/16 A3006 RMK AO2 SLP175 T02890156
+ -- end of getweather_new.php --
+ fixed notes: <p>took the kayak out to [Campau]&ndash; Claire and Jason also in their kayaks. tons of boat traffic, giant waves, churned water... Found some bluegills, managed to catch them on a jig and twister with a trailing hare\'s ear nymph. Beckstrom Rig?</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '42.83712715415296', 
+		lon = '-85.44752048541261', 
+		latlon = '42.83712715415296,-85.44752048541261', 
+		lastupdate = '2014-03-12 15:15:37', 
+		date = '2013-07-05', 
+		skunked = '', 
+		time = '2', 
+		timeofday = 'afternoon', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Campau Lake', 
+		watertype = 'lake', 
+		watercolor = 'muddy', 
+		sitecode = '', 
+		gaugeheight = '', 
+		discharge = '', 
+		temp = '84.0', 
+		hum = '44', 
+		wspdi = '8.1', 
+		wgusti = '0', 
+		wdir = 'SE', 
+		pressure = '30.05', 
+		conds = 'Scattered Clouds', 
+		metar = 'METAR KGRR 052153Z 14007KT 10SM FEW055 SCT220 29/16 A3006 RMK AO2 SLP175 T02890156', 
+		gear = 'spin', 
+		method = 'boat', 
+		watertemp = '', 
+		notes = '<p>took the kayak out to [Campau]&ndash; Claire and Jason also in their kayaks. tons of boat traffic, giant waves, churned water... Found some bluegills, managed to catch them on a jig and twister with a trailing hare\'s ear nymph. Beckstrom Rig?</p>', 
+		lures = 'hare\'s ear nymph', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '397', 
+		city = 'Alto', 
+		state = 'MI', 
+		zip = '49302', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '4'
+		WHERE tripid = '397'
+		AND username = 'cbfishes'
+		
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS **NOT** AN UPDATE TO A TRIP (new trip)
+ date: 2014-03-12 16:01:37
+ notes: <p>Crawled through the thick brush to get to the creek... Let my DIY pop bottle minnow trap hang out all day. Inside was a (relatively) giant bug I think is a stonefly nymph, along with a tiny creek chub&ndash; about the same size!</p>
+<p>I let both go. Very excited about what a stonefly might mean.. does it mean the creek is cold water? High quality? Supports lots of fish? Can't wait to find out!</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 42.86891476792567,-85.44189959764475
+ tripnumber is: 463
+ privacy: 2
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=42.86891476792567&lng=-85.44189959764475&username=chrisbeckstrom&maxRows=1
+ zipcode: 49302
+ city: Alto
+ state: MI
+ county: Kent
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%McCords Creek%' AND state like 'MI'
+ newwaterbodyresult_count: 1
+ the waterbody McCords Creek is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for McCords Creek near Alto
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%McCords Creek%'
+AND station_nm
+LIKE '%Alto%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%McCords Creek%'
+ the newqueryresult count is: 0
+ old site number is: 
+ site number:  station name: 
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2014-03-11 as date, and  as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=&startDT=2014-03-11&endDT=2014-03-11&parameterCd=00060,00065
+ what we found: 
+ discharge:  cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20140311 
+
+					zip: 49302 
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20140311/q/49302.json
+ here's what we found: 
+
+			temp: 39.0 degrees F 
+
+			humidity: 79 
+
+			wind speed 5.8 
+
+			wind gusts 0 
+
+			wind direction: WSW 
+
+			pressure: 29.65 
+
+			metar: METAR KGRR 110553Z AUTO 24005KT 8SM CLR 04/01 A2964 RMK AO2 SLP040 T00390006 10067 20039 51006
+ -- end of getweather_new.php --
+ fixed notes: <p>Crawled through the thick brush to get to the creek... Let my DIY pop bottle minnow trap hang out all day. Inside was a (relatively) giant bug I think is a stonefly nymph, along with a tiny creek chub&ndash; about the same size!</p>\r\n<p>I let both go. Very excited about what a stonefly might mean.. does it mean the creek is cold water? High quality? Supports lots of fish? Can\'t wait to find out!</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 2
+ total points: 7
+ -- end of points.php --
+ sql query: INSERT INTO trips (
+		private,
+		lat,
+		lon,
+		latlon,
+		lastupdate,
+		date, 
+		skunked, 
+		time, 
+		timeofday,
+		adventure,
+		scenery,
+		ninja,
+		waterbody,
+		watertype,
+		watercolor,
+		sitecode,
+		gaugeheight,
+		discharge,
+		temp,
+		hum,
+		wspdi,
+		wgusti,
+		wdir,
+		pressure,
+		conds,
+		metar,
+		gear,
+		method,
+		watertemp,
+		notes,
+		lures,
+		lureimage,
+		username,
+		tripnumber,
+		city,
+		state,
+		zip,
+		newwater,
+		points,
+		fishcaught
+		)
+	VALUES ('2',
+		'42.86891476792567',
+		'-85.44189959764475',
+		'42.86891476792567,-85.44189959764475',
+		'2014-03-12 16:01:37',
+		'2014-03-11',
+		'',
+		'.1',
+		'morning',
+		'0',
+		'0',
+		'2',
+		'McCords Creek',
+		'creek',
+		'stained',
+		'',
+		'',
+		'',
+		'39.0',
+		'79',
+		'5.8',
+		'0',
+		'WSW',
+		'29.65',
+		'Clear',
+		'METAR KGRR 110553Z AUTO 24005KT 8SM CLR 04/01 A2964 RMK AO2 SLP040 T00390006 10067 20039 51006',
+		'minnow trap',
+		'unattended',
+		'',
+		'<p>Crawled through the thick brush to get to the creek... Let my DIY pop bottle minnow trap hang out all day. Inside was a (relatively) giant bug I think is a stonefly nymph, along with a tiny creek chub&ndash; about the same size!</p>\r\n<p>I let both go. Very excited about what a stonefly might mean.. does it mean the creek is cold water? High quality? Supports lots of fish? Can\'t wait to find out!</p>',
+		'',
+		'',
+		'cbfishes',
+		'463',
+		'Alto',
+		'MI',
+		'49302',
+		'',
+		'7',
+		'1'
+		)
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 16:22:27
+ notes: <p>am - Flint River @ Mott Park - [need to count] at least 10 smallies, 4 rock bass, 1 crappie, 1 pike (first ever! 24</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 43.013532, -83.72367
+ tripnumber is: 173
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=43.013532&lng= -83.72367&username=chrisbeckstrom&maxRows=1
+ zipcode: 
+ city: 
+ state: 
+ county: 
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Flint River%' AND state like ''
+ newwaterbodyresult_count: 0
+ this is a new waterbody! adding it to the waterbodies table...
+ adding a new row to the waterbodies table: 
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Flint River near 
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Flint River%'
+AND station_nm
+LIKE '%%'
+ result count: 5
+ old site number is: 
+ site number: 04146063 station name: SOUTH BRANCH FLINT RIVER NEAR COLUMBIAVILLE,MI
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2012-09-03 as date, and 04146063 as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=04146063&startDT=2012-09-03&endDT=2012-09-03&parameterCd=00060,00065
+ what we found: 
+ discharge: 21 cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20120903 
+
+					zip:  
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20120903/q/.json
+ here's what we found: 
+
+			temp:  degrees F 
+
+			humidity:  
+
+			wind speed  
+
+			wind gusts  
+
+			wind direction:  
+
+			pressure:  
+
+			metar: 
+ -- end of getweather_new.php --
+ fixed notes: <p>am - Flint River @ Mott Park - [need to count] at least 10 smallies, 4 rock bass, 1 crappie, 1 pike (first ever! 24</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '43.013532', 
+		lon = ' -83.72367', 
+		latlon = '43.013532, -83.72367', 
+		lastupdate = '2014-03-12 16:22:27', 
+		date = '2012-09-03', 
+		skunked = '', 
+		time = '3', 
+		timeofday = 'morning', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Flint River', 
+		watertype = 'river', 
+		watercolor = 'muddy', 
+		sitecode = '04146063', 
+		gaugeheight = '', 
+		discharge = '21', 
+		temp = '', 
+		hum = '', 
+		wspdi = '', 
+		wgusti = '', 
+		wdir = '', 
+		pressure = '', 
+		conds = '', 
+		metar = '', 
+		gear = 'spin', 
+		method = 'shore', 
+		watertemp = '', 
+		notes = '<p>am - Flint River @ Mott Park - [need to count] at least 10 smallies, 4 rock bass, 1 crappie, 1 pike (first ever! 24</p>', 
+		lures = 'white jig and twister', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '173', 
+		city = '', 
+		state = '', 
+		zip = '', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '13'
+		WHERE tripid = '173'
+		AND username = 'cbfishes'
+		
+ new waterbody: YES
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 16:27:29
+ notes: <p>Hemlock Creek - OHIO - creek chubs on the fly- bright nymphs, dead drifted</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 41.385796, -81.56745
+ tripnumber is: 220
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=41.385796&lng= -81.56745&username=chrisbeckstrom&maxRows=1
+ zipcode: 
+ city: 
+ state: 
+ county: 
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Hemlock Creek%' AND state like ''
+ newwaterbodyresult_count: 0
+ this is a new waterbody! adding it to the waterbodies table...
+ adding a new row to the waterbodies table: 
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Hemlock Creek near 
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Hemlock Creek%'
+AND station_nm
+LIKE '%%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Hemlock Creek%'
+ the newqueryresult count is: 0
+ old site number is: 
+ site number:  station name: 
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2012-11-03 as date, and  as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=&startDT=2012-11-03&endDT=2012-11-03&parameterCd=00060,00065
+ what we found: 
+ discharge:  cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20121103 
+
+					zip:  
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20121103/q/.json
+ here's what we found: 
+
+			temp:  degrees F 
+
+			humidity:  
+
+			wind speed  
+
+			wind gusts  
+
+			wind direction:  
+
+			pressure:  
+
+			metar: 
+ -- end of getweather_new.php --
+ fixed notes: <p>Hemlock Creek - OHIO - creek chubs on the fly- bright nymphs, dead drifted</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 3 
+
+				scenic points: 3 
+
+				ninja points: 0
+ total points: 11
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '41.385796', 
+		lon = ' -81.56745', 
+		latlon = '41.385796, -81.56745', 
+		lastupdate = '2014-03-12 16:27:29', 
+		date = '2012-11-03', 
+		skunked = '', 
+		time = '2', 
+		timeofday = 'morning', 
+		adventure = '3', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Hemlock Creek', 
+		watertype = 'creek', 
+		watercolor = 'stained', 
+		sitecode = '', 
+		gaugeheight = '', 
+		discharge = '', 
+		temp = '', 
+		hum = '', 
+		wspdi = '', 
+		wgusti = '', 
+		wdir = '', 
+		pressure = '', 
+		conds = '', 
+		metar = '', 
+		gear = 'fly', 
+		method = 'wading', 
+		watertemp = '', 
+		notes = '<p>Hemlock Creek - OHIO - creek chubs on the fly- bright nymphs, dead drifted</p>', 
+		lures = 'bright nymphs', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '220', 
+		city = '', 
+		state = '', 
+		zip = '', 
+		newwater = '', 
+		points = '11', 
+		fishcaught = '15'
+		WHERE tripid = '220'
+		AND username = 'cbfishes'
+		
+ new waterbody: YES
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 16:30:20
+ notes: <p>Took the kayak out to the lake looking for bluegills.. Found them just where they've been, the SW corner of the lake near all the lilypads. Got them on nightcrawlers. Forgot a bobber, so I used my floaty keychain thing.</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 42.86370104799,-85.39581298849953
+ tripnumber is: 398
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=42.86370104799&lng=-85.39581298849953&username=chrisbeckstrom&maxRows=1
+ zipcode: 49331
+ city: Lowell
+ state: MI
+ county: Kent
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%McEwen Lake%' AND state like 'MI'
+ newwaterbodyresult_count: 0
+ this is a new waterbody! adding it to the waterbodies table...
+ adding a new row to the waterbodies table: 
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for McEwen Lake near Lowell
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%McEwen Lake%'
+AND station_nm
+LIKE '%Lowell%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%McEwen Lake%'
+ the newqueryresult count is: 0
+ old site number is: 
+ site number:  station name: 
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2013-07-06 as date, and  as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=&startDT=2013-07-06&endDT=2013-07-06&parameterCd=00060,00065
+ what we found: 
+ discharge:  cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20130706 
+
+					zip: 49331 
+
+					time of day: afternoon
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20130706/q/49331.json
+ here's what we found: 
+
+			temp: 82.9 degrees F 
+
+			humidity: 54 
+
+			wind speed 9.2 
+
+			wind gusts 0 
+
+			wind direction: SSW 
+
+			pressure: 30.00 
+
+			metar: METAR KGRR 062153Z 21008KT 10SM FEW038 SCT090 BKN160 OVC250 28/18 A3001 RMK AO2 SLP158 TCU DSNT ALQDS T02830183
+ -- end of getweather_new.php --
+ fixed notes: <p>Took the kayak out to the lake looking for bluegills.. Found them just where they\'ve been, the SW corner of the lake near all the lilypads. Got them on nightcrawlers. Forgot a bobber, so I used my floaty keychain thing.</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '42.86370104799', 
+		lon = '-85.39581298849953', 
+		latlon = '42.86370104799,-85.39581298849953', 
+		lastupdate = '2014-03-12 16:30:20', 
+		date = '2013-07-06', 
+		skunked = '', 
+		time = '2', 
+		timeofday = 'afternoon', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'McEwen Lake', 
+		watertype = 'lake', 
+		watercolor = 'muddy', 
+		sitecode = '', 
+		gaugeheight = '', 
+		discharge = '', 
+		temp = '82.9', 
+		hum = '54', 
+		wspdi = '9.2', 
+		wgusti = '0', 
+		wdir = 'SSW', 
+		pressure = '30.00', 
+		conds = 'Overcast', 
+		metar = 'METAR KGRR 062153Z 21008KT 10SM FEW038 SCT090 BKN160 OVC250 28/18 A3001 RMK AO2 SLP158 TCU DSNT ALQDS T02830183', 
+		gear = 'spin', 
+		method = 'boat', 
+		watertemp = '', 
+		notes = '<p>Took the kayak out to the lake looking for bluegills.. Found them just where they\'ve been, the SW corner of the lake near all the lilypads. Got them on nightcrawlers. Forgot a bobber, so I used my floaty keychain thing.</p>', 
+		lures = 'nightcrawlers', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '398', 
+		city = 'Lowell', 
+		state = 'MI', 
+		zip = '49331', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '12'
+		WHERE tripid = '398'
+		AND username = 'cbfishes'
+		
+ new waterbody: YES
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 16:30:56
+ notes: <p>went out in Mark's boat with Rob- pretty much non-stop action. nightcrawlers! they were around the lilypads.</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 42.86396579555602,-85.39571643224917
+ tripnumber is: 396
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=42.86396579555602&lng=-85.39571643224917&username=chrisbeckstrom&maxRows=1
+ zipcode: 49331
+ city: Lowell
+ state: MI
+ county: Kent
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%McEwen Lake%' AND state like 'MI'
+ newwaterbodyresult_count: 1
+ the waterbody McEwen Lake is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for McEwen Lake near Lowell
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%McEwen Lake%'
+AND station_nm
+LIKE '%Lowell%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%McEwen Lake%'
+ the newqueryresult count is: 0
+ old site number is: 
+ site number:  station name: 
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2013-07-04 as date, and  as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=&startDT=2013-07-04&endDT=2013-07-04&parameterCd=00060,00065
+ what we found: 
+ discharge:  cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20130704 
+
+					zip: 49331 
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20130704/q/49331.json
+ here's what we found: 
+
+			temp: 64.9 degrees F 
+
+			humidity: 87 
+
+			wind speed 3.5 
+
+			wind gusts 0 
+
+			wind direction: South 
+
+			pressure: 30.08 
+
+			metar: METAR KGRR 040553Z AUTO 17003KT 5SM BR FEW040 SCT055 18/16 A3009 RMK AO2 SLP186 T01830161 10239 20183 50002
+ -- end of getweather_new.php --
+ fixed notes: <p>went out in Mark\'s boat with Rob- pretty much non-stop action. nightcrawlers! they were around the lilypads.</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '42.86396579555602', 
+		lon = '-85.39571643224917', 
+		latlon = '42.86396579555602,-85.39571643224917', 
+		lastupdate = '2014-03-12 16:30:56', 
+		date = '2013-07-04', 
+		skunked = '', 
+		time = '3', 
+		timeofday = 'morning', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'McEwen Lake', 
+		watertype = 'lake', 
+		watercolor = 'muddy', 
+		sitecode = '', 
+		gaugeheight = '', 
+		discharge = '', 
+		temp = '64.9', 
+		hum = '87', 
+		wspdi = '3.5', 
+		wgusti = '0', 
+		wdir = 'South', 
+		pressure = '30.08', 
+		conds = 'Scattered Clouds', 
+		metar = 'METAR KGRR 040553Z AUTO 17003KT 5SM BR FEW040 SCT055 18/16 A3009 RMK AO2 SLP186 T01830161 10239 20183 50002', 
+		gear = 'spin', 
+		method = 'boat', 
+		watertemp = '', 
+		notes = '<p>went out in Mark\'s boat with Rob- pretty much non-stop action. nightcrawlers! they were around the lilypads.</p>', 
+		lures = 'nightcrawlers', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '396', 
+		city = 'Lowell', 
+		state = 'MI', 
+		zip = '49331', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '23'
+		WHERE tripid = '396'
+		AND username = 'cbfishes'
+		
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 16:32:02
+ notes: <p>Drove around looking for new spots, lots of people out fishing on a nice saturday afternoon. Got to this pull off, and there were two cars but both were kayaks. Fished the river a while, caught a tiny brown on a BHPT in a riffle (letting the nymph hang in the current) and then a 8 inch brown smacked a beckstrom special as soon as it hit the water (on a tandem rig with the BHPT). Later, fishing downstream with the same rig, a big brown SLAMMED into my fly and took off downstream. Spooled me! Took about 10 minutes to get it back to me. 14 inch brown trout, beautiful. Not entirely sure which fly it took, I think the beckstrom special. Tried fishing some more, but was so excited couldn't concentrate. Kept the 14 incher and took it home.</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 43.101331249159905,-85.58503734160615
+ tripnumber is: 393
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=43.101331249159905&lng=-85.58503734160615&username=chrisbeckstrom&maxRows=1
+ zipcode: 49306
+ city: Belmont
+ state: MI
+ county: Kent
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Rogue River%' AND state like 'MI'
+ newwaterbodyresult_count: 1
+ the waterbody Rogue River is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Rogue River near Belmont
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Rogue River%'
+AND station_nm
+LIKE '%Belmont%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Rogue River%'
+ the newqueryresult count is: 1
+ old site number is: 
+ site number: 04118500 station name: ROGUE RIVER NEAR ROCKFORD, MI
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2013-06-29 as date, and 04118500 as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=04118500&startDT=2013-06-29&endDT=2013-06-29&parameterCd=00060,00065
+ what we found: 
+ discharge: 229 cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20130629 
+
+					zip: 49306 
+
+					time of day: afternoon
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20130629/q/49306.json
+ here's what we found: 
+
+			temp: 68.0 degrees F 
+
+			humidity: 81 
+
+			wind speed 5.8 
+
+			wind gusts 0 
+
+			wind direction: North 
+
+			pressure: 29.62 
+
+			metar: METAR KGRR 291353Z 01005KT 10SM FEW010 BKN013 BKN180 20/17 A2963 RMK AO2 SLP031 T02000167
+ -- end of getweather_new.php --
+ fixed notes: <p>Drove around looking for new spots, lots of people out fishing on a nice saturday afternoon. Got to this pull off, and there were two cars but both were kayaks. Fished the river a while, caught a tiny brown on a BHPT in a riffle (letting the nymph hang in the current) and then a 8 inch brown smacked a beckstrom special as soon as it hit the water (on a tandem rig with the BHPT). Later, fishing downstream with the same rig, a big brown SLAMMED into my fly and took off downstream. Spooled me! Took about 10 minutes to get it back to me. 14 inch brown trout, beautiful. Not entirely sure which fly it took, I think the beckstrom special. Tried fishing some more, but was so excited couldn\'t concentrate. Kept the 14 incher and took it home.</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '43.101331249159905', 
+		lon = '-85.58503734160615', 
+		latlon = '43.101331249159905,-85.58503734160615', 
+		lastupdate = '2014-03-12 16:32:02', 
+		date = '2013-06-29', 
+		skunked = '', 
+		time = '2', 
+		timeofday = 'afternoon', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Rogue River', 
+		watertype = 'river', 
+		watercolor = 'muddy', 
+		sitecode = '04118500', 
+		gaugeheight = '', 
+		discharge = '229', 
+		temp = '68.0', 
+		hum = '81', 
+		wspdi = '5.8', 
+		wgusti = '0', 
+		wdir = 'North', 
+		pressure = '29.62', 
+		conds = 'Mostly Cloudy', 
+		metar = 'METAR KGRR 291353Z 01005KT 10SM FEW010 BKN013 BKN180 20/17 A2963 RMK AO2 SLP031 T02000167', 
+		gear = 'fly', 
+		method = 'wading', 
+		watertemp = '', 
+		notes = '<p>Drove around looking for new spots, lots of people out fishing on a nice saturday afternoon. Got to this pull off, and there were two cars but both were kayaks. Fished the river a while, caught a tiny brown on a BHPT in a riffle (letting the nymph hang in the current) and then a 8 inch brown smacked a beckstrom special as soon as it hit the water (on a tandem rig with the BHPT). Later, fishing downstream with the same rig, a big brown SLAMMED into my fly and took off downstream. Spooled me! Took about 10 minutes to get it back to me. 14 inch brown trout, beautiful. Not entirely sure which fly it took, I think the beckstrom special. Tried fishing some more, but was so excited couldn\'t concentrate. Kept the 14 incher and took it home.</p>', 
+		lures = 'beckstrom special, bead head pheasant tail nymph', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '393', 
+		city = 'Belmont', 
+		state = 'MI', 
+		zip = '49306', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '3'
+		WHERE tripid = '393'
+		AND username = 'cbfishes'
+		
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 16:32:28
+ notes: <p>Took Rob's canoe out- good times. No wind, no bugs, tons of fish. Probably caught 30+ fish between the two of us. Kept the big ones. Tried fly fishing for about 90 seconds, wasn't happening. Switched to spinning gear and bait, worked great.</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 42.8658149900099,-85.39344772609184
+ tripnumber is: 392
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=42.8658149900099&lng=-85.39344772609184&username=chrisbeckstrom&maxRows=1
+ zipcode: 49331
+ city: Lowell
+ state: MI
+ county: Kent
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%McEwen Lake%' AND state like 'MI'
+ newwaterbodyresult_count: 1
+ the waterbody McEwen Lake is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for McEwen Lake near Lowell
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%McEwen Lake%'
+AND station_nm
+LIKE '%Lowell%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%McEwen Lake%'
+ the newqueryresult count is: 0
+ old site number is: 
+ site number:  station name: 
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2013-06-27 as date, and  as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=&startDT=2013-06-27&endDT=2013-06-27&parameterCd=00060,00065
+ what we found: 
+ discharge:  cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20130627 
+
+					zip: 49331 
+
+					time of day: evening
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20130627/q/49331.json
+ here's what we found: 
+
+			temp: 86.0 degrees F 
+
+			humidity: 49 
+
+			wind speed 8.1 
+
+			wind gusts 16.1 
+
+			wind direction: West 
+
+			pressure: 29.71 
+
+			metar: METAR KGRR 271753Z 26007G14KT 220V280 10SM SCT037 BKN065 BKN210 30/18 A2973 RMK AO2 SLP061 T03000183 10300 20211 58009
+ -- end of getweather_new.php --
+ fixed notes: <p>Took Rob\'s canoe out- good times. No wind, no bugs, tons of fish. Probably caught 30+ fish between the two of us. Kept the big ones. Tried fly fishing for about 90 seconds, wasn\'t happening. Switched to spinning gear and bait, worked great.</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 1 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 6
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '42.8658149900099', 
+		lon = '-85.39344772609184', 
+		latlon = '42.8658149900099,-85.39344772609184', 
+		lastupdate = '2014-03-12 16:32:28', 
+		date = '2013-06-27', 
+		skunked = '', 
+		time = '3', 
+		timeofday = 'evening', 
+		adventure = '1', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'McEwen Lake', 
+		watertype = 'lake', 
+		watercolor = 'muddy', 
+		sitecode = '', 
+		gaugeheight = '', 
+		discharge = '', 
+		temp = '86.0', 
+		hum = '49', 
+		wspdi = '8.1', 
+		wgusti = '16.1', 
+		wdir = 'West', 
+		pressure = '29.71', 
+		conds = 'Mostly Cloudy', 
+		metar = 'METAR KGRR 271753Z 26007G14KT 220V280 10SM SCT037 BKN065 BKN210 30/18 A2973 RMK AO2 SLP061 T03000183 10300 20211 58009', 
+		gear = 'both', 
+		method = 'boat', 
+		watertemp = '', 
+		notes = '<p>Took Rob\'s canoe out- good times. No wind, no bugs, tons of fish. Probably caught 30+ fish between the two of us. Kept the big ones. Tried fly fishing for about 90 seconds, wasn\'t happening. Switched to spinning gear and bait, worked great.</p>', 
+		lures = 'nightcrawlers', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '392', 
+		city = 'Lowell', 
+		state = 'MI', 
+		zip = '49331', 
+		newwater = '', 
+		points = '6', 
+		fishcaught = '14'
+		WHERE tripid = '392'
+		AND username = 'cbfishes'
+		
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 16:32:49
+ notes: <p>Found lots of PT-looking nymphs under rocks, caught a 8 inch rainbow on a BHPT in some fast water next to faster water (in the seam). Later hooked into a monster brown, but he went into the rapids and I lost him. I'm loving this pheasant tail nymph! Explored a lot of the upstream stretch, saw lots of fish feeding on nymphs under the surface but couldn't catch any more.</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 43.10191137654922,-85.57852238421106
+ tripnumber is: 391
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=43.10191137654922&lng=-85.57852238421106&username=chrisbeckstrom&maxRows=1
+ zipcode: 49341
+ city: Rockford
+ state: MI
+ county: Kent
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Rogue River%' AND state like 'MI'
+ newwaterbodyresult_count: 1
+ the waterbody Rogue River is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Rogue River near Rockford
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Rogue River%'
+AND station_nm
+LIKE '%Rockford%'
+ result count: 1
+ old site number is: 
+ site number: 04118500 station name: ROGUE RIVER NEAR ROCKFORD, MI
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2013-06-26 as date, and 04118500 as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=04118500&startDT=2013-06-26&endDT=2013-06-26&parameterCd=00060,00065
+ what we found: 
+ discharge: 242 cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20130626 
+
+					zip: 49341 
+
+					time of day: evening
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20130626/q/49341.json
+ here's what we found: 
+
+			temp: 82.0 degrees F 
+
+			humidity: 60 
+
+			wind speed 10.4 
+
+			wind gusts 0 
+
+			wind direction: East 
+
+			pressure: 29.74 
+
+			metar: METAR KGRR 262253Z 10009KT 10SM SCT038TCU SCT110 BKN250 28/19 A2976 RMK AO2 SLP071 TCU NW-N T02780194 $
+ -- end of getweather_new.php --
+ fixed notes: <p>Found lots of PT-looking nymphs under rocks, caught a 8 inch rainbow on a BHPT in some fast water next to faster water (in the seam). Later hooked into a monster brown, but he went into the rapids and I lost him. I\'m loving this pheasant tail nymph! Explored a lot of the upstream stretch, saw lots of fish feeding on nymphs under the surface but couldn\'t catch any more.</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '43.10191137654922', 
+		lon = '-85.57852238421106', 
+		latlon = '43.10191137654922,-85.57852238421106', 
+		lastupdate = '2014-03-12 16:32:49', 
+		date = '2013-06-26', 
+		skunked = '', 
+		time = '2', 
+		timeofday = 'evening', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Rogue River', 
+		watertype = 'river', 
+		watercolor = 'muddy', 
+		sitecode = '04118500', 
+		gaugeheight = '', 
+		discharge = '242', 
+		temp = '82.0', 
+		hum = '60', 
+		wspdi = '10.4', 
+		wgusti = '0', 
+		wdir = 'East', 
+		pressure = '29.74', 
+		conds = 'Mostly Cloudy', 
+		metar = 'METAR KGRR 262253Z 10009KT 10SM SCT038TCU SCT110 BKN250 28/19 A2976 RMK AO2 SLP071 TCU NW-N T02780194 $', 
+		gear = 'fly', 
+		method = 'wading', 
+		watertemp = '', 
+		notes = '<p>Found lots of PT-looking nymphs under rocks, caught a 8 inch rainbow on a BHPT in some fast water next to faster water (in the seam). Later hooked into a monster brown, but he went into the rapids and I lost him. I\'m loving this pheasant tail nymph! Explored a lot of the upstream stretch, saw lots of fish feeding on nymphs under the surface but couldn\'t catch any more.</p>', 
+		lures = '#14 bead head pheasant tail nymph', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '391', 
+		city = 'Rockford', 
+		state = 'MI', 
+		zip = '49341', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '1'
+		WHERE tripid = '391'
+		AND username = 'cbfishes'
+		
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 16:33:42
+ notes: <p>Day trip with Claire- fished a lot of Tamarack Creek by the park- had trouble finding the fish. Lots of lures/flies caught in trees, Claire caught lots of sticks with a little spinner... Later we both caught crayfish on lures. One actually grabbed my nymph and kept holding on when I pulled it out of the water! Started catching fish when I switched to tossing nightcrawlers with my fly rod. Caught a chub and I think a big brown came out from under some branches swimming after it. Later caught some rainbows where I expected them- in the fast water under white bubbles. Then we stopped at Cedar Creek on the way home; the brookies on the west side spooked as soon as we stuck our heads over the rail. Tried wading for them, they were too spooked. Headed east through the pipe; saw a BIG brookie (brown?) hanging out upstream of a rock right before the pipe. I cast over it and he flew away. Saw some smaller brookies under the log, right at the bottom in the rocks. Tried tossing a tiny bit of nightcrawler upstream in the fast current, letting it drift down. Saw a bigger fish dart downstream, and it was on my line! Managed to catch it, about 9"- kept it for dinner. Cooked it in a foil packet with lime and butter- pretty good, a little fishy. Would be better pan fried.</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 43.3947730435343,-85.50549911547853
+ tripnumber is: 390
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=43.3947730435343&lng=-85.50549911547853&username=chrisbeckstrom&maxRows=1
+ zipcode: 49329
+ city: Howard City
+ state: MI
+ county: Montcalm
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Tamarack Creek%' AND state like 'MI'
+ newwaterbodyresult_count: 1
+ the waterbody Tamarack Creek is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Tamarack Creek near Howard City
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Tamarack Creek%'
+AND station_nm
+LIKE '%Howard City%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Tamarack Creek%'
+ the newqueryresult count is: 0
+ old site number is: 
+ site number:  station name: 
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2013-06-23 as date, and  as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=&startDT=2013-06-23&endDT=2013-06-23&parameterCd=00060,00065
+ what we found: 
+ discharge:  cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20130623 
+
+					zip: 49329 
+
+					time of day: noon
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20130623/q/49329.json
+ here's what we found: 
+
+			temp: 64.8 degrees F 
+
+			humidity: 96 
+
+			wind speed 0.0 
+
+			wind gusts 0 
+
+			wind direction: North 
+
+			pressure: 30.00 
+
+			metar: METAR KRQB 230915Z AUTO 00000KT 4SM BR CLR 18/18 A3000 RMK AO2 T01820175
+ -- end of getweather_new.php --
+ fixed notes: <p>Day trip with Claire- fished a lot of Tamarack Creek by the park- had trouble finding the fish. Lots of lures/flies caught in trees, Claire caught lots of sticks with a little spinner... Later we both caught crayfish on lures. One actually grabbed my nymph and kept holding on when I pulled it out of the water! Started catching fish when I switched to tossing nightcrawlers with my fly rod. Caught a chub and I think a big brown came out from under some branches swimming after it. Later caught some rainbows where I expected them- in the fast water under white bubbles. Then we stopped at Cedar Creek on the way home; the brookies on the west side spooked as soon as we stuck our heads over the rail. Tried wading for them, they were too spooked. Headed east through the pipe; saw a BIG brookie (brown?) hanging out upstream of a rock right before the pipe. I cast over it and he flew away. Saw some smaller brookies under the log, right at the bottom in the rocks. Tried tossing a tiny bit of nightcrawler upstream in the fast current, letting it drift down. Saw a bigger fish dart downstream, and it was on my line! Managed to catch it, about 9\"- kept it for dinner. Cooked it in a foil packet with lime and butter- pretty good, a little fishy. Would be better pan fried.</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '43.3947730435343', 
+		lon = '-85.50549911547853', 
+		latlon = '43.3947730435343,-85.50549911547853', 
+		lastupdate = '2014-03-12 16:33:42', 
+		date = '2013-06-23', 
+		skunked = '', 
+		time = '4', 
+		timeofday = 'noon', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Tamarack Creek', 
+		watertype = 'creek', 
+		watercolor = 'muddy', 
+		sitecode = '', 
+		gaugeheight = '', 
+		discharge = '', 
+		temp = '64.8', 
+		hum = '96', 
+		wspdi = '0.0', 
+		wgusti = '0', 
+		wdir = 'North', 
+		pressure = '30.00', 
+		conds = 'Clear', 
+		metar = 'METAR KRQB 230915Z AUTO 00000KT 4SM BR CLR 18/18 A3000 RMK AO2 T01820175', 
+		gear = 'fly', 
+		method = 'wading', 
+		watertemp = '', 
+		notes = '<p>Day trip with Claire- fished a lot of Tamarack Creek by the park- had trouble finding the fish. Lots of lures/flies caught in trees, Claire caught lots of sticks with a little spinner... Later we both caught crayfish on lures. One actually grabbed my nymph and kept holding on when I pulled it out of the water! Started catching fish when I switched to tossing nightcrawlers with my fly rod. Caught a chub and I think a big brown came out from under some branches swimming after it. Later caught some rainbows where I expected them- in the fast water under white bubbles. Then we stopped at Cedar Creek on the way home; the brookies on the west side spooked as soon as we stuck our heads over the rail. Tried wading for them, they were too spooked. Headed east through the pipe; saw a BIG brookie (brown?) hanging out upstream of a rock right before the pipe. I cast over it and he flew away. Saw some smaller brookies under the log, right at the bottom in the rocks. Tried tossing a tiny bit of nightcrawler upstream in the fast current, letting it drift down. Saw a bigger fish dart downstream, and it was on my line! Managed to catch it, about 9\"- kept it for dinner. Cooked it in a foil packet with lime and butter- pretty good, a little fishy. Would be better pan fried.</p>', 
+		lures = 'nightcrawlers', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '390', 
+		city = 'Howard City', 
+		state = 'MI', 
+		zip = '49329', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '1'
+		WHERE tripid = '390'
+		AND username = 'cbfishes'
+		
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 16:34:28
+ notes: <p>first headed to the coldwater and did some exploring, but it was crazy high and totally muddy. Zero visibility. Tried to wade but almost fell into a deep hole. Drove up the beltline to the Rogue, saw some fish sporadically feeding on the surface. Ignored my nymphs and wooly bugger- got a couple fish to investigate a small #14 light deer hair caddis with a red foam hi-vis thing. Went downstream, met a guy who told me of many 20+ inch browns out of the rogue. Worked all the usual spots, got nothing.. Until I tied on an extra long leader (about 12 feet) and a big bushy and dark (#14) deer hair caddis (no hi-vis foam). First nice fast, a 7" rainbow attacked it. So pretty! Later got another one the same way. That was it.</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 43.10180540555207,-85.5846118927002
+ tripnumber is: 387
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=43.10180540555207&lng=-85.5846118927002&username=chrisbeckstrom&maxRows=1
+ zipcode: 49306
+ city: Belmont
+ state: MI
+ county: Kent
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Rogue River%' AND state like 'MI'
+ newwaterbodyresult_count: 1
+ the waterbody Rogue River is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Rogue River near Belmont
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Rogue River%'
+AND station_nm
+LIKE '%Belmont%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Rogue River%'
+ the newqueryresult count is: 1
+ old site number is: 
+ site number: 04118500 station name: ROGUE RIVER NEAR ROCKFORD, MI
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2013-06-18 as date, and 04118500 as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=04118500&startDT=2013-06-18&endDT=2013-06-18&parameterCd=00060,00065
+ what we found: 
+ discharge: 365 cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20130618 
+
+					zip: 49306 
+
+					time of day: evening
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20130618/q/49306.json
+ here's what we found: 
+
+			temp: 70.0 degrees F 
+
+			humidity: 38 
+
+			wind speed 15.0 
+
+			wind gusts 19.6 
+
+			wind direction: NE 
+
+			pressure: 30.06 
+
+			metar: METAR KGRR 182053Z 05013G17KT 10SM FEW060 SCT220 21/06 A3006 RMK AO2 SLP178 T02110061 53002
+ -- end of getweather_new.php --
+ fixed notes: <p>first headed to the coldwater and did some exploring, but it was crazy high and totally muddy. Zero visibility. Tried to wade but almost fell into a deep hole. Drove up the beltline to the Rogue, saw some fish sporadically feeding on the surface. Ignored my nymphs and wooly bugger- got a couple fish to investigate a small #14 light deer hair caddis with a red foam hi-vis thing. Went downstream, met a guy who told me of many 20+ inch browns out of the rogue. Worked all the usual spots, got nothing.. Until I tied on an extra long leader (about 12 feet) and a big bushy and dark (#14) deer hair caddis (no hi-vis foam). First nice fast, a 7\" rainbow attacked it. So pretty! Later got another one the same way. That was it.</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '43.10180540555207', 
+		lon = '-85.5846118927002', 
+		latlon = '43.10180540555207,-85.5846118927002', 
+		lastupdate = '2014-03-12 16:34:28', 
+		date = '2013-06-18', 
+		skunked = '', 
+		time = '2', 
+		timeofday = 'evening', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Rogue River', 
+		watertype = 'river', 
+		watercolor = 'muddy', 
+		sitecode = '04118500', 
+		gaugeheight = '', 
+		discharge = '365', 
+		temp = '70.0', 
+		hum = '38', 
+		wspdi = '15.0', 
+		wgusti = '19.6', 
+		wdir = 'NE', 
+		pressure = '30.06', 
+		conds = 'Scattered Clouds', 
+		metar = 'METAR KGRR 182053Z 05013G17KT 10SM FEW060 SCT220 21/06 A3006 RMK AO2 SLP178 T02110061 53002', 
+		gear = 'fly', 
+		method = 'wading', 
+		watertemp = '', 
+		notes = '<p>first headed to the coldwater and did some exploring, but it was crazy high and totally muddy. Zero visibility. Tried to wade but almost fell into a deep hole. Drove up the beltline to the Rogue, saw some fish sporadically feeding on the surface. Ignored my nymphs and wooly bugger- got a couple fish to investigate a small #14 light deer hair caddis with a red foam hi-vis thing. Went downstream, met a guy who told me of many 20+ inch browns out of the rogue. Worked all the usual spots, got nothing.. Until I tied on an extra long leader (about 12 feet) and a big bushy and dark (#14) deer hair caddis (no hi-vis foam). First nice fast, a 7\" rainbow attacked it. So pretty! Later got another one the same way. That was it.</p>', 
+		lures = '#14 elk hair caddis - brown', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '387', 
+		city = 'Belmont', 
+		state = 'MI', 
+		zip = '49306', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '2'
+		WHERE tripid = '387'
+		AND username = 'cbfishes'
+		
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 16:35:26
+ notes: <p>Fished with Mark- started early, about 6:45am. A few bugs (cinnamon caddis?) but not very many fish rising. The water was high and fast, figured there would be fish in slower water. Fished a big eddy, got a nice smallie on my second cast! Olive and black wooly bugger near the bottom. Weighted wooly buggers seemed to be key- we fished them under indicators and got fish dead-drifting them, swinging them, and swimming them. I figured a bigger profile would get the fish's attention. Maybe I was right! I hooked into 2 smallies, and probably 5 trout - netted 1 smallie and 4 trout, Mark got 3 trout. Dark colors seemed better than light colors, although I got one trout on a red wooly bugger tied with pipe cleaner.</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 43.10026609158972,-85.58624267578125
+ tripnumber is: 384
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=43.10026609158972&lng=-85.58624267578125&username=chrisbeckstrom&maxRows=1
+ zipcode: 49306
+ city: Belmont
+ state: MI
+ county: Kent
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Rogue River%' AND state like 'MI'
+ newwaterbodyresult_count: 1
+ the waterbody Rogue River is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Rogue River near Belmont
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Rogue River%'
+AND station_nm
+LIKE '%Belmont%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Rogue River%'
+ the newqueryresult count is: 1
+ old site number is: 
+ site number: 04118500 station name: ROGUE RIVER NEAR ROCKFORD, MI
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2013-06-16 as date, and 04118500 as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=04118500&startDT=2013-06-16&endDT=2013-06-16&parameterCd=00060,00065
+ what we found: 
+ discharge: 373 cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20130616 
+
+					zip: 49306 
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20130616/q/49306.json
+ here's what we found: 
+
+			temp: 66.2 degrees F 
+
+			humidity: 88 
+
+			wind speed 4.6 
+
+			wind gusts 0 
+
+			wind direction: SSW 
+
+			pressure: 29.87 
+
+			metar: SPECI KGRR 160515Z AUTO 20004KT 4SM VCTS RA FEW033 SCT050 OVC075 19/17 A2987 RMK AO2 LTG DSNT SW-N TSB09 P0004
+ -- end of getweather_new.php --
+ fixed notes: <p>Fished with Mark- started early, about 6:45am. A few bugs (cinnamon caddis?) but not very many fish rising. The water was high and fast, figured there would be fish in slower water. Fished a big eddy, got a nice smallie on my second cast! Olive and black wooly bugger near the bottom. Weighted wooly buggers seemed to be key- we fished them under indicators and got fish dead-drifting them, swinging them, and swimming them. I figured a bigger profile would get the fish\'s attention. Maybe I was right! I hooked into 2 smallies, and probably 5 trout - netted 1 smallie and 4 trout, Mark got 3 trout. Dark colors seemed better than light colors, although I got one trout on a red wooly bugger tied with pipe cleaner.</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '43.10026609158972', 
+		lon = '-85.58624267578125', 
+		latlon = '43.10026609158972,-85.58624267578125', 
+		lastupdate = '2014-03-12 16:35:26', 
+		date = '2013-06-16', 
+		skunked = '', 
+		time = '5', 
+		timeofday = 'morning', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Rogue River', 
+		watertype = 'river', 
+		watercolor = 'muddy', 
+		sitecode = '04118500', 
+		gaugeheight = '', 
+		discharge = '373', 
+		temp = '66.2', 
+		hum = '88', 
+		wspdi = '4.6', 
+		wgusti = '0', 
+		wdir = 'SSW', 
+		pressure = '29.87', 
+		conds = 'Rain', 
+		metar = 'SPECI KGRR 160515Z AUTO 20004KT 4SM VCTS RA FEW033 SCT050 OVC075 19/17 A2987 RMK AO2 LTG DSNT SW-N TSB09 P0004', 
+		gear = 'fly', 
+		method = 'wading', 
+		watertemp = '', 
+		notes = '<p>Fished with Mark- started early, about 6:45am. A few bugs (cinnamon caddis?) but not very many fish rising. The water was high and fast, figured there would be fish in slower water. Fished a big eddy, got a nice smallie on my second cast! Olive and black wooly bugger near the bottom. Weighted wooly buggers seemed to be key- we fished them under indicators and got fish dead-drifting them, swinging them, and swimming them. I figured a bigger profile would get the fish\'s attention. Maybe I was right! I hooked into 2 smallies, and probably 5 trout - netted 1 smallie and 4 trout, Mark got 3 trout. Dark colors seemed better than light colors, although I got one trout on a red wooly bugger tied with pipe cleaner.</p>', 
+		lures = '#6 dark woolybugger', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '384', 
+		city = 'Belmont', 
+		state = 'MI', 
+		zip = '49306', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '4'
+		WHERE tripid = '384'
+		AND username = 'cbfishes'
+		
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 16:37:45
+ notes: <p>A repeat performance! Tons of trout. Caught them the same was as the day before- #12 white/red/brown wet fly at the top, stripped against the current quickly. Sometimes they took it as soon as it landed, or floated a foot or two. Went exploring to find other fish, and found bigger ones in the same tail of a pool. They wouldnt take anything, but I caught a few fish in riffles downstream. Swinging a brown wet fly with grey wings in the current and retrieving it back in spurts was the key. They smashed into the fly and hooked themselves, and the downstream fight made them feel even bigger. Great fun! The smaller fish seemed to be in slower water near the shore, but the bigger fish were in good spots at the tails of pools. Some in very shallow water, especially near rocks. Got some video too!</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 43.101558,-85.580009
+ tripnumber is: 359
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=43.101558&lng=-85.580009&username=chrisbeckstrom&maxRows=1
+ zipcode: 49341
+ city: Rockford
+ state: MI
+ county: Kent
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Rogue River%' AND state like 'MI'
+ newwaterbodyresult_count: 1
+ the waterbody Rogue River is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Rogue River near Rockford
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Rogue River%'
+AND station_nm
+LIKE '%Rockford%'
+ result count: 1
+ old site number is: 
+ site number: 04118500 station name: ROGUE RIVER NEAR ROCKFORD, MI
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2013-05-19 as date, and 04118500 as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=04118500&startDT=2013-05-19&endDT=2013-05-19&parameterCd=00060,00065
+ what we found: 
+ discharge: 259 cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20130519 
+
+					zip: 49341 
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20130519/q/49341.json
+ here's what we found: 
+
+			temp: 64.9 degrees F 
+
+			humidity: 48 
+
+			wind speed 10.4 
+
+			wind gusts 0 
+
+			wind direction: SE 
+
+			pressure: 29.99 
+
+			metar: METAR KGRR 190553Z AUTO 14009KT 10SM CLR 18/07 A3000 RMK AO2 SLP156 T01830072 10272 20183 58005 $
+ -- end of getweather_new.php --
+ fixed notes: <p>A repeat performance! Tons of trout. Caught them the same was as the day before- #12 white/red/brown wet fly at the top, stripped against the current quickly. Sometimes they took it as soon as it landed, or floated a foot or two. Went exploring to find other fish, and found bigger ones in the same tail of a pool. They wouldnt take anything, but I caught a few fish in riffles downstream. Swinging a brown wet fly with grey wings in the current and retrieving it back in spurts was the key. They smashed into the fly and hooked themselves, and the downstream fight made them feel even bigger. Great fun! The smaller fish seemed to be in slower water near the shore, but the bigger fish were in good spots at the tails of pools. Some in very shallow water, especially near rocks. Got some video too!</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '43.101558', 
+		lon = '-85.580009', 
+		latlon = '43.101558,-85.580009', 
+		lastupdate = '2014-03-12 16:37:45', 
+		date = '2013-05-19', 
+		skunked = '', 
+		time = '4', 
+		timeofday = 'morning', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Rogue River', 
+		watertype = 'river', 
+		watercolor = 'muddy', 
+		sitecode = '04118500', 
+		gaugeheight = '', 
+		discharge = '259', 
+		temp = '64.9', 
+		hum = '48', 
+		wspdi = '10.4', 
+		wgusti = '0', 
+		wdir = 'SE', 
+		pressure = '29.99', 
+		conds = 'Clear', 
+		metar = 'METAR KGRR 190553Z AUTO 14009KT 10SM CLR 18/07 A3000 RMK AO2 SLP156 T01830072 10272 20183 58005 $', 
+		gear = 'fly', 
+		method = 'wading', 
+		watertemp = '', 
+		notes = '<p>A repeat performance! Tons of trout. Caught them the same was as the day before- #12 white/red/brown wet fly at the top, stripped against the current quickly. Sometimes they took it as soon as it landed, or floated a foot or two. Went exploring to find other fish, and found bigger ones in the same tail of a pool. They wouldnt take anything, but I caught a few fish in riffles downstream. Swinging a brown wet fly with grey wings in the current and retrieving it back in spurts was the key. They smashed into the fly and hooked themselves, and the downstream fight made them feel even bigger. Great fun! The smaller fish seemed to be in slower water near the shore, but the bigger fish were in good spots at the tails of pools. Some in very shallow water, especially near rocks. Got some video too!</p>', 
+		lures = '#12 cb march brown wet fly, #12 cb hares ear wet fly', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '359', 
+		city = 'Rockford', 
+		state = 'MI', 
+		zip = '49341', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '20'
+		WHERE tripid = '359'
+		AND username = 'cbfishes'
+		
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 16:38:18
+ notes: <p>found lots of carp hanging out in the current of the outflow. very fast water. caught a little shiner in the slow part. then went to the 900 thorndale office pond and caught ten hybrid greenie/bluegills.</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 41.970845,-87.989139
+ tripnumber is: 351
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=41.970845&lng=-87.989139&username=chrisbeckstrom&maxRows=1
+ zipcode: 60143
+ city: Itasca
+ state: IL
+ county: DuPage
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Salt Creek%' AND state like 'IL'
+ newwaterbodyresult_count: 1
+ the waterbody Salt Creek is in the DB! (this is not a new waterbody)
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Salt Creek near Itasca
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Salt Creek%'
+AND station_nm
+LIKE '%Itasca%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Salt Creek%'
+ the newqueryresult count is: 13
+ old site number is: 
+ site number: 5530990 station name: SALT CREEK AT ROLLING MEADOWS, IL
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2013-05-07 as date, and 5530990 as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=5530990&startDT=2013-05-07&endDT=2013-05-07&parameterCd=00060,00065
+ what we found: 
+ discharge:  cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20130507 
+
+					zip: 60143 
+
+					time of day: evening
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20130507/q/60143.json
+ here's what we found: 
+
+			temp: 62.1 degrees F 
+
+			humidity: 50 
+
+			wind speed 3.5 
+
+			wind gusts 0 
+
+			wind direction: ENE 
+
+			pressure: 30.01 
+
+			metar: METAR KORD 080251Z 07003KT 10SM FEW200 SCT250 17/06 A3001 RMK AO2 SLP161 T01670061 53010 $
+ -- end of getweather_new.php --
+ fixed notes: <p>found lots of carp hanging out in the current of the outflow. very fast water. caught a little shiner in the slow part. then went to the 900 thorndale office pond and caught ten hybrid greenie/bluegills.</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '41.970845', 
+		lon = '-87.989139', 
+		latlon = '41.970845,-87.989139', 
+		lastupdate = '2014-03-12 16:38:18', 
+		date = '2013-05-07', 
+		skunked = '', 
+		time = '2', 
+		timeofday = 'evening', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Salt Creek', 
+		watertype = 'creek', 
+		watercolor = 'muddy', 
+		sitecode = '', 
+		gaugeheight = '', 
+		discharge = '', 
+		temp = '62.1', 
+		hum = '50', 
+		wspdi = '3.5', 
+		wgusti = '0', 
+		wdir = 'ENE', 
+		pressure = '30.01', 
+		conds = 'Scattered Clouds', 
+		metar = 'METAR KORD 080251Z 07003KT 10SM FEW200 SCT250 17/06 A3001 RMK AO2 SLP161 T01670061 53010 $', 
+		gear = 'fly', 
+		method = 'shore', 
+		watertemp = '', 
+		notes = '<p>found lots of carp hanging out in the current of the outflow. very fast water. caught a little shiner in the slow part. then went to the 900 thorndale office pond and caught ten hybrid greenie/bluegills.</p>', 
+		lures = '#12 scud', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '351', 
+		city = 'Itasca', 
+		state = 'IL', 
+		zip = '60143', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '1'
+		WHERE tripid = '351'
+		AND username = 'cbfishes'
+		
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: cbfishes
+ THIS IS AN UPDATE TO A TRIP (edit)
+ date: 2014-03-12 16:39:13
+ notes: <p>fished with a crappy Dicks $39 fly outfit.. so heavy! gotta take it back. will never go on a roadtrip without fishing gear again. Fished the white river for a few minutes, saw fish jumping but couldnt do much with my gear (and no streamers). found a pond, caught a bunch of bluegills. Almost had a little bass, but he spit it out real quick.</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 39.958259,-86.072639
+ tripnumber is: 349
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=39.958259&lng=-86.072639&username=chrisbeckstrom&maxRows=1
+ zipcode: 46033
+ city: Carmel
+ state: IN
+ county: Hamilton
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Founders Park Pond%' AND state like 'IN'
+ newwaterbodyresult_count: 0
+ this is a new waterbody! adding it to the waterbodies table...
+ adding a new row to the waterbodies table: 
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Founders Park Pond near Carmel
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Founders Park Pond%'
+AND station_nm
+LIKE '%Carmel%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Founders Park Pond%'
+ the newqueryresult count is: 0
+ old site number is: 
+ site number:  station name: 
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2013-05-06 as date, and  as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=&startDT=2013-05-06&endDT=2013-05-06&parameterCd=00060,00065
+ what we found: 
+ discharge:  cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20130506 
+
+					zip: 46033 
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20130506/q/46033.json
+ here's what we found: 
+
+			temp: 56.3 degrees F 
+
+			humidity: 68 
+
+			wind speed 0.0 
+
+			wind gusts 0 
+
+			wind direction: North 
+
+			pressure: 29.95 
+
+			metar: METAR KTYQ 060435Z AUTO 00000KT 10SM OVC075 14/08 A2995 RMK AO2 T01350078
+ -- end of getweather_new.php --
+ fixed notes: <p>fished with a crappy Dicks $39 fly outfit.. so heavy! gotta take it back. will never go on a roadtrip without fishing gear again. Fished the white river for a few minutes, saw fish jumping but couldnt do much with my gear (and no streamers). found a pond, caught a bunch of bluegills. Almost had a little bass, but he spit it out real quick.</p>
+ -- starting points.php --
+ not new water
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 0 
+
+				adventure points: 0 
+
+				scenic points: 0 
+
+				ninja points: 0
+ total points: 5
+ -- end of points.php --
+ sql query: UPDATE trips SET
+		private = '0', 
+		lat = '39.958259', 
+		lon = '-86.072639', 
+		latlon = '39.958259,-86.072639', 
+		lastupdate = '2014-03-12 16:39:13', 
+		date = '2013-05-06', 
+		skunked = '', 
+		time = '2', 
+		timeofday = 'morning', 
+		adventure = '0', 
+		scenery = '', 
+		ninja = '0', 
+		waterbody = 'Founders Park Pond', 
+		watertype = 'pond', 
+		watercolor = 'muddy', 
+		sitecode = '', 
+		gaugeheight = '', 
+		discharge = '', 
+		temp = '56.3', 
+		hum = '68', 
+		wspdi = '0.0', 
+		wgusti = '0', 
+		wdir = 'North', 
+		pressure = '29.95', 
+		conds = 'Overcast', 
+		metar = 'METAR KTYQ 060435Z AUTO 00000KT 10SM OVC075 14/08 A2995 RMK AO2 T01350078', 
+		gear = 'fly', 
+		method = 'shore', 
+		watertemp = '', 
+		notes = '<p>fished with a crappy Dicks $39 fly outfit.. so heavy! gotta take it back. will never go on a roadtrip without fishing gear again. Fished the white river for a few minutes, saw fish jumping but couldnt do much with my gear (and no streamers). found a pond, caught a bunch of bluegills. Almost had a little bass, but he spit it out real quick.</p>', 
+		lures = 'yellow and red soft hackle', 
+		lureimage = '', 
+		username = 'cbfishes', 
+		tripnumber = '349', 
+		city = 'Carmel', 
+		state = 'IN', 
+		zip = '46033', 
+		newwater = '', 
+		points = '5', 
+		fishcaught = '8'
+		WHERE tripid = '349'
+		AND username = 'cbfishes'
+		
+ new waterbody: YES
+ end of submit.php, closing the logfile now
+ *************** NEW form.php submitted **********************
+ user: rbergman
+ THIS IS **NOT** AN UPDATE TO A TRIP (new trip)
+ date: 2014-03-12 16:50:41
+ notes: <p>I am a famous fishing author!&nbsp;</p>
+ tripnumber: 
+ url: viewtrip.php?tripnumber=$tripnumber
+ latlon is: 44.44995770844165,-83.62518310546875
+ tripnumber is: 464
+ privacy: 0
+ -- starting findcity.php --
+ geonames URL: http://api.geonames.org/findNearbyPostalCodes?lat=44.44995770844165&lng=-83.62518310546875&username=chrisbeckstrom&maxRows=1
+ zipcode: 48737
+ city: Glennie
+ state: MI
+ county: Alcona
+ -- end of findcity.php --
+ -- starting newwaterbodytest.php --
+ newwaterbodyquery: SELECT name FROM waterbodies WHERE name LIKE '%Cooke Dam Pond%' AND state like 'MI'
+ newwaterbodyresult_count: 0
+ this is a new waterbody! adding it to the waterbodies table...
+ adding a new row to the waterbodies table: 
+ -- end of newwaterbodytest.php
+ -- starting findgauge.php --
+ looking for Cooke Dam Pond near Glennie
+ the query is SELECT site_no, station_nm
+FROM streamflow
+WHERE station_nm
+LIKE '%Cooke Dam Pond%'
+AND station_nm
+LIKE '%Glennie%'
+ result count: 0
+ count is ZERO! trying a new query...
+ the new query is SELECT site_no, station_nm
+				FROM streamflow
+				WHERE station_nm
+				LIKE '%Cooke Dam Pond%'
+ the newqueryresult count is: 0
+ old site number is: 
+ site number:  station name: 
+ -- end of findgauge.php --
+ -- starting getstreamflow.php --
+ using 2014-02-20 as date, and  as the site number
+ USGSURL = http://waterservices.usgs.gov/nwis/iv/?format=json&sites=&startDT=2014-02-20&endDT=2014-02-20&parameterCd=00060,00065
+ what we found: 
+ discharge:  cfs, gaugeheight:  ft
+ -- end of getstreamflow.php --
+ -- starting getweather_new.php --
+ looking for weather 
+
+					date: 20140220 
+
+					zip: 48737 
+
+					time of day: morning
+ weather URL: http://api.wunderground.com/api/681a9b949662ace6/history_20140220/q/48737.json
+ here's what we found: 
+
+			temp: 23.4 degrees F 
+
+			humidity: 75 
+
+			wind speed 3.5 
+
+			wind gusts 0 
+
+			wind direction: SSW 
+
+			pressure: 29.95 
+
+			metar: METAR KOSC 200534Z AUTO 20003KT 10SM CLR M05/M08 A2995 RMK AO2 T10481087
+ -- end of getweather_new.php --
+ fixed notes: <p>I am a famous fishing author!&nbsp;</p>
+ -- starting points.php --
+ new water: 1 -> 5 points! whoohooo!
+ 5 points for fishing because fishing is awesome
+				fish points:  
+
+				new water points: 5 
+
+				adventure points: 2 
+
+				scenic points: 3 
+
+				ninja points: 0
+ total points: 15
+ -- end of points.php --
+ sql query: INSERT INTO trips (
+		private,
+		lat,
+		lon,
+		latlon,
+		lastupdate,
+		date, 
+		skunked, 
+		time, 
+		timeofday,
+		adventure,
+		scenery,
+		ninja,
+		waterbody,
+		watertype,
+		watercolor,
+		sitecode,
+		gaugeheight,
+		discharge,
+		temp,
+		hum,
+		wspdi,
+		wgusti,
+		wdir,
+		pressure,
+		conds,
+		metar,
+		gear,
+		method,
+		watertemp,
+		notes,
+		lures,
+		lureimage,
+		username,
+		tripnumber,
+		city,
+		state,
+		zip,
+		newwater,
+		points,
+		fishcaught
+		)
+	VALUES ('0',
+		'44.44995770844165',
+		'-83.62518310546875',
+		'44.44995770844165,-83.62518310546875',
+		'2014-03-12 16:50:41',
+		'2014-02-20',
+		'',
+		'2',
+		'morning',
+		'2',
+		'3',
+		'0',
+		'Cooke Dam Pond',
+		'river',
+		'clear',
+		'',
+		'',
+		'',
+		'23.4',
+		'75',
+		'3.5',
+		'0',
+		'SSW',
+		'29.95',
+		'Clear',
+		'METAR KOSC 200534Z AUTO 20003KT 10SM CLR M05/M08 A2995 RMK AO2 T10481087',
+		'fly',
+		'canoe',
+		'',
+		'<p>I am a famous fishing author!&nbsp;</p>',
+		'',
+		'',
+		'rbergman',
+		'464',
+		'Glennie',
+		'MI',
+		'48737',
+		'1',
+		'15',
+		'6'
+		)
+ new waterbody: YES
+ end of submit.php, closing the logfile now

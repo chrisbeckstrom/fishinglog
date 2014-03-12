@@ -260,20 +260,20 @@ print "<small><br>$watertype in $city, $state<br></small></h3>
 // 	
 	// print "</box>
 
-	print "<br><smallnotes>$notes</smallnotes>";
+	print "<br><smallnotes>$notes</smallnotes><br>";
 
 
 // SMALL INFO AT THE BOTTOM
 if ( $hidethings == '1' )
 	{
-print "<br><span class='smallinfo'>
-		user: <a href='user.php?username=$username'>$username</a> 
-		/ tripnumber: $tripnumber 
-		/ tripid: $tripid
-		/ last updated: $lastupdate
-		/ <a href='log2.php?tripnumber=$tripnumber'>add another spot</a>
-		/ <a href='php/deletetrip.php?tripid=$tripid'>delete</a>
-	   </span>";
+// print "<br><span class='smallinfo'>
+// 		user: <a href='user.php?username=$username'>$username</a> 
+// 		/ tripnumber: $tripnumber 
+// 		/ tripid: $tripid
+// 		/ last updated: $lastupdate
+// 		/ <a href='log2.php?tripnumber=$tripnumber'>add another spot</a>
+// 		/ <a href='php/deletetrip.php?tripid=$tripid'>delete</a>
+// 	   </span>";
 	}
 else
 	{

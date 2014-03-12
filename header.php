@@ -58,6 +58,12 @@ if(isset($_SESSION['myusername']))
 	"<a href='kml/fishingtrips.kml' class='headerlink'>kml</a> |
 	<a href='rss.php' class='headerlink'>rss</a> |" ;
 	}
+	
+if($_SESSION['myusername'] == 'cbfishes')
+	{
+	$admin_stuff = '<a target="_blank" href="http://cb.hopto.org/phpmyadmin">phpmy<a> |
+					<a target="_blank" href="https://www.google.com/analytics/web/?hl=en#report/visitors-overview/a42708611w72532512p74868212/">ga</a> |';
+	}
 
 $header =
 	"<header-wrap>
@@ -68,7 +74,7 @@ $header =
 			<a href='trips.php' class='headerlink'>trips</a> | 
 			<a href='waterbodies.php' class='headerlink'>waters</a> |
 			
-			$secret_stuff
+			$secret_stuff $admin_stuff
 			</p>
 			
 			<p class='alignright'>

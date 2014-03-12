@@ -105,12 +105,12 @@ print "<small>";
 // if there is no limit as an argument, make it 10 by default
 if(isset($_GET['limit']))
 	{
-		//$limit = $_GET['limit'];
-		//print "<i>limit set! showing $limit most recent</i><br><br>";
+$limit = $_GET['limit'];
+print "<i>limit set! showing $limit most recent</i><br><br>";
 	}
 else
 	{
-		//$limit = 25;	
+		$limit = 25;	
 		//print "<i>no limit set: showing $limit most recent</i><br><br>";
 	}
 

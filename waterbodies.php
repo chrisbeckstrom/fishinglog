@@ -11,8 +11,6 @@ This is the WATERBODIES page
 <?php
 
 
-$pagetitle = "Waterbodies";
-
 include 'config/config.php';
 include 'config/connect.php';
 include 'header.php';
@@ -20,6 +18,8 @@ include 'header.php';
 print $header;
 
 ?>
+<title><?php echo "Waters | $sitename"; ?>
+</title>
 <div id='main'>
 		   <nav>nav</nav>
     <aside>
@@ -32,7 +32,7 @@ print $header;
     	<h1>Waters</h1>
     	</box>
     	
-    	<box>
+
     	<?
 
 // go get the distinct waterbodies
@@ -76,21 +76,21 @@ $row = mysql_fetch_array($result);
 while($row = mysql_fetch_array($result))
 	{
 		
-$name = $row['name'];
-$watertype = $row['watertype'];
-$lat = $row['lat'];
-$lon = $row['lon'];
-$city = $row['city'];
-$county = $row['county'];
-$state = $row['state'];
-$notes = $row['notes'];
-$owner = $row['owner'];
-$private = $row['private'];
-$id = $row['id'];
-
-
-print "<b><a href='water.php?name=$name'>$name</a></b> - $city $county $state<p>";
-
+	$name = $row['name'];
+	$watertype = $row['watertype'];
+	$lat = $row['lat'];
+	$lon = $row['lon'];
+	$city = $row['city'];
+	$county = $row['county'];
+	$state = $row['state'];
+	$notes = $row['notes'];
+	$owner = $row['owner'];
+	$private = $row['private'];
+	$id = $row['id'];
+	
+	print "<box>";
+	print "<b><a href='water.php?name=$name'>$name</a></b> - $city $county $state";
+	print "</box>";
 
 if ($private == '1')
 	{
@@ -100,4 +100,3 @@ if ($private == '1')
 
 }
 	?>
-	</box>

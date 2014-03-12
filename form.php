@@ -419,6 +419,15 @@ if($_GET['edit'] == 1 )
 					{
 					$trollingselected = 'checked';
 					}
+				if ($gear == 'trotline' )
+					{
+					$trotlineselected = 'checked';
+					}
+				if ($gear == 'minnow trap' )
+					{
+					$minnowtrapselected = 'checked';
+					}
+					
 				}
 		?>
 		<formitem>
@@ -427,6 +436,8 @@ if($_GET['edit'] == 1 )
 		<input class='checkbox' type="radio" name="gear" value="both" <?php echo $bothselected ?> >Both
 		<input class='checkbox' type="radio" name="gear" value="baitcasting" <?php echo $baitcastingselected ?> >Baitcasting
 		<input class='checkbox' type="radio" name="gear" value="trolling" <?php echo $trollingselected ?> >Trolling
+		<input class='checkbox' type="radio" name="gear" value="trotline" <?php echo $trotlineselected ?> >Trotline
+		<input class='checkbox' type="radio" name="gear" value="minnow trap" <?php echo $minnowtrapselected ?> >Minnow trap
 		</formitem>
 		
 		<!-- Method (dropdown) -->
@@ -456,6 +467,10 @@ if($_GET['edit'] == 1 )
 				{
 				$floattubeselect = 'selected';
 				}
+			if ($method == 'unattended')
+				{
+				$unattendedselected = 'selected';
+				}
 			}
 			
 		?>
@@ -467,6 +482,7 @@ if($_GET['edit'] == 1 )
 		<option value="kayak" <?php echo $kayakselect ?>>kayak</option>
 		<option value="canoe" <?php echo $canoeselect ?>>canoe</option>
 		<option value="float_tube" <?php echo $floattubeselect ?>>float tube</option>
+		<option value="unattended" <?php echo $unattendedselected ?>>unattended</option>
 		</select>
 		</formitem>
 		<br>
@@ -596,7 +612,7 @@ tinymce.init({
  });
 </script>
 
-<span class='smallinfo'>put your secret stuff in brackets</span>
+<small>Put your secret stuff in brackets! (Nobody will know [your secret])</small>
 <textarea style="width: 55%; height: 100px" name="notes" value="notes">
 
 			<?php if ($_GET['edit'] == 1 )
@@ -638,12 +654,13 @@ tinymce.init({
     }
 </script>
 
-<h2>Creel</h2>
+<h2>Creel</h2><br>
+<small>Start typing the species and choose from the list to make sure it gets logged</small>
 <!-- Right now we only have the option to choose a species and how many were caught...
 	maybe it would be cool if we had the option to record each specific fish!
 	that way we could record individual fish sizes and weights -->
 <!-- <form action="submitfish.php" method="get" target="_blank"> -->
-<span class='smallinfo'>kind of fish / number</span>
+<br><span class='smallinfo'>kind of fish / number</span>
 <table>
 		<div id="newlink">
 			  	<input class="findfish" id ="findfish" type="text" name="fishbox[]" value=""  size="50">

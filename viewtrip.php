@@ -1,6 +1,11 @@
 <?php
 session_start();
 ?>
+<head>
+<link rel="image_src" 
+      type="image/jpeg" 
+      href="http://upload.wikimedia.org/wikipedia/commons/c/c9/Hudson_river_from_bear_mountain_bridge.jpg" />
+      </head>
 <!-- FACEBOOK BUTTON CODE -->
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -135,6 +140,16 @@ include 'php/privacy.php';
 // END THE TRIP BOX ////////////////////////////////////////////////////////////////
 
 ?>
+
+<title>
+<?php 
+
+if ( $hidethings == 1 )
+	{
+	$waterbody = '[redacted]';
+	}
+print "$username @ $waterbody | $sitename"; ?>
+</title>
 <!-- ////////////////////////////////  LOAD THE FANCY GOOGLE MAP -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
   Strict//EN"
@@ -219,7 +234,17 @@ include 'php/privacy.php';
     	</center>
     </box>
     
-    <?php } ?>
+    <?php } 
+
+
+print "<box>";
+include 'disqus.php';
+print "</box>";
+
+
+    ?>
+    
+
   
   </article>
   
@@ -251,11 +276,8 @@ include 'php/privacy.php';
 //////////// end of map
 print "</div>
 <footer>here's the footer</footer>";
+
 ?>
 
 
-<head>
-	<title>
-	<?php print "$tripusername @ $waterbody | $sitename"; ?>
-</title>
 

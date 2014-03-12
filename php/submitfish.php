@@ -46,8 +46,8 @@ foreach ($getarray as $key => $val)
 
 	
 	// query the 'fish' table to get the fishID
-	$fishnamequery = "SELECT fishID, fishbase_name FROM fish WHERE (fishbase_name LIKE '%$fishname%' OR name LIKE '%$fishname%')";
-	
+	$fishnamequery = "SELECT fishID, fishbase_name FROM fish WHERE (fishbase_name LIKE '$fishname' OR name LIKE '$fishname')";
+	// select fishID, fishbase_name FROM fish WHERE (fishbase_name LIKE 'creek chub')
 	print "the query is: <pre>$fishnamequery</pre>";
 	
 	//Do your query and stuff here

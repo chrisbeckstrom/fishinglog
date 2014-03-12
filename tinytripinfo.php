@@ -3,45 +3,45 @@
 // TINY TRIP INFO
 // just a line or two about a trip
 
-	$date = $row['date'];
+	$ttdate = $row['date'];
 	
-	$tripnumber = $row['tripnumber'];
-	$state = $row['state'];
+	$tttripnumber = $row['tripnumber'];
+	$ttstate = $row['state'];
 	
 	// HIDE THE WATERBODY?
-	$watertype = $row['watertype'];
-	$tripwaterbody = $row['waterbody'];
+	$ttwatertype = $row['watertype'];
+	$tttripwaterbody = $row['waterbody'];
 	if ( $hidethings == 1 )
 		{
-		$tripwaterbody = disguise($tripwaterbody);
+		$tttripwaterbody = disguise($tttripwaterbody);
 		}
 		else {
-			$tripwaterbody = $tripwaterbody;
+			$tttripwaterbody = $tttripwaterbody;
 		}
 	
-	$newwater = $row['newwater'];
+	$ttnewwater = $row['newwater'];
 	// HIDE NOTES?
-	$notes = $row['notes'];
+	$ttnotes = $row['notes'];
 	if ( $hidethings == 1 )
 		{
 		// disuise anything in brackets
-		$notes = disguiseBrackets($notes);
+		$ttnotes = disguiseBrackets($ttnotes);
 		}
 	else {
 		// remove the brackets from notes
-	$notes = str_replace("[","",$notes);
-	$notes = str_replace("]","",$notes);
+	$ttnotes = str_replace("[","",$ttnotes);
+	$ttnotes = str_replace("]","",$ttnotes);
 	}
 	
 	
 	
-	$notesbetter = str_replace("'", "\'",$notes);
-	$metar = $row['metar'];
+	$ttnotesbetter = str_replace("'", "\'",$ttnotes);
+	$ttmetar = $row['metar'];
 	?>
 	<small>
-	<? print $date ?> / <a onmouseover="nhpup.popup('<? print $notesbetter ?>');"
-	href='viewtrip.php?tripnumber=<? print $tripnumber ?>'>
-		<b><nobr><? print $tripwaterbody ?></b></a>, 
-		<? print $state ?> </nobr><br></small>
+	<? print $ttdate ?> / <a onmouseover="nhpup.popup('<? print $ttnotesbetter ?>');"
+	href='viewtrip.php?tripnumber=<? print $tttripnumber ?>'>
+		<b><nobr><? print $tttripwaterbody ?></b></a>, 
+		<? print $ttstate ?> </nobr><br></small>
 		
 

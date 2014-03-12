@@ -6,6 +6,7 @@
 // made to show up in little boxes
 
 print "<h3>Your recent trips</h3>";
+$username = $_SESSION['myusername'];
 $limit = 10;
 $query = "
 SELECT * FROM trips WHERE username = '$username'
