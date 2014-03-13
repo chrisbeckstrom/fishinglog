@@ -194,13 +194,22 @@ if ( $newwater == '1' )
 
 // TRIPBOX
 
-print "
+	print "
 	<a href='user.php?username=$username'><img class='circular' src='$useravatar'></a>
 	<small>$date ($timeofday)</small><br>
-	<h3><a href='user.php?username=$username'>$username</a> @ <a href='viewtrip.php?tripnumber=$tripnumber'><b>$waterbody</b></a>";
-print "<small class='alignright'><a href='viewtrip.php?tripnumber=$tripnumber'>trip #$tripnumber</a></small>";
+	<h3><a href='user.php?username=$username'>$username</a> @ ";
+	
+	if ( $hidethings == '1' )
+		{
+		print "<b>$waterbody</b>";
+		}
+		else
+		{
+		print "<a href='water.php?name=$waterbody'><b>$waterbody</b></a>";
+		}
+	print "<small class='alignright'><a href='viewtrip.php?tripnumber=$tripnumber'>trip #$tripnumber</a></small>";
 
-print "<small><br>$watertype in $city, $state<br></small></h3>
+	print "<small><br>$watertype in $city, $state<br></small></h3>
 	";
 	
 		// A FISH SPRITE FOR EACH FISH CAUGHT
@@ -261,6 +270,7 @@ print "<small><br>$watertype in $city, $state<br></small></h3>
 	// print "</box>
 
 	print "<br><smallnotes>$notes</smallnotes><br>";
+	print "<a href='viewtrip.php?tripnumber=$tripnumber'>view trip details</a><br>";
 
 
 // SMALL INFO AT THE BOTTOM

@@ -213,7 +213,7 @@ print "<br><br>";
 print "</div>";
 
 // FOOTER
-print "<footer>here's the footer</footer>";
+include 'footer.php';
 
 ?>
 <head>

@@ -8,6 +8,9 @@ include 'header.php';
 print "<link rel='stylesheet' href='css/style.css' type='text/css' />";
 
 print $header;
-$message = $_GET['message'];
 
+if (isset($_GET['message']))
+	{
+	$message = "<messagebox>" . $_GET['message'] . "</messagebox>";
+	}
 include 'php/loginbox.php';

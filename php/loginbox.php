@@ -5,7 +5,7 @@ top
 <form class="loginform" name="loginform" method="post" action="php/checklogin.php">
 <td>
 <tr>
-<b><? print $message ?> </b>
+<h2><? print $message ?> </h2>
 <td width="294"><input name="myusername" type="text" id="myusername" placeholder="username" required></td>
 </tr>
 <tr>

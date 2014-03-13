@@ -42,7 +42,7 @@ if (!isset($_GET[key]))
 	
 // check that the key matches a key in the the key table
 	$key = $_GET[key];
-	$keyquery = "SELECT * from signup_keys WHERE signup_key='$key' AND used != '1'";
+	$keyquery = "SELECT * from signup_keys WHERE signup_key='$key'";
 	//print "<br>keyquery: $keyquery <br>";
 	$keyresults = mysql_query($keyquery);
 	
@@ -52,7 +52,7 @@ if (!isset($_GET[key]))
 	
 	if ($number_of_results != 1 )
 		{
-		print "<box>either the key wasn't found or it's already been used by somebody else
+		print "<box>that key wasn't found <br>
 		<a href='mailto:chrisbeckstrom@gmail.com'>(email chris)</a></box>";
 		die;
 		}
@@ -79,15 +79,15 @@ Questions? Comments? Bugs? <a href='mailto:chrisbeckstrom@gmail.com'>Email Chris
 <tr>
 <td></td>
 <br>
+<td>Username <input name="newusername" type="text" id="newusername" placeholder="what should we call you?" required></td>
+</tr><br>
 
 <td>Password <input name="mypassword" type="password" id="mypassword" placeholder="desired password" required></td>
 </tr>
 <br>
 
 <br>
-<tr>
-<td>Username <input name="newusername" type="text" id="newusername" placeholder="what should we call you?" required></td>
-</tr><br>
+
 
 <td>Avatar image <input name="avatarurl" type="text" id="avatarurl" placeholder="link to your picture"></td>
 </tr><br>

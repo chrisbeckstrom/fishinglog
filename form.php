@@ -29,7 +29,7 @@ $username = $_SESSION['myusername'];
 if(!isset($_SESSION['myusername']))
 	{
 	print "You gotta log in to do that!";
-	header( 'Location: login.php' );
+	header( 'Location: login.php?message=You gotta login to log a trip' );
 	}
 	
 	

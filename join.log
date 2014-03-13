@@ -1,0 +1,114 @@
+
+ *************** NEW join.php submitted **********************
+ realname: John Doe 
+
+				username:  
+
+				avatarurl: http://images.nationalgeographic.com/wpf/media-live/photos/000/002/cache/angler-fish_222_600x450.jpg 
+
+				email: chrisbeckstrom@gmail.com 
+
+				gps = 41.13884745373137,-83.16650390625 
+
+				key = 36251 
+
+				location = Tiffin, OH
+ query: INSERT INTO users 
+	(username, userrealname, password, email, useravatarurl, location, GPS)
+	VALUES 
+	('','John Doe','supjuyeriy2763', 'chrisbeckstrom@gmail.com', 'http://images.nationalgeographic.com/wpf/media-live/photos/000/002/cache/angler-fish_222_600x450.jpg', 'Tiffin, OH', '41.13884745373137,-83.16650390625')
+ *************** NEW join.php submitted **********************
+ realname: John Doe 
+
+				username:  
+
+				avatarurl: http://images.nationalgeographic.com/wpf/media-live/photos/000/002/cache/angler-fish_222_600x450.jpg 
+
+				email: chrisbeckstrom@gmail.com 
+
+				gps = 41.13884745373137,-83.16650390625 
+
+				key = 36251 
+
+				location = Tiffin, OH
+ query: INSERT INTO users 
+	(username, userrealname, password, email, useravatarurl, location, GPS)
+	VALUES 
+	('','John Doe','supjuyeriy2763', 'chrisbeckstrom@gmail.com', 'http://images.nationalgeographic.com/wpf/media-live/photos/000/002/cache/angler-fish_222_600x450.jpg', 'Tiffin, OH', '41.13884745373137,-83.16650390625')
+ *************** NEW join.php submitted **********************
+ realname: John Doe 
+
+				username:  
+
+				avatarurl: http://images.nationalgeographic.com/wpf/media-live/photos/000/002/cache/angler-fish_222_600x450.jpg 
+
+				email: chrisbeckstrom@gmail.com 
+
+				gps = 41.13884745373137,-83.16650390625 
+
+				key = 36251 
+
+				location = Tiffin, OH
+ query: INSERT INTO users 
+	(username, userrealname, password, email, useravatarurl, location, GPS)
+	VALUES 
+	('','John Doe','supjuyeriy2763', 'chrisbeckstrom@gmail.com', 'http://images.nationalgeographic.com/wpf/media-live/photos/000/002/cache/angler-fish_222_600x450.jpg', 'Tiffin, OH', '41.13884745373137,-83.16650390625')
+ *************** NEW join.php submitted **********************
+ realname: John Doe 
+
+				username: jdoe 
+
+				avatarurl: http://images.nationalgeographic.com/wpf/media-live/photos/000/002/cache/angler-fish_222_600x450.jpg 
+
+				email: chrisbeckstrom@gmail.com 
+
+				gps = 41.13884745373137,-83.16650390625 
+
+				key = 36251 
+
+				location = Tiffin, OH
+ query: INSERT INTO users 
+	(username, userrealname, password, email, useravatarurl, location, GPS)
+	VALUES 
+	('jdoe','John Doe','supjuyeriy2763', 'chrisbeckstrom@gmail.com', 'http://images.nationalgeographic.com/wpf/media-live/photos/000/002/cache/angler-fish_222_600x450.jpg', 'Tiffin, OH', '41.13884745373137,-83.16650390625')
+ signup key query is: UPDATE signup_keys SET used = '1' WHERE signup_key = '36251' 
+
+ *************** NEW join.php submitted **********************
+ realname: test testy 
+
+				username: testing 
+
+				avatarurl: http://www.oldhickorybassanglers.com/wp-content/uploads/2012/01/angler-sonnenuntergang.jpg 
+
+				email: chris@cbfishes.com 
+
+				gps = 43.61519958447072,-83.84765625 
+
+				key = 36251 
+
+				location = Bay City, MI
+ query: INSERT INTO users 
+	(username, userrealname, password, email, useravatarurl, location, GPS)
+	VALUES 
+	('testing','test testy','iyasdlh703434309u', 'chris@cbfishes.com', 'http://www.oldhickorybassanglers.com/wp-content/uploads/2012/01/angler-sonnenuntergang.jpg', 'Bay City, MI', '43.61519958447072,-83.84765625')
+ signup key query is: UPDATE signup_keys SET used = '1' WHERE signup_key = '36251' 
+
+ *************** NEW join.php submitted **********************
+ realname: testy test 
+
+				username: testing 
+
+				avatarurl:  
+
+				email: asdjh@jhasd.com 
+
+				gps = 42.33036712583701,-87.28515625 
+
+				key = 36251 
+
+				location = 
+ query: INSERT INTO users 
+	(username, userrealname, password, email, useravatarurl, location, GPS)
+	VALUES 
+	('testing','testy test','iuasd39843', 'asdjh@jhasd.com', '', '', '42.33036712583701,-87.28515625')
+ signup key query is: UPDATE signup_keys SET used = '1' WHERE signup_key = '36251' 
